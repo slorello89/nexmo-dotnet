@@ -54,5 +54,8 @@ namespace Nexmo.Api
         public ClientMethods.ShortCode ShortCode { get; private set; }
         public ClientMethods.SMS SMS { get; private set; }
         public ClientMethods.Redact Redact { get; private set; }
+        public ClientMethods.Conversation Conversation { get; set; }
+
+
     }
 }
