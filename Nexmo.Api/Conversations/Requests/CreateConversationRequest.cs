@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nexmo.Api.Request
+namespace Nexmo.Api.Conversations.Request
 {
     public class CreateConversationRequest : BaseConversationRequest
     {
