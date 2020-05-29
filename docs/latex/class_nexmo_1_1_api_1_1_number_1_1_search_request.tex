@@ -1,0 +1,121 @@
+\hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request}{}\doxysection{Nexmo.\+Api.\+Number.\+Search\+Request Class Reference}
+\label{class_nexmo_1_1_api_1_1_number_1_1_search_request}\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a15279caab37338d76399cd34f391f68b}{country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required. Country code. Ex\+: CA \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a66c2d631a05ee57591a6d59e2e5cbf7a}{pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. A matching pattern. Ex\+: 888 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a88edfe14213dc2b3d12969651653b0e5}{search\+\_\+pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Strategy for matching pattern. Expected values\+: 0 \char`\"{}starts with\char`\"{} (default), 1 \char`\"{}anywhere\char`\"{}, 2 \char`\"{}ends with\char`\"{}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae44e4c276d3cd045ac884d4ff5c21ed7}{Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional.\+the type of number to search for. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a8751863481660f018ecb094128225bba}{features}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Available features are S\+MS and V\+O\+I\+CE, use a comma-\/separated values. Ex\+: S\+MS,V\+O\+I\+CE \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a14f809adcc25369f627fa4c4040c1087}{index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Page index ($>$0, default 1). Ex\+: 2 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae61ffbe00fe898f1818ae3fba12a7b95}{size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Page size (max 100, default 10). Ex\+: 25 \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_a4206ef65844a143c64f275d3ad19d3ab}{has\+\_\+application}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set this optional field to true to restrict your results to numbers associated with an application (any application). Set to false to find all numbers not associated with any application. Omit the field to avoid filtering on whether or not the number is assigned to an application. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request_acbda9efea412f336e4a894de8ad9ba4b}{application\+\_\+id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The application that you want to return the numbers for \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_acbda9efea412f336e4a894de8ad9ba4b}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_acbda9efea412f336e4a894de8ad9ba4b}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!application\_id@{application\_id}}
+\index{application\_id@{application\_id}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{application\_id}{application\_id}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+application\+\_\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The application that you want to return the numbers for 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a15279caab37338d76399cd34f391f68b}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a15279caab37338d76399cd34f391f68b}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!country@{country}}
+\index{country@{country}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{country}{country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required. Country code. Ex\+: CA 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a8751863481660f018ecb094128225bba}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a8751863481660f018ecb094128225bba}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!features@{features}}
+\index{features@{features}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+features\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Available features are S\+MS and V\+O\+I\+CE, use a comma-\/separated values. Ex\+: S\+MS,V\+O\+I\+CE 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a4206ef65844a143c64f275d3ad19d3ab}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a4206ef65844a143c64f275d3ad19d3ab}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!has\_application@{has\_application}}
+\index{has\_application@{has\_application}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{has\_application}{has\_application}}
+{\footnotesize\ttfamily bool? Nexmo.\+Api.\+Number.\+Search\+Request.\+has\+\_\+application\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set this optional field to true to restrict your results to numbers associated with an application (any application). Set to false to find all numbers not associated with any application. Omit the field to avoid filtering on whether or not the number is assigned to an application. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a14f809adcc25369f627fa4c4040c1087}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a14f809adcc25369f627fa4c4040c1087}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!index@{index}}
+\index{index@{index}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Page index ($>$0, default 1). Ex\+: 2 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a66c2d631a05ee57591a6d59e2e5cbf7a}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a66c2d631a05ee57591a6d59e2e5cbf7a}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!pattern@{pattern}}
+\index{pattern@{pattern}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{pattern}{pattern}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. A matching pattern. Ex\+: 888 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_a88edfe14213dc2b3d12969651653b0e5}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_a88edfe14213dc2b3d12969651653b0e5}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!search\_pattern@{search\_pattern}}
+\index{search\_pattern@{search\_pattern}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{search\_pattern}{search\_pattern}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+search\+\_\+pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Strategy for matching pattern. Expected values\+: 0 \char`\"{}starts with\char`\"{} (default), 1 \char`\"{}anywhere\char`\"{}, 2 \char`\"{}ends with\char`\"{}. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae61ffbe00fe898f1818ae3fba12a7b95}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae61ffbe00fe898f1818ae3fba12a7b95}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!size@{size}}
+\index{size@{size}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Page size (max 100, default 10). Ex\+: 25 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae44e4c276d3cd045ac884d4ff5c21ed7}\label{class_nexmo_1_1_api_1_1_number_1_1_search_request_ae44e4c276d3cd045ac884d4ff5c21ed7}} 
+\index{Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}!Type@{Type}}
+\index{Type@{Type}!Nexmo.Api.Number.SearchRequest@{Nexmo.Api.Number.SearchRequest}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Search\+Request.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional.\+the type of number to search for. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/Number.\+cs\end{DoxyCompactItemize}

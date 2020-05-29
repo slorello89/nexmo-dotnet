@@ -1,0 +1,307 @@
+\hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{}\doxysection{Nexmo.\+Api.\+Client\+Methods.\+Call Class Reference}
+\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call}\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_ab77582784ddea6205e5a89c17acea74b}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_ab77582784ddea6205e5a89c17acea74b}} 
+{\bfseries Call} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds)
+\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aa0be421f75486a06b7a4e4fb836cc4db}{Do}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command}{Voice.\+Call.\+Call\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em P\+O\+ST /v1/calls -\/ create an outbound S\+IP or P\+S\+TN \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_paginated_response}{Paginated\+Response}}$<$ \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_list}{Voice.\+Call.\+Call\+List}} $>$ \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_ae7e9086b68fbcc367d8c3274213c5f04}{List}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter}{Voice.\+Call.\+Search\+Filter}} filter, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em G\+ET /v1/calls -\/ retrieve information about all your Calls 
+\begin{DoxyParams}{Parameters}
+{\em filter} & Filter to search calls on\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_paginated_response}{Paginated\+Response}}$<$ \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_list}{Voice.\+Call.\+Call\+List}} $>$ \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a2a935c22b5aa7fc107cdd9165ca3516d}{List}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Lists the first 10 calls \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6121ab4192c6782c4a7cefc784aae409}{Get}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em G\+ET /v1/calls/\{uuid\} -\/ retrieve information about a single \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aae4a265ed35a9cba8d49bc5fa00e85a8}{Edit}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_edit_command}{Voice.\+Call.\+Call\+Edit\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em P\+UT /v1/calls/\{uuid\} -\/ modify an existing \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6f332fbb082ea58637e32e840fc6c1b8}{Begin\+Stream}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_stream_command}{Voice.\+Call.\+Stream\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em P\+UT /v1/calls/\{uuid\}/stream -\/ stream an audio file to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a68c539f2aa9ae6a834a364ae698420e5}{End\+Stream}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em D\+E\+L\+E\+TE /v1/calls/\{uuid\}/stream -\/ stop streaming an audio file to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_adc61ba347575403338bc2e242c19cc04}{Begin\+Talk}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_talk_command}{Voice.\+Call.\+Talk\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em P\+UT /v1/calls/\{uuid\}/talk -\/ send a synthesized speech message to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a59b27eab91861d1db075d47eef91bb01}{End\+Talk}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em D\+E\+L\+E\+TE /v1/calls/\{uuid\}/talk -\/ stop sending a synthesized speech message to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aee3c26ce777f453b40f725b419466990}{Send\+Dtmf}} (string id, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_dtmf_command}{Voice.\+Call.\+Dtmf\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em P\+UT /v1/calls/\{uuid\}/dtmf -\/ send Dual-\/tone multi-\/frequency(D\+T\+MF) tones to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_get_recording_response}{Voice.\+Call.\+Call\+Get\+Recording\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aded2926413ec736c4fd4ea94346d968e}{Get\+Recording}} (string recording\+Url, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Retrieves a Recording ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a4e889f0502f18c2bfed104c9a7ed6d53}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a4e889f0502f18c2bfed104c9a7ed6d53}} 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} {\bfseries Credentials}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6f332fbb082ea58637e32e840fc6c1b8}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6f332fbb082ea58637e32e840fc6c1b8}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!BeginStream@{BeginStream}}
+\index{BeginStream@{BeginStream}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{BeginStream()}{BeginStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Begin\+Stream (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_stream_command}{Voice.\+Call.\+Stream\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+P\+UT /v1/calls/\{uuid\}/stream -\/ stream an audio file to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em cmd} & Command to execute against call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_adc61ba347575403338bc2e242c19cc04}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_adc61ba347575403338bc2e242c19cc04}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!BeginTalk@{BeginTalk}}
+\index{BeginTalk@{BeginTalk}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{BeginTalk()}{BeginTalk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Begin\+Talk (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_talk_command}{Voice.\+Call.\+Talk\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+P\+UT /v1/calls/\{uuid\}/talk -\/ send a synthesized speech message to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em cmd} & Command to execute against call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aa0be421f75486a06b7a4e4fb836cc4db}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aa0be421f75486a06b7a4e4fb836cc4db}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!Do@{Do}}
+\index{Do@{Do}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{Do()}{Do()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Do (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command}{Voice.\+Call.\+Call\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+P\+O\+ST /v1/calls -\/ create an outbound S\+IP or P\+S\+TN \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & \\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aae4a265ed35a9cba8d49bc5fa00e85a8}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aae4a265ed35a9cba8d49bc5fa00e85a8}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!Edit@{Edit}}
+\index{Edit@{Edit}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Edit (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_edit_command}{Voice.\+Call.\+Call\+Edit\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+P\+UT /v1/calls/\{uuid\} -\/ modify an existing \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em cmd} & Command to execute against call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a68c539f2aa9ae6a834a364ae698420e5}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a68c539f2aa9ae6a834a364ae698420e5}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!EndStream@{EndStream}}
+\index{EndStream@{EndStream}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{EndStream()}{EndStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+End\+Stream (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+D\+E\+L\+E\+TE /v1/calls/\{uuid\}/stream -\/ stop streaming an audio file to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a59b27eab91861d1db075d47eef91bb01}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a59b27eab91861d1db075d47eef91bb01}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!EndTalk@{EndTalk}}
+\index{EndTalk@{EndTalk}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{EndTalk()}{EndTalk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+End\+Talk (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+D\+E\+L\+E\+TE /v1/calls/\{uuid\}/talk -\/ stop sending a synthesized speech message to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6121ab4192c6782c4a7cefc784aae409}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a6121ab4192c6782c4a7cefc784aae409}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!Get@{Get}}
+\index{Get@{Get}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{Voice.\+Call.\+Call\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Get (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+G\+ET /v1/calls/\{uuid\} -\/ retrieve information about a single \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aded2926413ec736c4fd4ea94346d968e}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aded2926413ec736c4fd4ea94346d968e}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!GetRecording@{GetRecording}}
+\index{GetRecording@{GetRecording}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{GetRecording()}{GetRecording()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_get_recording_response}{Voice.\+Call.\+Call\+Get\+Recording\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Get\+Recording (\begin{DoxyParamCaption}\item[{string}]{recording\+Url,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Retrieves a Recording ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recording\+Url} & Url where the recording is stored\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a2a935c22b5aa7fc107cdd9165ca3516d}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_a2a935c22b5aa7fc107cdd9165ca3516d}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!List@{List}}
+\index{List@{List}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_paginated_response}{Paginated\+Response}}$<$\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_list}{Voice.\+Call.\+Call\+List}}$>$ Nexmo.\+Api.\+Client\+Methods.\+Call.\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Lists the first 10 calls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_ae7e9086b68fbcc367d8c3274213c5f04}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_ae7e9086b68fbcc367d8c3274213c5f04}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!List@{List}}
+\index{List@{List}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_paginated_response}{Paginated\+Response}}$<$\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_list}{Voice.\+Call.\+Call\+List}}$>$ Nexmo.\+Api.\+Client\+Methods.\+Call.\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter}{Voice.\+Call.\+Search\+Filter}}}]{filter,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+G\+ET /v1/calls -\/ retrieve information about all your Calls 
+\begin{DoxyParams}{Parameters}
+{\em filter} & Filter to search calls on\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aee3c26ce777f453b40f725b419466990}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_call_aee3c26ce777f453b40f725b419466990}} 
+\index{Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}!SendDtmf@{SendDtmf}}
+\index{SendDtmf@{SendDtmf}!Nexmo.Api.ClientMethods.Call@{Nexmo.Api.ClientMethods.Call}}
+\doxysubsubsection{\texorpdfstring{SendDtmf()}{SendDtmf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_command_response}{Voice.\+Call.\+Call\+Command\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Call.\+Send\+Dtmf (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_dtmf_command}{Voice.\+Call.\+Dtmf\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+P\+UT /v1/calls/\{uuid\}/dtmf -\/ send Dual-\/tone multi-\/frequency(D\+T\+MF) tones to an active \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_call}{Call}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of call\\
+\hline
+{\em cmd} & Command to execute against call\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Client/Call.\+cs\end{DoxyCompactItemize}

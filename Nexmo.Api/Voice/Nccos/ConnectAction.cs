@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Nexmo.Api.Voice.Nccos.Endpoints;
-using System;
 
 
 namespace Nexmo.Api.Voice.Nccos
@@ -30,6 +29,8 @@ namespace Nexmo.Api.Voice.Nccos
 
         [JsonProperty("eventMethod")]
         public string EventMethod { get; set; }
+        [JsonProperty("ringbackTone")]
+        public string RingbackTone { get; set; }
 
         public ConnectAction()
         {

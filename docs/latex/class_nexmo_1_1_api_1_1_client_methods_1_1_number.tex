@@ -1,0 +1,161 @@
+\hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number}{}\doxysection{Nexmo.\+Api.\+Client\+Methods.\+Number Class Reference}
+\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number}\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a60de4a0e72f139c1d0e7ab8dad45f670}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a60de4a0e72f139c1d0e7ab8dad45f670}} 
+{\bfseries Number} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds)
+\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_results}{Api.\+Number.\+Search\+Results}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a81e177a38bacc9666918879c0e0b348c}{List\+Own\+Numbers}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request}{Api.\+Number.\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em List \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_numbers}{Numbers}} available in your account \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_results}{Api.\+Number.\+Search\+Results}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a87430db2ee06deafa96493f643171a4b}{Search}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request}{Api.\+Number.\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Retrieve the list of virtual numbers available for a specific country. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a7febdc652d17cdbabb75a18e53435635}{Buy}} (string country, string number, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Rent a specific virtual number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a8404eedf716670914f1d9b357efe57b6}{Update}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command}{Api.\+Number.\+Number\+Update\+Command}} cmd, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Change the webhook endpoints associated with a rented virtual number or associate a virtual number with an Application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a2e9caba19a40d4a0f50d4e25d463fff2}{Cancel}} (string country, string number, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Cancel your rental of a specific virtual number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a852a56fbf9519e84109007928f7c17c0}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a852a56fbf9519e84109007928f7c17c0}} 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} {\bfseries Credentials}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a7febdc652d17cdbabb75a18e53435635}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a7febdc652d17cdbabb75a18e53435635}} 
+\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}!Buy@{Buy}}
+\index{Buy@{Buy}!Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsubsection{\texorpdfstring{Buy()}{Buy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} Nexmo.\+Api.\+Client\+Methods.\+Number.\+Buy (\begin{DoxyParamCaption}\item[{string}]{country,  }\item[{string}]{number,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Rent a specific virtual number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & I\+SO 3166-\/1 alpha-\/2 country code\\
+\hline
+{\em number} & \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_number}{Number}} to rent\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a2e9caba19a40d4a0f50d4e25d463fff2}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a2e9caba19a40d4a0f50d4e25d463fff2}} 
+\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsubsection{\texorpdfstring{Cancel()}{Cancel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} Nexmo.\+Api.\+Client\+Methods.\+Number.\+Cancel (\begin{DoxyParamCaption}\item[{string}]{country,  }\item[{string}]{number,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Cancel your rental of a specific virtual number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & I\+SO 3166-\/1 alpha-\/2 country code\\
+\hline
+{\em number} & The number to cancel\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a81e177a38bacc9666918879c0e0b348c}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a81e177a38bacc9666918879c0e0b348c}} 
+\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}!ListOwnNumbers@{ListOwnNumbers}}
+\index{ListOwnNumbers@{ListOwnNumbers}!Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsubsection{\texorpdfstring{ListOwnNumbers()}{ListOwnNumbers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_results}{Api.\+Number.\+Search\+Results}} Nexmo.\+Api.\+Client\+Methods.\+Number.\+List\+Own\+Numbers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request}{Api.\+Number.\+Search\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_numbers}{Numbers}} available in your account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a87430db2ee06deafa96493f643171a4b}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a87430db2ee06deafa96493f643171a4b}} 
+\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}!Search@{Search}}
+\index{Search@{Search}!Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsubsection{\texorpdfstring{Search()}{Search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_results}{Api.\+Number.\+Search\+Results}} Nexmo.\+Api.\+Client\+Methods.\+Number.\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_search_request}{Api.\+Number.\+Search\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Retrieve the list of virtual numbers available for a specific country. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_search}{Search}} filter\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a8404eedf716670914f1d9b357efe57b6}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_number_a8404eedf716670914f1d9b357efe57b6}} 
+\index{Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}!Update@{Update}}
+\index{Update@{Update}!Nexmo.Api.ClientMethods.Number@{Nexmo.Api.ClientMethods.Number}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_response_base}{Response\+Base}} Nexmo.\+Api.\+Client\+Methods.\+Number.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command}{Api.\+Number.\+Number\+Update\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Change the webhook endpoints associated with a rented virtual number or associate a virtual number with an Application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Update request\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Client/Number.\+cs\end{DoxyCompactItemize}

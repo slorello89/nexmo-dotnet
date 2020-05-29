@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['vbc_761',['Vbc',['../class_nexmo_1_1_api_1_1_applications_1_1_capabilities_1_1_vbc.html',1,'Nexmo::Api::Applications::Capabilities']]],
+  ['vbcendpoint_762',['VbcEndpoint',['../class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_vbc_endpoint.html',1,'Nexmo::Api::Voice::Nccos::Endpoints']]],
+  ['vbcwebhook_763',['VbcWebhook',['../class_nexmo_1_1_api_1_1_vbc_webhook.html',1,'Nexmo::Api']]],
+  ['verifycheck_764',['VerifyCheck',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_check.html',1,'Nexmo::Api::Verify']]],
+  ['verifycheckrequest_765',['VerifyCheckRequest',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_check_request.html',1,'Nexmo::Api::Verify']]],
+  ['verifycheckresponse_766',['VerifyCheckResponse',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response.html',1,'Nexmo::Api::Verify']]],
+  ['verifyclient_767',['VerifyClient',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_client.html',1,'Nexmo::Api::Verify']]],
+  ['verifycontrolrequest_768',['VerifyControlRequest',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request.html',1,'Nexmo::Api::Verify']]],
+  ['verifycontrolresponse_769',['VerifyControlResponse',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_control_response.html',1,'Nexmo::Api::Verify']]],
+  ['verifyevent_770',['VerifyEvent',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_event.html',1,'Nexmo::Api::Verify']]],
+  ['verifyrequest_771',['VerifyRequest',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html',1,'Nexmo.Api.Verify.VerifyRequest'],['../class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request.html',1,'Nexmo.Api.NumberVerify.VerifyRequest']]],
+  ['verifyresponse_772',['VerifyResponse',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_response.html',1,'Nexmo.Api.Verify.VerifyResponse'],['../class_nexmo_1_1_api_1_1_number_verify_1_1_verify_response.html',1,'Nexmo.Api.NumberVerify.VerifyResponse']]],
+  ['verifyresponsebase_773',['VerifyResponseBase',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_response_base.html',1,'Nexmo.Api.Verify.VerifyResponseBase'],['../class_nexmo_1_1_api_1_1_number_verify_1_1_verify_response_base.html',1,'Nexmo.Api.NumberVerify.VerifyResponseBase']]],
+  ['verifyresponseexception_774',['VerifyResponseException',['../class_nexmo_1_1_api_1_1_verify_response_exception.html',1,'Nexmo::Api']]],
+  ['verifysearchrequest_775',['VerifySearchRequest',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_search_request.html',1,'Nexmo::Api::Verify']]],
+  ['verifysearchresponse_776',['VerifySearchResponse',['../class_nexmo_1_1_api_1_1_verify_1_1_verify_search_response.html',1,'Nexmo::Api::Verify']]],
+  ['verifytest_777',['VerifyTest',['../class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_verify_test.html',1,'Nexmo::Api::Test::Unit']]],
+  ['voice_778',['Voice',['../class_nexmo_1_1_api_1_1_applications_1_1_capabilities_1_1_voice.html',1,'Nexmo::Api::Applications::Capabilities']]],
+  ['voiceclient_779',['VoiceClient',['../class_nexmo_1_1_api_1_1_voice_1_1_voice_client.html',1,'Nexmo::Api::Voice']]],
+  ['voiceclienttests_780',['VoiceClientTests',['../class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_voice_client_tests.html',1,'Nexmo::Api::Test::Unit']]],
+  ['voicestreamtest_781',['VoiceStreamTest',['../class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_voice_stream_test.html',1,'Nexmo::Api::Test::Unit']]],
+  ['voicetalktest_782',['VoiceTalkTest',['../class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_voice_talk_test.html',1,'Nexmo::Api::Test::Unit']]],
+  ['voicewebhook_783',['VoiceWebhook',['../class_nexmo_1_1_api_1_1_voice_webhook.html',1,'Nexmo::Api']]]
+];

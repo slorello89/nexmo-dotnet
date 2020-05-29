@@ -1,0 +1,97 @@
+\hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command}{}\doxysection{Nexmo.\+Api.\+Number.\+Number\+Update\+Command Class Reference}
+\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command}\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a87cfab2a1279e5764072397b2107534a}{country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required. The two character country code in I\+SO 3166-\/1 alpha-\/2 format. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aff3cf18ead7719b61ea2df8e60200ddf}{msisdn}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required. An available inbound virtual number. For example, 447700900000. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad586faa524167505c28a690e730fb149}{mo\+Http\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. An U\+RL encoded U\+RI to the webhook endpoint endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request, \mbox{\hyperlink{namespace_nexmo}{Nexmo}} makes a G\+ET request to your endpoint and checks that it returns a 200 OK response. Set to empty string to clear. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a9ac6bc48f0a057b7257caf8ec45413a4}{mo\+Smpp\+Sys\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The associated system type for your S\+M\+PP client. For example inbound. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aeeece39d3d7d182ef9bff8694cb09ade}{voice\+Callback\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The voice webhook type. Possible values are sip, tel, vxml (Voice\+X\+ML) or app \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a0afd7336f7bfebfcc4ffd4486a1bb00a}{voice\+Callback\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required if voice\+Callback\+Type is specified. A U\+RI for your voice\+Callback\+Type or an Application ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad0f6e4a33c3fbfc54756c3d7333a9e8b}{voice\+Status\+Callback}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends a request to this webhook endpoint when a call ends. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a87cfab2a1279e5764072397b2107534a}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a87cfab2a1279e5764072397b2107534a}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!country@{country}}
+\index{country@{country}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{country}{country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required. The two character country code in I\+SO 3166-\/1 alpha-\/2 format. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad586faa524167505c28a690e730fb149}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad586faa524167505c28a690e730fb149}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!moHttpUrl@{moHttpUrl}}
+\index{moHttpUrl@{moHttpUrl}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{moHttpUrl}{moHttpUrl}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+mo\+Http\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. An U\+RL encoded U\+RI to the webhook endpoint endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request, \mbox{\hyperlink{namespace_nexmo}{Nexmo}} makes a G\+ET request to your endpoint and checks that it returns a 200 OK response. Set to empty string to clear. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a9ac6bc48f0a057b7257caf8ec45413a4}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a9ac6bc48f0a057b7257caf8ec45413a4}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!moSmppSysType@{moSmppSysType}}
+\index{moSmppSysType@{moSmppSysType}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{moSmppSysType}{moSmppSysType}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+mo\+Smpp\+Sys\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The associated system type for your S\+M\+PP client. For example inbound. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aff3cf18ead7719b61ea2df8e60200ddf}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aff3cf18ead7719b61ea2df8e60200ddf}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!msisdn@{msisdn}}
+\index{msisdn@{msisdn}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{msisdn}{msisdn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+msisdn\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required. An available inbound virtual number. For example, 447700900000. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aeeece39d3d7d182ef9bff8694cb09ade}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_aeeece39d3d7d182ef9bff8694cb09ade}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!voiceCallbackType@{voiceCallbackType}}
+\index{voiceCallbackType@{voiceCallbackType}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{voiceCallbackType}{voiceCallbackType}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+voice\+Callback\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The voice webhook type. Possible values are sip, tel, vxml (Voice\+X\+ML) or app 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a0afd7336f7bfebfcc4ffd4486a1bb00a}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_a0afd7336f7bfebfcc4ffd4486a1bb00a}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!voiceCallbackValue@{voiceCallbackValue}}
+\index{voiceCallbackValue@{voiceCallbackValue}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{voiceCallbackValue}{voiceCallbackValue}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+voice\+Callback\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required if voice\+Callback\+Type is specified. A U\+RI for your voice\+Callback\+Type or an Application ID 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad0f6e4a33c3fbfc54756c3d7333a9e8b}\label{class_nexmo_1_1_api_1_1_number_1_1_number_update_command_ad0f6e4a33c3fbfc54756c3d7333a9e8b}} 
+\index{Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}!voiceStatusCallback@{voiceStatusCallback}}
+\index{voiceStatusCallback@{voiceStatusCallback}!Nexmo.Api.Number.NumberUpdateCommand@{Nexmo.Api.Number.NumberUpdateCommand}}
+\doxysubsubsection{\texorpdfstring{voiceStatusCallback}{voiceStatusCallback}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number.\+Number\+Update\+Command.\+voice\+Status\+Callback\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends a request to this webhook endpoint when a call ends. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/Number.\+cs\end{DoxyCompactItemize}

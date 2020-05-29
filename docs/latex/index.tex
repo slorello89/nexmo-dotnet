@@ -1,0 +1,514 @@
+\label{index_md_C}%
+\Hypertarget{index_md_C}%
+\+:\+\_\+\+Users\+\_\+slore\+\_\+\+Documents\+\_\+projects\+\_\+slorello89\+\_\+nexmo-\/dotnet\+\_\+\+R\+E\+A\+D\+ME
+
+\href{http://www.nuget.org/packages/Nexmo.Csharp.Client}{\texttt{ }} \href{https://ci.appveyor.com/project/slorello89/nexmo-dotnet/branch/master}{\texttt{ }}
+
+You can use this C\# client library to integrate \href{\#api-coverage}{\texttt{ Nexmo\textquotesingle{}s A\+P\+Is}} to your application. To use this, you\textquotesingle{}ll need a \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account. Sign up \href{https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ for free at nexmo.\+com}}.
+
+
+\begin{DoxyItemize}
+\item \href{\#installation}{\texttt{ Installation}}
+\item \href{\#configuration}{\texttt{ Configuration}}
+\item \href{\#examples}{\texttt{ Examples}}
+\item \href{\#api-coverage}{\texttt{ Coverage}}
+\item \href{\#contributing}{\texttt{ Contributing}}
+\end{DoxyItemize}\hypertarget{index_autotoc_md22}{}\doxysection{Installation\+:}\label{index_autotoc_md22}
+To use the client library you\textquotesingle{}ll need to have \href{https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ created a Nexmo account}}.
+
+To install the C\# client library using Nu\+Get\+:
+
+
+\begin{DoxyItemize}
+\item Run the following command in the Package Manager Console\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Install-\/Package Nexmo.Csharp.Client}
+\end{DoxyCode}
+
+
+Alternatively\+:
+
+
+\begin{DoxyItemize}
+\item Download or build (see developer instructions) the {\ttfamily Nexmo.\+Api.\+dll}.
+\item If you have downloaded a release, ensure you are referencing the required dependencies by either including them with your project\textquotesingle{}s Nu\+Get dependencies or manually referencing them.
+\item Reference the assembly in your code.
+\end{DoxyItemize}\hypertarget{index_autotoc_md23}{}\doxysection{Targeted frameworks\+:}\label{index_autotoc_md23}
+
+\begin{DoxyItemize}
+\item 4.\+5.\+2 \begin{quote}
+N\+O\+TE\+: for 4.\+5.\+2 frameworks you will need to enable T\+LS 1.\+2 either via \href{https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls\#for-net-framework-35---452-and-not-wcf}{\texttt{ registry}} or by setting it globablly -\/ {\ttfamily System.\+Net.\+Service\+Point\+Manager.\+Security\+Protocol = System.\+Net.\+Security\+Protocol\+Type.\+Tls12;} \end{quote}
+
+\item 4.\+6, 4.\+6.\+1, 4.\+6.\+2
+\item .N\+ET Standard 1.\+6, 2.\+0
+\item .N\+ET Core 2.\+0, 2.\+1, 2.\+2, 3.\+0, 3.\+1
+\end{DoxyItemize}\hypertarget{index_autotoc_md24}{}\doxysection{Configuration\+:}\label{index_autotoc_md24}
+To setup the configuration of the \mbox{\hyperlink{namespace_nexmo}{Nexmo}} Client you can do one of the following.
+
+
+\begin{DoxyItemize}
+\item Create a \mbox{\hyperlink{namespace_nexmo}{Nexmo}} Client instance and pass in credentials in the constructor -\/ this will only affect the security credentials (Api Key, Api Secret, Signing Secret, Signing Method Private Key, App Id)
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{                \{}
+\DoxyCodeLine{                    ApiKey = "NEXMO-\/API-\/KEY",}
+\DoxyCodeLine{                    ApiSecret = "NEXMO-\/API-\/SECRET"}
+\DoxyCodeLine{                \});}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var results = client.SMS.Send(request: new SMS.SMSRequest}
+\DoxyCodeLine{                \{}
+\DoxyCodeLine{ }
+\DoxyCodeLine{                    from = NEXMO\_NUMBER,}
+\DoxyCodeLine{                    to = TO\_NUMBER,}
+\DoxyCodeLine{                    text = "Hello, I'm an SMS sent to you using Nexmo"}
+\DoxyCodeLine{                \});}
+\end{DoxyCode}
+
+
+Or
+
+
+\begin{DoxyItemize}
+\item Provide the nexmo U\+R\+Ls, A\+PI key, secret, and application credentials (for J\+WT) in {\ttfamily appsettings.\+json}\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  "appSettings": \{}
+\DoxyCodeLine{    "Nexmo.UserAgent": "myApp/1.0",}
+\DoxyCodeLine{    "Nexmo.Url.Rest": "https://rest.nexmo.com",}
+\DoxyCodeLine{    "Nexmo.Url.Api": "https://api.nexmo.com",}
+\DoxyCodeLine{    "Nexmo.api\_key": "NEXMO-\/API-\/KEY",}
+\DoxyCodeLine{    "Nexmo.api\_secret": "NEXMO-\/API-\/SECRET",}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    "Nexmo.Application.Id": "ffffffff-\/ffff-\/ffff-\/ffff-\/ffffffffffff",}
+\DoxyCodeLine{    "Nexmo.Application.Key": "NEXMO\_APPLICATION\_PRIVATE\_KEY"}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+\begin{quote}
+Note\+: In the event multiple configuration files are found, the order of precedence is as follows\+: \end{quote}
+\begin{DoxyVerb}* ```appsettings.json``` which overrides
+* ```settings.json```
+\end{DoxyVerb}
+ Or
+
+
+\begin{DoxyItemize}
+\item Access the Configuration instance and set the appropriate key in your code for example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Configuration.Instance.Settings["appSettings:Nexmo.Url.Api"] = "https://www.example.com/api";}
+\DoxyCodeLine{Configuration.Instance.Settings["appSettings:Nexmo.Url.Rest"] = "https://www.example.com/rest";}
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+\begin{quote}
+N\+O\+TE\+: Private Key is the literal key -\/ not a path to the file containing the key \end{quote}
+\hypertarget{index_autotoc_md25}{}\doxysubsection{Configuration Reference}\label{index_autotoc_md25}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+Nexmo.\+api\+\_\+key &Your A\+PI key from the \href{https://dashboard.nexmo.com/settings}{\texttt{ dashboard}}  \\\cline{1-2}
+Nexmo.\+api\+\_\+secret &Your A\+PI secret from the \href{https://dashboard.nexmo.com/settings}{\texttt{ dashboard}}  \\\cline{1-2}
+Nexmo.\+Application.\+Id &Your application ID  \\\cline{1-2}
+Nexmo.\+Application.\+Key &Your application\textquotesingle{}s private key  \\\cline{1-2}
+Nexmo.\+security\+\_\+secret &Optional. This is the signing secret that\textquotesingle{}s used for \href{https://developer.nexmo.com/concepts/guides/signing-messages}{\texttt{ signing S\+MS}}  \\\cline{1-2}
+Nexmo.\+signing\+\_\+method &Optional. This is the method used for signing S\+MS messages  \\\cline{1-2}
+Nexmo.\+Url.\+Rest &Optional. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} R\+E\+ST A\+PI base U\+RL. Defaults to \href{https://rest.nexmo.com}{\texttt{ https\+://rest.\+nexmo.\+com}}  \\\cline{1-2}
+Nexmo.\+Url.\+Api &Optional. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} A\+PI base U\+RL. Defaults to \href{https://api.nexmo.com}{\texttt{ https\+://api.\+nexmo.\+com}}  \\\cline{1-2}
+Nexmo.\+Api.\+Requests\+Per\+Second &Optional. Throttle to specified requests per second.  \\\cline{1-2}
+Nexmo.\+Api.\+Ensure\+Success\+Status\+Code &Optional. Defaults to {\ttfamily false}. If {\ttfamily true}, {\ttfamily Ensure\+Success\+Status\+Code} will be called against each response. If the response has a failure H\+T\+TP status code, a {\ttfamily Http\+Request\+Exception} will be thrown.  \\\cline{1-2}
+Nexmo.\+User\+Agent &Optional. Your app-\/specific usage identifier in the format of {\ttfamily name/version}. Example\+: {\ttfamily \char`\"{}my\+App/1.\+0\char`\"{}}  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{index_autotoc_md26}{}\doxysubsection{Logging}\label{index_autotoc_md26}
+\hypertarget{index_autotoc_md27}{}\doxysubsubsection{3.\+1.\+x+}\label{index_autotoc_md27}
+The library makes use of \href{https://github.com/damianh/LibLog/wiki}{\texttt{ Lib\+Log}} to facilitate logging.
+
+Your application controls if and how logging occurs. Example using \href{https://serilog.net/}{\texttt{ Serilog}} and \href{https://www.nuget.org/packages/Serilog.Sinks.Console}{\texttt{ Serilog.\+Sinks.\+Console}} v3.\+x\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{using Nexmo.Api.Request;}
+\DoxyCodeLine{using Serilog;}
+\DoxyCodeLine{}
+\DoxyCodeLine{// set up logging at startup}
+\DoxyCodeLine{var log = new LoggerConfiguration()}
+\DoxyCodeLine{  .MinimumLevel.Debug()}
+\DoxyCodeLine{  .WriteTo.Console(outputTemplate: "\{Timestamp:HH:mm\} [\{Level\}] (\{Name:l\}) \{Message\}")}
+\DoxyCodeLine{  .CreateLogger();}
+\DoxyCodeLine{Log.Logger = log;}
+\DoxyCodeLine{}
+\DoxyCodeLine{Log.Logger.Debug("start");}
+\DoxyCodeLine{var client = new Nexmo.Api.Client(new Credentials("example", "password"));}
+\DoxyCodeLine{client.Account.GetBalance();}
+\DoxyCodeLine{Log.Logger.Debug("end");}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md28}{}\doxysubsubsection{2.\+2.\+0 -\/ 3.\+0.\+x}\label{index_autotoc_md28}
+You can request console logging by placing a {\ttfamily logging.\+json} file alongside your {\ttfamily appsettings.\+json} configuration.
+
+Note that logging \mbox{\hyperlink{namespace_nexmo_1_1_api}{Nexmo.\+Api}} messages will very likely expose your key and secret to the console as they can be part of the query string.
+
+Example {\ttfamily logging.\+json} contents that would log all requests as well as major configuration and authentication errors\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  "IncludeScopes": "true",}
+\DoxyCodeLine{  "LogLevel": \{}
+\DoxyCodeLine{    "Default": "Debug",}
+\DoxyCodeLine{    "Nexmo.Api": "Debug",}
+\DoxyCodeLine{    "Nexmo.Api.Authentication": "Error",}
+\DoxyCodeLine{    "Nexmo.Api.Configuration": "Error"}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+You may specify other types of logging (file, etc.). The {\ttfamily Nexmo.\+Samples.\+Coverage} project contains an example that logs to a file with the assistance of {\ttfamily Serilog.\+Extensions.\+Logging.\+File}.\hypertarget{index_autotoc_md29}{}\doxysection{Examples}\label{index_autotoc_md29}
+We are working on a separate repository for .N\+ET examples. \href{https://github.com/nexmo-community/nexmo-dotnet-quickstart}{\texttt{ Check it out here!}}
+
+The following examples show how to\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#sending-a-message}{\texttt{ Send a message}}
+\item \href{\#receiving-a-message}{\texttt{ Receive a message}}
+\item \href{\#receiving-a-message-delivery-receipt}{\texttt{ Receive a message delivery receipt}}
+\item \href{\#redacting-a-message}{\texttt{ Redact a message}}
+\item \href{\#initiating-a-call}{\texttt{ Initiate a call}}
+\item \href{\#receiving-a-call}{\texttt{ Receive a call}}
+\item \href{\#sending-2fa-code}{\texttt{ Send 2FA code}}
+\item \href{\#checking-2fa-code}{\texttt{ Check 2FA code}}
+\end{DoxyItemize}\hypertarget{index_autotoc_md30}{}\doxysubsection{Sending a Message}\label{index_autotoc_md30}
+Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to send an S\+MS message.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                  ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                  ApiSecret = "NEXMO\_API\_SECRET"}
+\DoxyCodeLine{            \});}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var results = client.SMS.Send(new SMS.SMSRequest}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    from = NEXMO\_NUMBER,}
+\DoxyCodeLine{    to = TO\_NUMBER,}
+\DoxyCodeLine{    text = "this is a test"}
+\DoxyCodeLine{\});}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md31}{}\doxysubsection{Receiving a Message}\label{index_autotoc_md31}
+Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to receive an S\+MS message. Assumes your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} endpoint is configured.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{public ActionResult Get([FromUri]SMS.SMSInbound response)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    return new HttpStatusCodeResult(HttpStatusCode.OK);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md32}{}\doxysubsection{Receiving a Message Delivery Receipt}\label{index_autotoc_md32}
+Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to receive an S\+MS delivery receipt. Assumes your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} endpoint is configured.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{public ActionResult DLR([FromUri]SMS.SMSDeliveryReceipt response)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    Debug.WriteLine("-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/");}
+\DoxyCodeLine{    Debug.WriteLine("DELIVERY RECEIPT");}
+\DoxyCodeLine{    Debug.WriteLine("Message ID: " + response.messageId);}
+\DoxyCodeLine{    Debug.WriteLine("From: " + response.msisdn);}
+\DoxyCodeLine{    Debug.WriteLine("To: " + response.to);}
+\DoxyCodeLine{    Debug.WriteLine("Status: " + response.status);}
+\DoxyCodeLine{    Debug.WriteLine("-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/");}
+\DoxyCodeLine{}
+\DoxyCodeLine{    return new HttpStatusCodeResult(HttpStatusCode.OK);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+{\bfseries{N\+O\+TE\+:}} {\ttfamily \mbox{[}From\+Uri\mbox{]}} is deprecated in .N\+ET Core; {\ttfamily \mbox{[}From\+Query\mbox{]}} works in this case.\hypertarget{index_autotoc_md33}{}\doxysubsection{Redacting a message}\label{index_autotoc_md33}
+Use \href{https://developer.nexmo.com/api/redact?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Redact A\+PI}} to redact a S\+MS message.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                  ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                  ApiSecret = "NEXMO\_API\_SECRET"}
+\DoxyCodeLine{            \});}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{client.Redact.RedactTransaction(new Redact.RedactRequest(MESSAGE\_ID, "sms", "outbound"));}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md34}{}\doxysubsection{Initiating a Call}\label{index_autotoc_md34}
+Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Voice A\+PI}} to initiate a voice call.
+
+{\bfseries{N\+O\+TE\+:}} You must have a valid Application ID and private key in order to make voice calls. Use either {\ttfamily Nexmo.\+Api.\+Application} or \mbox{\hyperlink{namespace_nexmo}{Nexmo}}\textquotesingle{}s Node.\+js-\/based \href{https://github.com/nexmo/nexmo-cli}{\texttt{ C\+LI tool}} to register. See the \href{https://developer.nexmo.com/concepts/guides/applications?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Application A\+PI}} documentation for details.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                ApiSecret = "NEXMO\_API\_SECRET",}
+\DoxyCodeLine{                ApplicationId = "NEXMO\_APPLICATION\_ID",}
+\DoxyCodeLine{                ApplicationKey = "NEXMO\_APPLICATION\_PRIVATE\_KEY"}
+\DoxyCodeLine{            \}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{using Nexmo.Api.Voice;}
+\DoxyCodeLine{}
+\DoxyCodeLine{client.Call.Do(new Call.CallCommand}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    to = new[]}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        new Call.Endpoint \{}
+\DoxyCodeLine{            type = "phone",}
+\DoxyCodeLine{            number = TO\_NUMBER}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    from = new Call.Endpoint}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        type = "phone",}
+\DoxyCodeLine{        number = NEXMO\_NUMBER}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    answer\_url = new[]}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        "https://nexmo-\/community.github.io/ncco-\/examples/first\_call\_talk.json"}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\});}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md35}{}\doxysubsection{Receiving a Call}\label{index_autotoc_md35}
+Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Voice A\+PI}} to receive a voice call.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                ApiSecret = "NEXMO\_API\_SECRET",}
+\DoxyCodeLine{                ApplicationId = "NEXMO\_APPLICATION\_ID",}
+\DoxyCodeLine{                ApplicationKey = "NEXMO\_APPLICATION\_PRIVATE\_KEY"}
+\DoxyCodeLine{            \}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{using Nexmo.Api.Voice;}
+\DoxyCodeLine{}
+\DoxyCodeLine{public ActionResult GetCall(string id)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    var call = client.Call.Get(id);}
+\DoxyCodeLine{    // Do something with call.}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md36}{}\doxysubsection{Sending 2\+F\+A Code}\label{index_autotoc_md36}
+Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Verify A\+PI}} to send 2FA pin code.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                ApiSecret = "NEXMO\_API\_SECRET"}
+\DoxyCodeLine{            \}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{public ActionResult Start(string to)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    var start = client.NumberVerify.Verify(new NumberVerify.VerifyRequest}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        number = to,}
+\DoxyCodeLine{        brand = "NexmoQS"}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{    Session["requestID"] = start.request\_id;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    return View();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md37}{}\doxysubsection{Checking 2\+F\+A Code}\label{index_autotoc_md37}
+Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Verify A\+PI}} to check 2FA pin code.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{var client = new Client(creds: new Nexmo.Api.Request.Credentials}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                ApiKey = "NEXMO\_API\_KEY",}
+\DoxyCodeLine{                ApiSecret = "NEXMO\_API\_SECRET"}
+\DoxyCodeLine{            \}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C\#\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{public ActionResult Check(string code)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    var result = client.NumberVerify.Check(new NumberVerify.CheckRequest}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        request\_id = Session["requestID"].ToString(),}
+\DoxyCodeLine{        code = code}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{   }
+\DoxyCodeLine{    if (result.status == "0")}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        ViewBag.Message = "Verification Sucessful";}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    else}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        ViewBag.Message = result.error\_text;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    return View();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md38}{}\doxysubsection{Additional Examples}\label{index_autotoc_md38}
+
+\begin{DoxyItemize}
+\item Check out the sample M\+VC application and tests for more examples. Make sure to copy appsettings.\+json.\+example to appsettings.\+json and enter your key/secret.
+\end{DoxyItemize}\hypertarget{index_autotoc_md39}{}\doxysection{A\+P\+I Coverage}\label{index_autotoc_md39}
+
+\begin{DoxyItemize}
+\item Account
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Balance
+\item \mbox{[}X\mbox{]} Pricing
+\item \mbox{[}X\mbox{]} Settings
+\item \mbox{[}X\mbox{]} Top Up
+\item \mbox{[}X\mbox{]} Numbers
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Search
+\item \mbox{[}X\mbox{]} Buy
+\item \mbox{[}X\mbox{]} Cancel
+\item \mbox{[}X\mbox{]} Update
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Number Insight
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Basic
+\item \mbox{[}X\mbox{]} Standard
+\item \mbox{[}X\mbox{]} Advanced
+\item \mbox{[}X\mbox{]} Webhook Notification
+\end{DoxyItemize}
+\item Verify
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Verify
+\item \mbox{[}X\mbox{]} Check
+\item \mbox{[}X\mbox{]} Search
+\item \mbox{[}X\mbox{]} Control
+\end{DoxyItemize}
+\item Search
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Message
+\item \mbox{[}X\mbox{]} Messages
+\item \mbox{[}X\mbox{]} Rejections
+\end{DoxyItemize}
+\item Messaging
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Send
+\item \mbox{[}X\mbox{]} Delivery Receipt
+\item \mbox{[}X\mbox{]} Inbound Messages
+\item \mbox{[}X\mbox{]} Search
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Message
+\item \mbox{[}X\mbox{]} Messages
+\item \mbox{[}X\mbox{]} Rejections
+\end{DoxyItemize}
+\item US Short Codes
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Two-\/\+Factor Authentication
+\item \mbox{[}X\mbox{]} Event Based Alerts
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Sending Alerts
+\item \mbox{[}X\mbox{]} Campaign Subscription Management
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Application
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Create
+\item \mbox{[}X\mbox{]} List
+\item \mbox{[}X\mbox{]} Update
+\item \mbox{[}X\mbox{]} Delete
+\end{DoxyItemize}
+\item Call
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Outbound
+\item \mbox{[}X\mbox{]} Get
+\item \mbox{[}X\mbox{]} List
+\item \mbox{[}X\mbox{]} Edit
+\item \mbox{[}X\mbox{]} T\+TS
+\item \mbox{[}X\mbox{]} Stream
+\item \mbox{[}X\mbox{]} D\+T\+MF
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md40}{}\doxysection{Contributing}\label{index_autotoc_md40}
+Visual Studio 2017 is required (Community is fine). v15.\+5+ is recommended.
+
+
+\begin{DoxyEnumerate}
+\item Get the latest code either by cloning the repository or downloading a snapshot of the source.
+\item Open \char`\"{}\+Nexmo.\+Api.\+sln\char`\"{}
+\item Build! Nu\+Get dependencies should be brought down automatically; check your settings if they are not.
+\end{DoxyEnumerate}
+
+Pull requests are welcome!\hypertarget{index_autotoc_md41}{}\doxysection{Thanks}\label{index_autotoc_md41}
+Special thanks to our contributors\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/jdpearce}{\texttt{ jdpearce}}
+\item \href{https://github.com/jonferreira}{\texttt{ jonferreira}}
+\item \href{https://github.com/fauna5}{\texttt{ fauna5}}
+\end{DoxyItemize}\hypertarget{index_autotoc_md42}{}\doxysection{License}\label{index_autotoc_md42}
+This library is released under \mbox{\hyperlink{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__l_i_c_e_n_s_e}{the M\+IT License}}. 

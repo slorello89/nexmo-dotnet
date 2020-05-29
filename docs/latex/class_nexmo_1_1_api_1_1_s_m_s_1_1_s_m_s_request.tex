@@ -1,0 +1,217 @@
+\hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request}{}\doxysection{Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request Class Reference}
+\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request}\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ab24eba3babf2324609a0f97ddc3b2f3f}{from}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An alphanumeric string giving your sender address. For example, from=My\+Company20. See our information Global messaging. This is also called the Sender\+ID. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5033543a54fa426e85704821e4b8b71c}{to}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A single phone number in international format, that is E.\+164 . For example, to=447700900000. You can set one recipient only for each request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6fff1e206da9efcad46f0362b3603009}{type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default value is text. Possible values are\+: text -\/ for plain text S\+MS, you must also set the text parameter. binary -\/ for binary S\+MS you must also set the udh and body parameters. Do not set the text parameter. wappush -\/ a W\+AP Push . You must also set the title and url parameters. Do not set the text or body parameters. unicode -\/ S\+MS in unicode contain fewer characters than text. Only use unicode when your S\+MS must contain special characters. For more information, see Encoding. vcal -\/ send a calendar event. You send your v\+Cal encoded calendar event in the vcal parameter. vcard -\/ send a business card. You send your v\+Card encoded business card in the the vcard parameter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ada8aeefca83cb0b85aa5d196b7bc4357}{text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The S\+MS body. Messages where type is text (the default) are in U\+T\+F-\/8 with U\+RL encoding. You send \char`\"{}\+Déjà vu\char`\"{} as a text (type=text) message as long as you encode it as DC3A9jC3A0+vu. You can see the full U\+T\+F-\/8 character set here . To test if your message can be U\+RL encoded, use\+: \href{http://www.url-encode-decode.com/}{\texttt{ http\+://www.\+url-\/encode-\/decode.\+com/}} . If you cannot find the character you want to send in these two references, you should use unicode. For more information, see Encoding. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_abe3df4aebca83683ff7cf74ac973ed3d}{status\+\_\+report\+\_\+req}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to 1 to receive a Delivery Receipt (D\+LR). To receive the D\+LR, you have to either\+: Configure a webhook endpoint in Dashboard. Set the callback parameter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_adfb7ca4a4a148e1b77827f1df7f00e53}{vcard}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A business card in v\+Card. You must set the type parameter to vcard. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5d71dbf05926e99e60c7faee9b228189}{vcal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A calendar event in v\+Cal. You must set the type parameter to vcal. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a94e240029612c899c9e57d48ebe27570}{ttl}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The lifespan of this S\+MS in milliseconds. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ac988739eed547d851f32c9ff6a0e4485}{callback}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The webhook endpoint the delivery receipt for this sms is sent to. This parameter overrides the webhook endpoint you set in Dashboard. This must be a fully formed U\+RL. For example\+: \href{https://mysite.com/sms_api_callback.php}{\texttt{ https\+://mysite.\+com/sms\+\_\+api\+\_\+callback.\+php}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_af1679758bc93ddf5df793b205fea0f4b}{message\+\_\+class}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to\+: 0 for Flash S\+MS, 1 -\/ M\+E-\/specific, 2 -\/ S\+IM / U\+S\+IM specific, 3 -\/ T\+E-\/specific See \href{http://en.wikipedia.org/wiki/Data_Coding_Scheme}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Data\+\_\+\+Coding\+\_\+\+Scheme}} Note\+: Flash S\+MS is not fully support by all handsets and carriers. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a1fb0affd2d65ae505c95e666a2135132}{udh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Your custom Hex encoded User Data Header (U\+DH) . For example, udh=06050415811581. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a63cc99269afe71dafa37d9f5a9f10bca}{protocol\+\_\+id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value in decimal format for the higher level protocol to use for this S\+MS. For example, to send a binary S\+MS to the S\+IM Toolkit, this would be protocol-\/id=127. Ensure that the value of protocol-\/id is aligned with udh. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6bad54c79f9f53206675e01dac62c37e}{body}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hex encoded binary data. For example, body=0011223344556677. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a3f34e8bb2868dfb44712d97256e8707b}{title}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The title for a wappush S\+MS. For example\+: My\+Company\+Is\+Great. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a673d313af477f1fe621176daf8d8e9dc}{url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The U\+RL your user taps to navigate to your website. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5e38dc643cd51af155dd3604b65f2834}{validity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The availability period for a wappush type S\+MS in milliseconds. For example, validity=86400000. If you do not set this parameter, the default is 48 hours. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_aabb4ba087ae776191ff776c9ddfd75aa}{client\+\_\+ref}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, you can include a 40 character maximum length string for internal reporting/analytics. You will need to email \href{mailto:support@nexmo.com}{\texttt{ support@nexmo.\+com}} to get this functionality enabled on your account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6bad54c79f9f53206675e01dac62c37e}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6bad54c79f9f53206675e01dac62c37e}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!body@{body}}
+\index{body@{body}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+body\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Hex encoded binary data. For example, body=0011223344556677. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ac988739eed547d851f32c9ff6a0e4485}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ac988739eed547d851f32c9ff6a0e4485}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!callback@{callback}}
+\index{callback@{callback}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+callback\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The webhook endpoint the delivery receipt for this sms is sent to. This parameter overrides the webhook endpoint you set in Dashboard. This must be a fully formed U\+RL. For example\+: \href{https://mysite.com/sms_api_callback.php}{\texttt{ https\+://mysite.\+com/sms\+\_\+api\+\_\+callback.\+php}}. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_aabb4ba087ae776191ff776c9ddfd75aa}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_aabb4ba087ae776191ff776c9ddfd75aa}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!client\_ref@{client\_ref}}
+\index{client\_ref@{client\_ref}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{client\_ref}{client\_ref}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+client\+\_\+ref\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, you can include a 40 character maximum length string for internal reporting/analytics. You will need to email \href{mailto:support@nexmo.com}{\texttt{ support@nexmo.\+com}} to get this functionality enabled on your account. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ab24eba3babf2324609a0f97ddc3b2f3f}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ab24eba3babf2324609a0f97ddc3b2f3f}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!from@{from}}
+\index{from@{from}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{from}{from}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+from\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An alphanumeric string giving your sender address. For example, from=My\+Company20. See our information Global messaging. This is also called the Sender\+ID. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_af1679758bc93ddf5df793b205fea0f4b}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_af1679758bc93ddf5df793b205fea0f4b}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!message\_class@{message\_class}}
+\index{message\_class@{message\_class}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{message\_class}{message\_class}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+message\+\_\+class\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to\+: 0 for Flash S\+MS, 1 -\/ M\+E-\/specific, 2 -\/ S\+IM / U\+S\+IM specific, 3 -\/ T\+E-\/specific See \href{http://en.wikipedia.org/wiki/Data_Coding_Scheme}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Data\+\_\+\+Coding\+\_\+\+Scheme}} Note\+: Flash S\+MS is not fully support by all handsets and carriers. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a63cc99269afe71dafa37d9f5a9f10bca}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a63cc99269afe71dafa37d9f5a9f10bca}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!protocol\_id@{protocol\_id}}
+\index{protocol\_id@{protocol\_id}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{protocol\_id}{protocol\_id}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+protocol\+\_\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value in decimal format for the higher level protocol to use for this S\+MS. For example, to send a binary S\+MS to the S\+IM Toolkit, this would be protocol-\/id=127. Ensure that the value of protocol-\/id is aligned with udh. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_abe3df4aebca83683ff7cf74ac973ed3d}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_abe3df4aebca83683ff7cf74ac973ed3d}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!status\_report\_req@{status\_report\_req}}
+\index{status\_report\_req@{status\_report\_req}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{status\_report\_req}{status\_report\_req}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+status\+\_\+report\+\_\+req\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to 1 to receive a Delivery Receipt (D\+LR). To receive the D\+LR, you have to either\+: Configure a webhook endpoint in Dashboard. Set the callback parameter. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ada8aeefca83cb0b85aa5d196b7bc4357}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_ada8aeefca83cb0b85aa5d196b7bc4357}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!text@{text}}
+\index{text@{text}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The S\+MS body. Messages where type is text (the default) are in U\+T\+F-\/8 with U\+RL encoding. You send \char`\"{}\+Déjà vu\char`\"{} as a text (type=text) message as long as you encode it as DC3A9jC3A0+vu. You can see the full U\+T\+F-\/8 character set here . To test if your message can be U\+RL encoded, use\+: \href{http://www.url-encode-decode.com/}{\texttt{ http\+://www.\+url-\/encode-\/decode.\+com/}} . If you cannot find the character you want to send in these two references, you should use unicode. For more information, see Encoding. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a3f34e8bb2868dfb44712d97256e8707b}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a3f34e8bb2868dfb44712d97256e8707b}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!title@{title}}
+\index{title@{title}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+title\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The title for a wappush S\+MS. For example\+: My\+Company\+Is\+Great. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5033543a54fa426e85704821e4b8b71c}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5033543a54fa426e85704821e4b8b71c}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!to@{to}}
+\index{to@{to}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+to\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A single phone number in international format, that is E.\+164 . For example, to=447700900000. You can set one recipient only for each request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a94e240029612c899c9e57d48ebe27570}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a94e240029612c899c9e57d48ebe27570}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!ttl@{ttl}}
+\index{ttl@{ttl}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{ttl}{ttl}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+ttl\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The lifespan of this S\+MS in milliseconds. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6fff1e206da9efcad46f0362b3603009}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a6fff1e206da9efcad46f0362b3603009}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!type@{type}}
+\index{type@{type}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Default value is text. Possible values are\+: text -\/ for plain text S\+MS, you must also set the text parameter. binary -\/ for binary S\+MS you must also set the udh and body parameters. Do not set the text parameter. wappush -\/ a W\+AP Push . You must also set the title and url parameters. Do not set the text or body parameters. unicode -\/ S\+MS in unicode contain fewer characters than text. Only use unicode when your S\+MS must contain special characters. For more information, see Encoding. vcal -\/ send a calendar event. You send your v\+Cal encoded calendar event in the vcal parameter. vcard -\/ send a business card. You send your v\+Card encoded business card in the the vcard parameter. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a1fb0affd2d65ae505c95e666a2135132}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a1fb0affd2d65ae505c95e666a2135132}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!udh@{udh}}
+\index{udh@{udh}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{udh}{udh}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+udh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Your custom Hex encoded User Data Header (U\+DH) . For example, udh=06050415811581. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a673d313af477f1fe621176daf8d8e9dc}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a673d313af477f1fe621176daf8d8e9dc}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!url@{url}}
+\index{url@{url}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The U\+RL your user taps to navigate to your website. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5e38dc643cd51af155dd3604b65f2834}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5e38dc643cd51af155dd3604b65f2834}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!validity@{validity}}
+\index{validity@{validity}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{validity}{validity}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+validity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The availability period for a wappush type S\+MS in milliseconds. For example, validity=86400000. If you do not set this parameter, the default is 48 hours. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5d71dbf05926e99e60c7faee9b228189}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_a5d71dbf05926e99e60c7faee9b228189}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!vcal@{vcal}}
+\index{vcal@{vcal}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{vcal}{vcal}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+vcal\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A calendar event in v\+Cal. You must set the type parameter to vcal. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_adfb7ca4a4a148e1b77827f1df7f00e53}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_request_adfb7ca4a4a148e1b77827f1df7f00e53}} 
+\index{Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}!vcard@{vcard}}
+\index{vcard@{vcard}!Nexmo.Api.SMS.SMSRequest@{Nexmo.Api.SMS.SMSRequest}}
+\doxysubsubsection{\texorpdfstring{vcard}{vcard}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Request.\+vcard\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A business card in v\+Card. You must set the type parameter to vcard. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/S\+M\+S.\+cs\end{DoxyCompactItemize}
