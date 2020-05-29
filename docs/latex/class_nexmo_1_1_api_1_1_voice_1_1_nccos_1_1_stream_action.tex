@@ -9,19 +9,58 @@ Inheritance diagram for Nexmo.\+Api.\+Voice.\+Nccos.\+Stream\+Action\+:\begin{fi
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aa278cf4785148b418cc5872716e49e85}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aa278cf4785148b418cc5872716e49e85}} 
-string\mbox{[}$\,$\mbox{]} {\bfseries Stream\+Url}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_a51fe63e0dc640a03b96f06dac7bd20d4}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_a51fe63e0dc640a03b96f06dac7bd20d4}} 
-string {\bfseries Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aaa43ad7146727fe4611507e1bf19a4e6}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aaa43ad7146727fe4611507e1bf19a4e6}} 
-string {\bfseries Barge\+In}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_ab3885a0f59289b7d51c1e42ffca7b833}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_ab3885a0f59289b7d51c1e42ffca7b833}} 
-string {\bfseries Loop}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aa278cf4785148b418cc5872716e49e85}{Stream\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array containing a single U\+RL to an mp3 or wav (16-\/bit) audio file to stream to the Call or Conversation. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_a51fe63e0dc640a03b96f06dac7bd20d4}{Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set the audio level of the stream in the range -\/1 $>$=level$<$=1 with a precision of 0.\+1. The default value is 0. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aaa43ad7146727fe4611507e1bf19a4e6}{Barge\+In}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} Response (I\+VR ). If you set barge\+In to true on one more Stream actions then the next non-\/stream action in the N\+C\+CO stack must be an input action. The default value is false. Once barge\+In is set to true it will stay true (even if barge\+In\+: false is set in a following action) until an input action is encountered \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_ab3885a0f59289b7d51c1e42ffca7b833}{Loop}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of times audio is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aaa43ad7146727fe4611507e1bf19a4e6}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aaa43ad7146727fe4611507e1bf19a4e6}} 
+\index{Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}!BargeIn@{BargeIn}}
+\index{BargeIn@{BargeIn}!Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}}
+\doxysubsubsection{\texorpdfstring{BargeIn}{BargeIn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Stream\+Action.\+Barge\+In\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} Response (I\+VR ). If you set barge\+In to true on one more Stream actions then the next non-\/stream action in the N\+C\+CO stack must be an input action. The default value is false. Once barge\+In is set to true it will stay true (even if barge\+In\+: false is set in a following action) until an input action is encountered 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_a51fe63e0dc640a03b96f06dac7bd20d4}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_a51fe63e0dc640a03b96f06dac7bd20d4}} 
+\index{Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}!Level@{Level}}
+\index{Level@{Level}!Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Stream\+Action.\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set the audio level of the stream in the range -\/1 $>$=level$<$=1 with a precision of 0.\+1. The default value is 0. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_ab3885a0f59289b7d51c1e42ffca7b833}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_ab3885a0f59289b7d51c1e42ffca7b833}} 
+\index{Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}!Loop@{Loop}}
+\index{Loop@{Loop}!Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}}
+\doxysubsubsection{\texorpdfstring{Loop}{Loop}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Stream\+Action.\+Loop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of times audio is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aa278cf4785148b418cc5872716e49e85}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action_aa278cf4785148b418cc5872716e49e85}} 
+\index{Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}!StreamUrl@{StreamUrl}}
+\index{StreamUrl@{StreamUrl}!Nexmo.Api.Voice.Nccos.StreamAction@{Nexmo.Api.Voice.Nccos.StreamAction}}
+\doxysubsubsection{\texorpdfstring{StreamUrl}{StreamUrl}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Nccos.\+Stream\+Action.\+Stream\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An array containing a single U\+RL to an mp3 or wav (16-\/bit) audio file to stream to the Call or Conversation. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

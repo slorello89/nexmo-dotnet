@@ -9,21 +9,69 @@ Inheritance diagram for Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response\+:\begin{
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a59c87a23d9bb894c27df562a97d35242}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a59c87a23d9bb894c27df562a97d35242}} 
-string {\bfseries Request\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a321fa6731d23e2fa4913ab53ca1efb03}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a321fa6731d23e2fa4913ab53ca1efb03}} 
-string {\bfseries Event\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a3850cfeab980e213ca403b7de467f10e}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a3850cfeab980e213ca403b7de467f10e}} 
-string {\bfseries Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a59c87a23d9bb894c27df562a97d35242}{Request\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The request\+\_\+id that you received in the response to the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request and used in the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} check request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a321fa6731d23e2fa4913ab53ca1efb03}{Event\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ID of the verification event, such as an S\+MS or T\+TS call. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a3850cfeab980e213ca403b7de467f10e}{Price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The cost incurred for this request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a725c5b6228b29ac7d81c3a36cdcfa7da}{Currency}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The currency code. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_afbc78a6faacacfe44d8b564b4400eb5a}{Estimated\+Price\+Messages\+Sent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This field may not be present, depending on your pricing model. The value indicates the cost (in E\+UR) of the calls made and messages sent for the verification process. This value may be updated during and shortly after the request completes because user input events can overlap with message/call events. When this field is present, the total cost of the verification is the sum of this field and the price field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a725c5b6228b29ac7d81c3a36cdcfa7da}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a725c5b6228b29ac7d81c3a36cdcfa7da}} 
-string {\bfseries Currency}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}!Currency@{Currency}}
+\index{Currency@{Currency}!Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}}
+\doxysubsubsection{\texorpdfstring{Currency}{Currency}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response.\+Currency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The currency code. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_afbc78a6faacacfe44d8b564b4400eb5a}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_afbc78a6faacacfe44d8b564b4400eb5a}} 
-string {\bfseries Estimated\+Price\+Messages\+Sent}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}!EstimatedPriceMessagesSent@{EstimatedPriceMessagesSent}}
+\index{EstimatedPriceMessagesSent@{EstimatedPriceMessagesSent}!Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}}
+\doxysubsubsection{\texorpdfstring{EstimatedPriceMessagesSent}{EstimatedPriceMessagesSent}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response.\+Estimated\+Price\+Messages\+Sent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This field may not be present, depending on your pricing model. The value indicates the cost (in E\+UR) of the calls made and messages sent for the verification process. This value may be updated during and shortly after the request completes because user input events can overlap with message/call events. When this field is present, the total cost of the verification is the sum of this field and the price field. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a321fa6731d23e2fa4913ab53ca1efb03}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a321fa6731d23e2fa4913ab53ca1efb03}} 
+\index{Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}!EventId@{EventId}}
+\index{EventId@{EventId}!Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}}
+\doxysubsubsection{\texorpdfstring{EventId}{EventId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response.\+Event\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The ID of the verification event, such as an S\+MS or T\+TS call. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a3850cfeab980e213ca403b7de467f10e}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a3850cfeab980e213ca403b7de467f10e}} 
+\index{Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}!Price@{Price}}
+\index{Price@{Price}!Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}}
+\doxysubsubsection{\texorpdfstring{Price}{Price}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response.\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The cost incurred for this request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a59c87a23d9bb894c27df562a97d35242}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_check_response_a59c87a23d9bb894c27df562a97d35242}} 
+\index{Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}!RequestId@{RequestId}}
+\index{RequestId@{RequestId}!Nexmo.Api.Verify.VerifyCheckResponse@{Nexmo.Api.Verify.VerifyCheckResponse}}
+\doxysubsubsection{\texorpdfstring{RequestId}{RequestId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Check\+Response.\+Request\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The request\+\_\+id that you received in the response to the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request and used in the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} check request. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

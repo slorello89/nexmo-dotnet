@@ -78,16 +78,92 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a350f2ed7941bec95986278b6b75aab9e"><td class="memItemLeft" align="right" valign="top"><a id="a350f2ed7941bec95986278b6b75aab9e"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>MessageId</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a350f2ed7941bec95986278b6b75aab9e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#a350f2ed7941bec95986278b6b75aab9e">MessageId</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a350f2ed7941bec95986278b6b75aab9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID you receive in the response to a request. * From the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> API - use the event_id in the response to <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> Check.  <a href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#a350f2ed7941bec95986278b6b75aab9e">More...</a><br /></td></tr>
 <tr class="separator:a350f2ed7941bec95986278b6b75aab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558b25e79b008708f193d184902da1d9"><td class="memItemLeft" align="right" valign="top"><a id="a558b25e79b008708f193d184902da1d9"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Delivered</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a558b25e79b008708f193d184902da1d9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#a558b25e79b008708f193d184902da1d9">Delivered</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a558b25e79b008708f193d184902da1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true if your user replied to the message you sent. Otherwise, set to false. Note: for curl, use 0 and 1.  <a href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#a558b25e79b008708f193d184902da1d9">More...</a><br /></td></tr>
 <tr class="separator:a558b25e79b008708f193d184902da1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ed11fa67adf222681ffcb97354007d"><td class="memItemLeft" align="right" valign="top"><a id="ae9ed11fa67adf222681ffcb97354007d"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TimeStamp</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ae9ed11fa67adf222681ffcb97354007d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#ae9ed11fa67adf222681ffcb97354007d">TimeStamp</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae9ed11fa67adf222681ffcb97354007d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the user completed your call-to-action (e.g. visited your website, installed your app) in UTC±00:00 format: yyyy-MM-dd HH:mm:ss. If you do not set this parameter, <a class="el" href="namespace_nexmo.html">Nexmo</a> uses the time it receives this request.  <a href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html#ae9ed11fa67adf222681ffcb97354007d">More...</a><br /></td></tr>
 <tr class="separator:ae9ed11fa67adf222681ffcb97354007d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a558b25e79b008708f193d184902da1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558b25e79b008708f193d184902da1d9">&#9670;&nbsp;</a></span>Delivered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Conversions.ConversionRequest.Delivered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set to true if your user replied to the message you sent. Otherwise, set to false. Note: for curl, use 0 and 1. </p>
+
+</div>
+</div>
+<a id="a350f2ed7941bec95986278b6b75aab9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350f2ed7941bec95986278b6b75aab9e">&#9670;&nbsp;</a></span>MessageId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Conversions.ConversionRequest.MessageId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The ID you receive in the response to a request. * From the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> API - use the event_id in the response to <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> Check. </p>
+<ul>
+<li>From the SMS API - use the message-id * From the Text-To-Speech API - use the call-id * From the Text-To-Speech-Prompt API - use the call-id</li>
+</ul>
+
+</div>
+</div>
+<a id="ae9ed11fa67adf222681ffcb97354007d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ed11fa67adf222681ffcb97354007d">&#9670;&nbsp;</a></span>TimeStamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Conversions.ConversionRequest.TimeStamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When the user completed your call-to-action (e.g. visited your website, installed your app) in UTC±00:00 format: yyyy-MM-dd HH:mm:ss. If you do not set this parameter, <a class="el" href="namespace_nexmo.html">Nexmo</a> uses the time it receives this request. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Conversions/ConversionRequest.cs</li>
 </ul>

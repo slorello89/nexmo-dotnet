@@ -87,20 +87,20 @@ Inheritance diagram for Nexmo.Api.Voice.Nccos.InputAction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:af3fd0863b8e66226cb70cd6daea96dcd"><td class="memItemLeft" align="right" valign="top"><a id="af3fd0863b8e66226cb70cd6daea96dcd"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TimeOut</b><code> [get, set]</code></td></tr>
+<tr class="memitem:af3fd0863b8e66226cb70cd6daea96dcd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#af3fd0863b8e66226cb70cd6daea96dcd">TimeOut</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af3fd0863b8e66226cb70cd6daea96dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of the callee's activity is sent to the eventUrl webhook endpoint timeOut seconds after the last action. The default value is 3. Max is 10.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#af3fd0863b8e66226cb70cd6daea96dcd">More...</a><br /></td></tr>
 <tr class="separator:af3fd0863b8e66226cb70cd6daea96dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2d78107d0125eee80e4a86c1341e3ed"><td class="memItemLeft" align="right" valign="top"><a id="ac2d78107d0125eee80e4a86c1341e3ed"></a>
-int?&#160;</td><td class="memItemRight" valign="bottom"><b>MaxDigits</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ac2d78107d0125eee80e4a86c1341e3ed"><td class="memItemLeft" align="right" valign="top">int?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#ac2d78107d0125eee80e4a86c1341e3ed">MaxDigits</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac2d78107d0125eee80e4a86c1341e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of digits the user can press. The maximum value is 20, the default is 4 digits.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#ac2d78107d0125eee80e4a86c1341e3ed">More...</a><br /></td></tr>
 <tr class="separator:ac2d78107d0125eee80e4a86c1341e3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83020369f6262c1c3e92298c1b1c8608"><td class="memItemLeft" align="right" valign="top"><a id="a83020369f6262c1c3e92298c1b1c8608"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitOnHash</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a83020369f6262c1c3e92298c1b1c8608"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#a83020369f6262c1c3e92298c1b1c8608">SubmitOnHash</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a83020369f6262c1c3e92298c1b1c8608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true so the callee's activity is sent to your webhook endpoint at eventUrl after they press #. If # is not pressed the result is submitted after timeOut seconds. The default value is false. That is, the result is sent to your webhook endpoint after timeOut seconds.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#a83020369f6262c1c3e92298c1b1c8608">More...</a><br /></td></tr>
 <tr class="separator:a83020369f6262c1c3e92298c1b1c8608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27bce85158083fd2522a177adf707971"><td class="memItemLeft" align="right" valign="top"><a id="a27bce85158083fd2522a177adf707971"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>EventUrl</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a27bce85158083fd2522a177adf707971"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#a27bce85158083fd2522a177adf707971">EventUrl</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a27bce85158083fd2522a177adf707971"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_nexmo.html">Nexmo</a> sends the digits pressed by the callee to this URL after timeOut pause in activity or when # is pressed.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#a27bce85158083fd2522a177adf707971">More...</a><br /></td></tr>
 <tr class="separator:a27bce85158083fd2522a177adf707971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced032e1739b06ac4f4eb5b63e4bf76a"><td class="memItemLeft" align="right" valign="top"><a id="aced032e1739b06ac4f4eb5b63e4bf76a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>EventMethod</b><code> [get, set]</code></td></tr>
+<tr class="memitem:aced032e1739b06ac4f4eb5b63e4bf76a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#aced032e1739b06ac4f4eb5b63e4bf76a">EventMethod</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aced032e1739b06ac4f4eb5b63e4bf76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP method used to send event information to event_url The default value is POST.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action.html#aced032e1739b06ac4f4eb5b63e4bf76a">More...</a><br /></td></tr>
 <tr class="separator:aced032e1739b06ac4f4eb5b63e4bf76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td colspan="2" onclick="javascript:toggleInherit('properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action.html">Nexmo.Api.Voice.Nccos.NccoAction</a></td></tr>
 <tr class="memitem:a6e7de4d346c47ef03cee49ceeba07341 inherit properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memItemLeft" align="right" valign="top"><a id="a6e7de4d346c47ef03cee49ceeba07341"></a>
@@ -127,6 +127,127 @@ Additional Inherited Members</h2></td></tr>
 override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
 <tr class="separator:aed1ab8e907822c83b65555f27b6914f7 inherit pub_methods_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="aced032e1739b06ac4f4eb5b63e4bf76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced032e1739b06ac4f4eb5b63e4bf76a">&#9670;&nbsp;</a></span>EventMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.InputAction.EventMethod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The HTTP method used to send event information to event_url The default value is POST. </p>
+
+</div>
+</div>
+<a id="a27bce85158083fd2522a177adf707971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bce85158083fd2522a177adf707971">&#9670;&nbsp;</a></span>EventUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] Nexmo.Api.Voice.Nccos.InputAction.EventUrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespace_nexmo.html">Nexmo</a> sends the digits pressed by the callee to this URL after timeOut pause in activity or when # is pressed. </p>
+
+</div>
+</div>
+<a id="ac2d78107d0125eee80e4a86c1341e3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d78107d0125eee80e4a86c1341e3ed">&#9670;&nbsp;</a></span>MaxDigits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int? Nexmo.Api.Voice.Nccos.InputAction.MaxDigits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of digits the user can press. The maximum value is 20, the default is 4 digits. </p>
+
+</div>
+</div>
+<a id="a83020369f6262c1c3e92298c1b1c8608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83020369f6262c1c3e92298c1b1c8608">&#9670;&nbsp;</a></span>SubmitOnHash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.InputAction.SubmitOnHash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set to true so the callee's activity is sent to your webhook endpoint at eventUrl after they press #. If # is not pressed the result is submitted after timeOut seconds. The default value is false. That is, the result is sent to your webhook endpoint after timeOut seconds. </p>
+
+</div>
+</div>
+<a id="af3fd0863b8e66226cb70cd6daea96dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fd0863b8e66226cb70cd6daea96dcd">&#9670;&nbsp;</a></span>TimeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.InputAction.TimeOut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The result of the callee's activity is sent to the eventUrl webhook endpoint timeOut seconds after the last action. The default value is 3. Max is 10. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Voice/Nccos/InputAction.cs</li>
 </ul>

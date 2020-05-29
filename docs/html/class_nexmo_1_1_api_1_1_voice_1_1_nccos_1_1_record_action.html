@@ -109,32 +109,32 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:afdf7a345a65d8cd94f1fc5b10ff44524"><td class="memItemLeft" align="right" valign="top"><a id="afdf7a345a65d8cd94f1fc5b10ff44524"></a>
-AudioFormat&#160;</td><td class="memItemRight" valign="bottom"><b>Format</b><code> [get, set]</code></td></tr>
+<tr class="memitem:afdf7a345a65d8cd94f1fc5b10ff44524"><td class="memItemLeft" align="right" valign="top">AudioFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#afdf7a345a65d8cd94f1fc5b10ff44524">Format</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afdf7a345a65d8cd94f1fc5b10ff44524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the Call in a specific format. The default value is mp3, or wav when recording more than 2 channels.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#afdf7a345a65d8cd94f1fc5b10ff44524">More...</a><br /></td></tr>
 <tr class="separator:afdf7a345a65d8cd94f1fc5b10ff44524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6016be1d6b9b12dde5d7b68fb9a9a209"><td class="memItemLeft" align="right" valign="top"><a id="a6016be1d6b9b12dde5d7b68fb9a9a209"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Split</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a6016be1d6b9b12dde5d7b68fb9a9a209"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a6016be1d6b9b12dde5d7b68fb9a9a209">Split</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6016be1d6b9b12dde5d7b68fb9a9a209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the sent and received audio in separate channels of a stereo recording—set to conversation to enable this.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a6016be1d6b9b12dde5d7b68fb9a9a209">More...</a><br /></td></tr>
 <tr class="separator:a6016be1d6b9b12dde5d7b68fb9a9a209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a641b4394031a63ca5e8d9d4b7aed6d00"><td class="memItemLeft" align="right" valign="top"><a id="a641b4394031a63ca5e8d9d4b7aed6d00"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><b>Channels</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a641b4394031a63ca5e8d9d4b7aed6d00"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a641b4394031a63ca5e8d9d4b7aed6d00">Channels</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a641b4394031a63ca5e8d9d4b7aed6d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of channels to record (maximum 32). If the number of participants exceeds channels any additional participants will be added to the last channel in file. split conversation must also be enabled  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a641b4394031a63ca5e8d9d4b7aed6d00">More...</a><br /></td></tr>
 <tr class="separator:a641b4394031a63ca5e8d9d4b7aed6d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde2d951ad148a5ddfe84e396317cd11"><td class="memItemLeft" align="right" valign="top"><a id="adde2d951ad148a5ddfe84e396317cd11"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>EndOnSilence</b><code> [get, set]</code></td></tr>
+<tr class="memitem:adde2d951ad148a5ddfe84e396317cd11"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#adde2d951ad148a5ddfe84e396317cd11">EndOnSilence</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adde2d951ad148a5ddfe84e396317cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop recording after n seconds of silence. Once the recording is stopped the recording data is sent to event_url. The range of possible values is 3&lt;=endOnSilence&lt;=10.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#adde2d951ad148a5ddfe84e396317cd11">More...</a><br /></td></tr>
 <tr class="separator:adde2d951ad148a5ddfe84e396317cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906266287e38b98dc9edb22c8eee2f71"><td class="memItemLeft" align="right" valign="top"><a id="a906266287e38b98dc9edb22c8eee2f71"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>EndOnKey</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a906266287e38b98dc9edb22c8eee2f71"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a906266287e38b98dc9edb22c8eee2f71">EndOnKey</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a906266287e38b98dc9edb22c8eee2f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop recording when a digit is pressed on the handset. Possible values are: *, # or any single digit e.g. 9  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a906266287e38b98dc9edb22c8eee2f71">More...</a><br /></td></tr>
 <tr class="separator:a906266287e38b98dc9edb22c8eee2f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd46e5a6b6a6e454aaa1954401a5601e"><td class="memItemLeft" align="right" valign="top"><a id="afd46e5a6b6a6e454aaa1954401a5601e"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TimeOut</b><code> [get, set]</code></td></tr>
+<tr class="memitem:afd46e5a6b6a6e454aaa1954401a5601e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#afd46e5a6b6a6e454aaa1954401a5601e">TimeOut</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afd46e5a6b6a6e454aaa1954401a5601e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a recording in seconds. One the recording is stopped the recording data is sent to event_url. The range of possible values is between 3 seconds and 7200 seconds (2 hours)  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#afd46e5a6b6a6e454aaa1954401a5601e">More...</a><br /></td></tr>
 <tr class="separator:afd46e5a6b6a6e454aaa1954401a5601e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3691699a821575025984b0fa65cf633b"><td class="memItemLeft" align="right" valign="top"><a id="a3691699a821575025984b0fa65cf633b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>BeepStart</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a3691699a821575025984b0fa65cf633b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a3691699a821575025984b0fa65cf633b">BeepStart</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3691699a821575025984b0fa65cf633b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true to play a beep when a recording starts  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#a3691699a821575025984b0fa65cf633b">More...</a><br /></td></tr>
 <tr class="separator:a3691699a821575025984b0fa65cf633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94f188e5a6ecad12aadfddc8cd842bd"><td class="memItemLeft" align="right" valign="top"><a id="ac94f188e5a6ecad12aadfddc8cd842bd"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>EventUrl</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ac94f188e5a6ecad12aadfddc8cd842bd"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#ac94f188e5a6ecad12aadfddc8cd842bd">EventUrl</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac94f188e5a6ecad12aadfddc8cd842bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to the webhook endpoint that is called asynchronously when a recording is finished. If the message recording is hosted by <a class="el" href="namespace_nexmo.html">Nexmo</a>, this webhook contains the URL you need to download the recording and other meta data.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#ac94f188e5a6ecad12aadfddc8cd842bd">More...</a><br /></td></tr>
 <tr class="separator:ac94f188e5a6ecad12aadfddc8cd842bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cf0624b22c70710961d6ab92139127"><td class="memItemLeft" align="right" valign="top"><a id="ad4cf0624b22c70710961d6ab92139127"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>EventMethod</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ad4cf0624b22c70710961d6ab92139127"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#ad4cf0624b22c70710961d6ab92139127">EventMethod</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad4cf0624b22c70710961d6ab92139127"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP method used to make the request to eventUrl. The default value is POST.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_record_action.html#ad4cf0624b22c70710961d6ab92139127">More...</a><br /></td></tr>
 <tr class="separator:ad4cf0624b22c70710961d6ab92139127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td colspan="2" onclick="javascript:toggleInherit('properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action.html">Nexmo.Api.Voice.Nccos.NccoAction</a></td></tr>
 <tr class="memitem:a6e7de4d346c47ef03cee49ceeba07341 inherit properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memItemLeft" align="right" valign="top"><a id="a6e7de4d346c47ef03cee49ceeba07341"></a>
@@ -148,6 +148,223 @@ Additional Inherited Members</h2></td></tr>
 override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
 <tr class="separator:aed1ab8e907822c83b65555f27b6914f7 inherit pub_methods_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a3691699a821575025984b0fa65cf633b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3691699a821575025984b0fa65cf633b">&#9670;&nbsp;</a></span>BeepStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.BeepStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set to true to play a beep when a recording starts </p>
+
+</div>
+</div>
+<a id="a641b4394031a63ca5e8d9d4b7aed6d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641b4394031a63ca5e8d9d4b7aed6d00">&#9670;&nbsp;</a></span>Channels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Nexmo.Api.Voice.Nccos.RecordAction.Channels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of channels to record (maximum 32). If the number of participants exceeds channels any additional participants will be added to the last channel in file. split conversation must also be enabled </p>
+
+</div>
+</div>
+<a id="a906266287e38b98dc9edb22c8eee2f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906266287e38b98dc9edb22c8eee2f71">&#9670;&nbsp;</a></span>EndOnKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.EndOnKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop recording when a digit is pressed on the handset. Possible values are: *, # or any single digit e.g. 9 </p>
+
+</div>
+</div>
+<a id="adde2d951ad148a5ddfe84e396317cd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde2d951ad148a5ddfe84e396317cd11">&#9670;&nbsp;</a></span>EndOnSilence</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.EndOnSilence</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop recording after n seconds of silence. Once the recording is stopped the recording data is sent to event_url. The range of possible values is 3&lt;=endOnSilence&lt;=10. </p>
+
+</div>
+</div>
+<a id="ad4cf0624b22c70710961d6ab92139127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cf0624b22c70710961d6ab92139127">&#9670;&nbsp;</a></span>EventMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.EventMethod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The HTTP method used to make the request to eventUrl. The default value is POST. </p>
+
+</div>
+</div>
+<a id="ac94f188e5a6ecad12aadfddc8cd842bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94f188e5a6ecad12aadfddc8cd842bd">&#9670;&nbsp;</a></span>EventUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] Nexmo.Api.Voice.Nccos.RecordAction.EventUrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The URL to the webhook endpoint that is called asynchronously when a recording is finished. If the message recording is hosted by <a class="el" href="namespace_nexmo.html">Nexmo</a>, this webhook contains the URL you need to download the recording and other meta data. </p>
+
+</div>
+</div>
+<a id="afdf7a345a65d8cd94f1fc5b10ff44524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf7a345a65d8cd94f1fc5b10ff44524">&#9670;&nbsp;</a></span>Format</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioFormat Nexmo.Api.Voice.Nccos.RecordAction.Format</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Record the Call in a specific format. The default value is mp3, or wav when recording more than 2 channels. </p>
+
+</div>
+</div>
+<a id="a6016be1d6b9b12dde5d7b68fb9a9a209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6016be1d6b9b12dde5d7b68fb9a9a209">&#9670;&nbsp;</a></span>Split</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.Split</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Record the sent and received audio in separate channels of a stereo recording—set to conversation to enable this. </p>
+
+</div>
+</div>
+<a id="afd46e5a6b6a6e454aaa1954401a5601e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd46e5a6b6a6e454aaa1954401a5601e">&#9670;&nbsp;</a></span>TimeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.RecordAction.TimeOut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum length of a recording in seconds. One the recording is stopped the recording data is sent to event_url. The range of possible values is between 3 seconds and 7200 seconds (2 hours) </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Voice/Nccos/RecordAction.cs</li>
 </ul>

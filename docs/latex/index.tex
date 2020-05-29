@@ -2,7 +2,9 @@
 \Hypertarget{index_md_C}%
 \+:\+\_\+\+Users\+\_\+slore\+\_\+\+Documents\+\_\+projects\+\_\+slorello89\+\_\+nexmo-\/dotnet\+\_\+\+R\+E\+A\+D\+ME
 
-\href{http://www.nuget.org/packages/Nexmo.Csharp.Client}{\texttt{ }} \href{https://ci.appveyor.com/project/slorello89/nexmo-dotnet/branch/master}{\texttt{ }}
+\href{http://www.nuget.org/packages/Nexmo.Csharp.Client}{\texttt{ }} \href{https://ci.appveyor.com/project/slorello89/nexmo-dotnet/branch/master}{\texttt{ }} \mbox{\hyperlink{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_o_d_e__o_f__c_o_n_d_u_c_t}{!\mbox{[}Contributor Covenant\mbox{]}(https\+://img.shields.io/badge/\+Contributor\%20\+Covenant-\/v2.0\%20adopted-\/ff69b4.svg)}}
+
+
 
 You can use this C\# client library to integrate \href{\#api-coverage}{\texttt{ Nexmo\textquotesingle{}s A\+P\+Is}} to your application. To use this, you\textquotesingle{}ll need a \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account. Sign up \href{https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ for free at nexmo.\+com}}.
 
@@ -13,7 +15,7 @@ You can use this C\# client library to integrate \href{\#api-coverage}{\texttt{ 
 \item \href{\#examples}{\texttt{ Examples}}
 \item \href{\#api-coverage}{\texttt{ Coverage}}
 \item \href{\#contributing}{\texttt{ Contributing}}
-\end{DoxyItemize}\hypertarget{index_autotoc_md22}{}\doxysection{Installation\+:}\label{index_autotoc_md22}
+\end{DoxyItemize}\hypertarget{index_autotoc_md29}{}\doxysection{Installation\+:}\label{index_autotoc_md29}
 To use the client library you\textquotesingle{}ll need to have \href{https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ created a Nexmo account}}.
 
 To install the C\# client library using Nu\+Get\+:
@@ -36,7 +38,7 @@ Alternatively\+:
 \item Download or build (see developer instructions) the {\ttfamily Nexmo.\+Api.\+dll}.
 \item If you have downloaded a release, ensure you are referencing the required dependencies by either including them with your project\textquotesingle{}s Nu\+Get dependencies or manually referencing them.
 \item Reference the assembly in your code.
-\end{DoxyItemize}\hypertarget{index_autotoc_md23}{}\doxysection{Targeted frameworks\+:}\label{index_autotoc_md23}
+\end{DoxyItemize}\hypertarget{index_autotoc_md30}{}\doxysection{Targeted frameworks\+:}\label{index_autotoc_md30}
 
 \begin{DoxyItemize}
 \item 4.\+5.\+2 \begin{quote}
@@ -45,7 +47,7 @@ N\+O\+TE\+: for 4.\+5.\+2 frameworks you will need to enable T\+LS 1.\+2 either 
 \item 4.\+6, 4.\+6.\+1, 4.\+6.\+2
 \item .N\+ET Standard 1.\+6, 2.\+0
 \item .N\+ET Core 2.\+0, 2.\+1, 2.\+2, 3.\+0, 3.\+1
-\end{DoxyItemize}\hypertarget{index_autotoc_md24}{}\doxysection{Configuration\+:}\label{index_autotoc_md24}
+\end{DoxyItemize}\hypertarget{index_autotoc_md31}{}\doxysection{Configuration\+:}\label{index_autotoc_md31}
 To setup the configuration of the \mbox{\hyperlink{namespace_nexmo}{Nexmo}} Client you can do one of the following.
 
 
@@ -118,7 +120,7 @@ Note\+: In the event multiple configuration files are found, the order of preced
 
 \begin{quote}
 N\+O\+TE\+: Private Key is the literal key -\/ not a path to the file containing the key \end{quote}
-\hypertarget{index_autotoc_md25}{}\doxysubsection{Configuration Reference}\label{index_autotoc_md25}
+\hypertarget{index_autotoc_md32}{}\doxysubsection{Configuration Reference}\label{index_autotoc_md32}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
 \hline
@@ -141,8 +143,8 @@ Nexmo.\+Api.\+Requests\+Per\+Second &Optional. Throttle to specified requests pe
 Nexmo.\+Api.\+Ensure\+Success\+Status\+Code &Optional. Defaults to {\ttfamily false}. If {\ttfamily true}, {\ttfamily Ensure\+Success\+Status\+Code} will be called against each response. If the response has a failure H\+T\+TP status code, a {\ttfamily Http\+Request\+Exception} will be thrown.  \\\cline{1-2}
 Nexmo.\+User\+Agent &Optional. Your app-\/specific usage identifier in the format of {\ttfamily name/version}. Example\+: {\ttfamily \char`\"{}my\+App/1.\+0\char`\"{}}  \\\cline{1-2}
 \end{longtabu}
-\hypertarget{index_autotoc_md26}{}\doxysubsection{Logging}\label{index_autotoc_md26}
-\hypertarget{index_autotoc_md27}{}\doxysubsubsection{3.\+1.\+x+}\label{index_autotoc_md27}
+\hypertarget{index_autotoc_md33}{}\doxysubsection{Logging}\label{index_autotoc_md33}
+\hypertarget{index_autotoc_md34}{}\doxysubsubsection{3.\+1.\+x+}\label{index_autotoc_md34}
 The library makes use of \href{https://github.com/damianh/LibLog/wiki}{\texttt{ Lib\+Log}} to facilitate logging.
 
 Your application controls if and how logging occurs. Example using \href{https://serilog.net/}{\texttt{ Serilog}} and \href{https://www.nuget.org/packages/Serilog.Sinks.Console}{\texttt{ Serilog.\+Sinks.\+Console}} v3.\+x\+:
@@ -165,7 +167,7 @@ Your application controls if and how logging occurs. Example using \href{https:/
 \DoxyCodeLine{client.Account.GetBalance();}
 \DoxyCodeLine{Log.Logger.Debug("end");}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md28}{}\doxysubsubsection{2.\+2.\+0 -\/ 3.\+0.\+x}\label{index_autotoc_md28}
+\hypertarget{index_autotoc_md35}{}\doxysubsubsection{2.\+2.\+0 -\/ 3.\+0.\+x}\label{index_autotoc_md35}
 You can request console logging by placing a {\ttfamily logging.\+json} file alongside your {\ttfamily appsettings.\+json} configuration.
 
 Note that logging \mbox{\hyperlink{namespace_nexmo_1_1_api}{Nexmo.\+Api}} messages will very likely expose your key and secret to the console as they can be part of the query string.
@@ -186,7 +188,7 @@ Example {\ttfamily logging.\+json} contents that would log all requests as well 
 \end{DoxyCode}
 
 
-You may specify other types of logging (file, etc.). The {\ttfamily Nexmo.\+Samples.\+Coverage} project contains an example that logs to a file with the assistance of {\ttfamily Serilog.\+Extensions.\+Logging.\+File}.\hypertarget{index_autotoc_md29}{}\doxysection{Examples}\label{index_autotoc_md29}
+You may specify other types of logging (file, etc.). The {\ttfamily Nexmo.\+Samples.\+Coverage} project contains an example that logs to a file with the assistance of {\ttfamily Serilog.\+Extensions.\+Logging.\+File}.\hypertarget{index_autotoc_md36}{}\doxysection{Examples}\label{index_autotoc_md36}
 We are working on a separate repository for .N\+ET examples. \href{https://github.com/nexmo-community/nexmo-dotnet-quickstart}{\texttt{ Check it out here!}}
 
 The following examples show how to\+:
@@ -201,7 +203,7 @@ The following examples show how to\+:
 \item \href{\#receiving-a-call}{\texttt{ Receive a call}}
 \item \href{\#sending-2fa-code}{\texttt{ Send 2FA code}}
 \item \href{\#checking-2fa-code}{\texttt{ Check 2FA code}}
-\end{DoxyItemize}\hypertarget{index_autotoc_md30}{}\doxysubsection{Sending a Message}\label{index_autotoc_md30}
+\end{DoxyItemize}\hypertarget{index_autotoc_md37}{}\doxysubsection{Sending a Message}\label{index_autotoc_md37}
 Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to send an S\+MS message.
 
 
@@ -225,7 +227,7 @@ Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=gith
 \DoxyCodeLine{    text = "this is a test"}
 \DoxyCodeLine{\});}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md31}{}\doxysubsection{Receiving a Message}\label{index_autotoc_md31}
+\hypertarget{index_autotoc_md38}{}\doxysubsection{Receiving a Message}\label{index_autotoc_md38}
 Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to receive an S\+MS message. Assumes your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} endpoint is configured.
 
 
@@ -236,7 +238,7 @@ Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=gith
 \DoxyCodeLine{    return new HttpStatusCodeResult(HttpStatusCode.OK);}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md32}{}\doxysubsection{Receiving a Message Delivery Receipt}\label{index_autotoc_md32}
+\hypertarget{index_autotoc_md39}{}\doxysubsection{Receiving a Message Delivery Receipt}\label{index_autotoc_md39}
 Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s S\+MS A\+PI}} to receive an S\+MS delivery receipt. Assumes your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} endpoint is configured.
 
 
@@ -257,7 +259,7 @@ Use \href{https://developer.nexmo.com/api/sms?utm_source=DEV_REL&utm_medium=gith
 \end{DoxyCode}
 
 
-{\bfseries{N\+O\+TE\+:}} {\ttfamily \mbox{[}From\+Uri\mbox{]}} is deprecated in .N\+ET Core; {\ttfamily \mbox{[}From\+Query\mbox{]}} works in this case.\hypertarget{index_autotoc_md33}{}\doxysubsection{Redacting a message}\label{index_autotoc_md33}
+{\bfseries{N\+O\+TE\+:}} {\ttfamily \mbox{[}From\+Uri\mbox{]}} is deprecated in .N\+ET Core; {\ttfamily \mbox{[}From\+Query\mbox{]}} works in this case.\hypertarget{index_autotoc_md40}{}\doxysubsection{Redacting a message}\label{index_autotoc_md40}
 Use \href{https://developer.nexmo.com/api/redact?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Redact A\+PI}} to redact a S\+MS message.
 
 
@@ -276,7 +278,7 @@ Use \href{https://developer.nexmo.com/api/redact?utm_source=DEV_REL&utm_medium=g
 \DoxyCodeLine{ \{C\#\}}
 \DoxyCodeLine{client.Redact.RedactTransaction(new Redact.RedactRequest(MESSAGE\_ID, "sms", "outbound"));}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md34}{}\doxysubsection{Initiating a Call}\label{index_autotoc_md34}
+\hypertarget{index_autotoc_md41}{}\doxysubsection{Initiating a Call}\label{index_autotoc_md41}
 Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Voice A\+PI}} to initiate a voice call.
 
 {\bfseries{N\+O\+TE\+:}} You must have a valid Application ID and private key in order to make voice calls. Use either {\ttfamily Nexmo.\+Api.\+Application} or \mbox{\hyperlink{namespace_nexmo}{Nexmo}}\textquotesingle{}s Node.\+js-\/based \href{https://github.com/nexmo/nexmo-cli}{\texttt{ C\+LI tool}} to register. See the \href{https://developer.nexmo.com/concepts/guides/applications?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Application A\+PI}} documentation for details.
@@ -319,7 +321,7 @@ Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_RE
 \DoxyCodeLine{    \}}
 \DoxyCodeLine{\});}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md35}{}\doxysubsection{Receiving a Call}\label{index_autotoc_md35}
+\hypertarget{index_autotoc_md42}{}\doxysubsection{Receiving a Call}\label{index_autotoc_md42}
 Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Voice A\+PI}} to receive a voice call.
 
 
@@ -346,7 +348,7 @@ Use \href{https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_RE
 \DoxyCodeLine{    // Do something with call.}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md36}{}\doxysubsection{Sending 2\+F\+A Code}\label{index_autotoc_md36}
+\hypertarget{index_autotoc_md43}{}\doxysubsection{Sending 2\+F\+A Code}\label{index_autotoc_md43}
 Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Verify A\+PI}} to send 2FA pin code.
 
 
@@ -376,7 +378,7 @@ Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_med
 \DoxyCodeLine{    return View();}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md37}{}\doxysubsection{Checking 2\+F\+A Code}\label{index_autotoc_md37}
+\hypertarget{index_autotoc_md44}{}\doxysubsection{Checking 2\+F\+A Code}\label{index_autotoc_md44}
 Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_medium=github&utm_campaign=csharp-client-library}{\texttt{ Nexmo\textquotesingle{}s Verify A\+PI}} to check 2FA pin code.
 
 
@@ -413,11 +415,11 @@ Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_med
 \DoxyCodeLine{    return View();}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{index_autotoc_md38}{}\doxysubsection{Additional Examples}\label{index_autotoc_md38}
+\hypertarget{index_autotoc_md45}{}\doxysubsection{Additional Examples}\label{index_autotoc_md45}
 
 \begin{DoxyItemize}
 \item Check out the sample M\+VC application and tests for more examples. Make sure to copy appsettings.\+json.\+example to appsettings.\+json and enter your key/secret.
-\end{DoxyItemize}\hypertarget{index_autotoc_md39}{}\doxysection{A\+P\+I Coverage}\label{index_autotoc_md39}
+\end{DoxyItemize}\hypertarget{index_autotoc_md46}{}\doxysection{A\+P\+I Coverage}\label{index_autotoc_md46}
 
 \begin{DoxyItemize}
 \item Account
@@ -492,7 +494,7 @@ Use \href{https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&utm_med
 \item \mbox{[}X\mbox{]} Stream
 \item \mbox{[}X\mbox{]} D\+T\+MF
 \end{DoxyItemize}
-\end{DoxyItemize}\hypertarget{index_autotoc_md40}{}\doxysection{Contributing}\label{index_autotoc_md40}
+\end{DoxyItemize}\hypertarget{index_autotoc_md47}{}\doxysection{Contributing}\label{index_autotoc_md47}
 Visual Studio 2017 is required (Community is fine). v15.\+5+ is recommended.
 
 
@@ -502,7 +504,7 @@ Visual Studio 2017 is required (Community is fine). v15.\+5+ is recommended.
 \item Build! Nu\+Get dependencies should be brought down automatically; check your settings if they are not.
 \end{DoxyEnumerate}
 
-Pull requests are welcome!\hypertarget{index_autotoc_md41}{}\doxysection{Thanks}\label{index_autotoc_md41}
+Pull requests are welcome!\hypertarget{index_autotoc_md48}{}\doxysection{Thanks}\label{index_autotoc_md48}
 Special thanks to our contributors\+:
 
 
@@ -510,5 +512,6 @@ Special thanks to our contributors\+:
 \item \href{https://github.com/jdpearce}{\texttt{ jdpearce}}
 \item \href{https://github.com/jonferreira}{\texttt{ jonferreira}}
 \item \href{https://github.com/fauna5}{\texttt{ fauna5}}
-\end{DoxyItemize}\hypertarget{index_autotoc_md42}{}\doxysection{License}\label{index_autotoc_md42}
+\item \href{https://github.com/taylus}{\texttt{ taylus}}
+\end{DoxyItemize}\hypertarget{index_autotoc_md49}{}\doxysection{License}\label{index_autotoc_md49}
 This library is released under \mbox{\hyperlink{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__l_i_c_e_n_s_e}{the M\+IT License}}. 

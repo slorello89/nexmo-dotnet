@@ -9,27 +9,201 @@ Inheritance diagram for Nexmo.\+Api.\+Accounts.\+I\+Account\+Client\+:\begin{fig
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a5fc7d232f5255a298d157f051408687b}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a5fc7d232f5255a298d157f051408687b}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_balance}{Balance}} {\bfseries Get\+Account\+Balance} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
-\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ac0737072b216160331654c985418e963}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ac0737072b216160331654c985418e963}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result}{Top\+Up\+Result}} {\bfseries Top\+Up\+Account\+Balance} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request}{Top\+Up\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_balance}{Balance}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a5fc7d232f5255a298d157f051408687b}{Get\+Account\+Balance}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Retrieve the current balance of your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result}{Top\+Up\+Result}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ac0737072b216160331654c985418e963}{Top\+Up\+Account\+Balance}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request}{Top\+Up\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em You can top up your account using this A\+PI when you have enabled auto-\/reload in the dashboard. The amount added by the top-\/up operation will be the same amount as was added in the payment when auto-\/reload was enabled. Your account balance is checked every 5-\/10 minutes and if it falls below the threshold and auto-\/reload is enabled, then it will be topped up automatically. Use this endpoint if you need to top up at times when your credit may be exhausted more quickly than the auto-\/reload may occur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result}{Account\+Settings\+Result}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a999bd518927cc500ad5866bbf2bcbdbf}{Change\+Account\+Settings}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request}{Account\+Settings\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Update the default callback U\+R\+Ls (where the webhooks are sent to) associated with your account\+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result}{Secrets\+Request\+Result}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_acbf8d28451d14c0a20d173c92801fb22}{Retrieve\+Api\+Secrets}} (string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Many of \mbox{\hyperlink{namespace_nexmo}{Nexmo}}\textquotesingle{}s A\+P\+Is are accessed using an A\+PI key and secret. It is recommended that you change or \char`\"{}rotate\char`\"{} your secrets from time to time for security purposes. This section provides the A\+PI interface for achieving this. Note\+: to work on secrets for your secondary accounts, you may authenticate with your primary credentials and supply the secondary A\+PI keys as U\+RL parameters to these A\+PI endpoints. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_aa6df02bd9d1de25606d609053b841ab4}{Create\+Api\+Secret}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request}{Create\+Secret\+Request}} request, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Createse an A\+PI \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a2883b884760586b21ab213915d607877}{Retrieve\+Api\+Secret}} (string secret\+Id, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em retrieves info about an api secret at the given id \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ae2a68ea1f7e91416bc89e2244c175d3a}{Revoke\+Api\+Secret}} (string secret\+Id, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Deletes an \mbox{\hyperlink{namespace_nexmo_1_1_api}{Api}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a999bd518927cc500ad5866bbf2bcbdbf}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a999bd518927cc500ad5866bbf2bcbdbf}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result}{Account\+Settings\+Result}} {\bfseries Change\+Account\+Settings} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request}{Account\+Settings\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
-\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_acbf8d28451d14c0a20d173c92801fb22}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_acbf8d28451d14c0a20d173c92801fb22}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result}{Secrets\+Request\+Result}} {\bfseries Retrieve\+Api\+Secrets} (string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!ChangeAccountSettings@{ChangeAccountSettings}}
+\index{ChangeAccountSettings@{ChangeAccountSettings}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{ChangeAccountSettings()}{ChangeAccountSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result}{Account\+Settings\+Result}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Change\+Account\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request}{Account\+Settings\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Update the default callback U\+R\+Ls (where the webhooks are sent to) associated with your account\+: 
+
+
+\begin{DoxyItemize}
+\item Callback U\+RL for incoming S\+MS messages $\ast$ Callback U\+RL for delivery receipts ~\newline
+ Note\+: that the U\+R\+Ls you provide must be valid and active.\+Nexmo will check that they return a 200 OK response before the setting is saved
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_a7b4ec575120afbf71222341b99eff845}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_aa6df02bd9d1de25606d609053b841ab4}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_aa6df02bd9d1de25606d609053b841ab4}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} {\bfseries Create\+Api\+Secret} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request}{Create\+Secret\+Request}} request, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!CreateApiSecret@{CreateApiSecret}}
+\index{CreateApiSecret@{CreateApiSecret}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{CreateApiSecret()}{CreateApiSecret()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Create\+Api\+Secret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request}{Create\+Secret\+Request}}}]{request,  }\item[{string}]{api\+Key = {\ttfamily null},  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Createse an A\+PI \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em api\+Key} & The \mbox{\hyperlink{namespace_nexmo_1_1_api}{Api}} Key to create a secret for\\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_ae2060d522902fcb7115beeddbd7d1531}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
+\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a5fc7d232f5255a298d157f051408687b}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a5fc7d232f5255a298d157f051408687b}} 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!GetAccountBalance@{GetAccountBalance}}
+\index{GetAccountBalance@{GetAccountBalance}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{GetAccountBalance()}{GetAccountBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_balance}{Balance}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Get\+Account\+Balance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Retrieve the current balance of your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_a7380ade91e8d1d7884ac384125cee4a1}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a2883b884760586b21ab213915d607877}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_a2883b884760586b21ab213915d607877}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} {\bfseries Retrieve\+Api\+Secret} (string secret\+Id, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!RetrieveApiSecret@{RetrieveApiSecret}}
+\index{RetrieveApiSecret@{RetrieveApiSecret}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{RetrieveApiSecret()}{RetrieveApiSecret()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Retrieve\+Api\+Secret (\begin{DoxyParamCaption}\item[{string}]{secret\+Id,  }\item[{string}]{api\+Key = {\ttfamily null},  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+retrieves info about an api secret at the given id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em secret\+Id} & the id of the secret\\
+\hline
+{\em api\+Key} & \mbox{\hyperlink{namespace_nexmo_1_1_api}{Api}} Key the secret is for\\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_ab9b6915a807959e9372bae3a53f479e4}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
+\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_acbf8d28451d14c0a20d173c92801fb22}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_acbf8d28451d14c0a20d173c92801fb22}} 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!RetrieveApiSecrets@{RetrieveApiSecrets}}
+\index{RetrieveApiSecrets@{RetrieveApiSecrets}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{RetrieveApiSecrets()}{RetrieveApiSecrets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result}{Secrets\+Request\+Result}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Retrieve\+Api\+Secrets (\begin{DoxyParamCaption}\item[{string}]{api\+Key = {\ttfamily null},  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Many of \mbox{\hyperlink{namespace_nexmo}{Nexmo}}\textquotesingle{}s A\+P\+Is are accessed using an A\+PI key and secret. It is recommended that you change or \char`\"{}rotate\char`\"{} your secrets from time to time for security purposes. This section provides the A\+PI interface for achieving this. Note\+: to work on secrets for your secondary accounts, you may authenticate with your primary credentials and supply the secondary A\+PI keys as U\+RL parameters to these A\+PI endpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_a6b4209996c6b53fd596daf27e17d9d49}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ae2a68ea1f7e91416bc89e2244c175d3a}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ae2a68ea1f7e91416bc89e2244c175d3a}} 
-bool {\bfseries Revoke\+Api\+Secret} (string secret\+Id, string api\+Key=null, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!RevokeApiSecret@{RevokeApiSecret}}
+\index{RevokeApiSecret@{RevokeApiSecret}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{RevokeApiSecret()}{RevokeApiSecret()}}
+{\footnotesize\ttfamily bool Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Revoke\+Api\+Secret (\begin{DoxyParamCaption}\item[{string}]{secret\+Id,  }\item[{string}]{api\+Key = {\ttfamily null},  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Deletes an \mbox{\hyperlink{namespace_nexmo_1_1_api}{Api}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_secret}{Secret}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em secret\+Id} & the id of the secret to be deleted\\
+\hline
+{\em api\+Key} & the api key the secret is for\\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_aa15bb420d615cedd87a21e62ef9fc7c9}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
+\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ac0737072b216160331654c985418e963}\label{interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client_ac0737072b216160331654c985418e963}} 
+\index{Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}!TopUpAccountBalance@{TopUpAccountBalance}}
+\index{TopUpAccountBalance@{TopUpAccountBalance}!Nexmo.Api.Accounts.IAccountClient@{Nexmo.Api.Accounts.IAccountClient}}
+\doxysubsubsection{\texorpdfstring{TopUpAccountBalance()}{TopUpAccountBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result}{Top\+Up\+Result}} Nexmo.\+Api.\+Accounts.\+I\+Account\+Client.\+Top\+Up\+Account\+Balance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request}{Top\+Up\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+You can top up your account using this A\+PI when you have enabled auto-\/reload in the dashboard. The amount added by the top-\/up operation will be the same amount as was added in the payment when auto-\/reload was enabled. Your account balance is checked every 5-\/10 minutes and if it falls below the threshold and auto-\/reload is enabled, then it will be topped up automatically. Use this endpoint if you need to top up at times when your credit may be exhausted more quickly than the auto-\/reload may occur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_accounts_1_1_account_client_a568dabb04494d7fe49cccce1c2a8973c}{Nexmo.\+Api.\+Accounts.\+Account\+Client}}.
+
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -87,13 +87,94 @@ Inheritance diagram for Nexmo.Api.Conversions.IConversionClient:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3e04d6fd702c3d44fd971542c8ecd9f"><td class="memItemLeft" align="right" valign="top"><a id="af3e04d6fd702c3d44fd971542c8ecd9f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SmsConversion</b> (<a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:af3e04d6fd702c3d44fd971542c8ecd9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client.html#af3e04d6fd702c3d44fd971542c8ecd9f">SmsConversion</a> (<a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:af3e04d6fd702c3d44fd971542c8ecd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Conversion API request with information about the SMS message identified by message-id. <a class="el" href="namespace_nexmo.html">Nexmo</a> uses your conversion data and internal information about message-id to help improve our routing of messages in the future.  <a href="interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client.html#af3e04d6fd702c3d44fd971542c8ecd9f">More...</a><br /></td></tr>
 <tr class="separator:af3e04d6fd702c3d44fd971542c8ecd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac5fc6f6645d68b2e99dd6ccd2b3e35"><td class="memItemLeft" align="right" valign="top"><a id="a3ac5fc6f6645d68b2e99dd6ccd2b3e35"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>VoiceConversion</b> (<a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:a3ac5fc6f6645d68b2e99dd6ccd2b3e35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client.html#a3ac5fc6f6645d68b2e99dd6ccd2b3e35">VoiceConversion</a> (<a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:a3ac5fc6f6645d68b2e99dd6ccd2b3e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Conversion API request with information about the Call or Text-To-Speech identified by message-id. <a class="el" href="namespace_nexmo.html">Nexmo</a> uses your conversion data and internal information about message-id to help improve our routing of messages in the future.  <a href="interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client.html#a3ac5fc6f6645d68b2e99dd6ccd2b3e35">More...</a><br /></td></tr>
 <tr class="separator:a3ac5fc6f6645d68b2e99dd6ccd2b3e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af3e04d6fd702c3d44fd971542c8ecd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e04d6fd702c3d44fd971542c8ecd9f">&#9670;&nbsp;</a></span>SmsConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nexmo.Api.Conversions.IConversionClient.SmsConversion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a Conversion API request with information about the SMS message identified by message-id. <a class="el" href="namespace_nexmo.html">Nexmo</a> uses your conversion data and internal information about message-id to help improve our routing of messages in the future. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client.html#af3c83fc3f8ed5634c0bd1cd54374723d">Nexmo.Api.Conversions.ConversionClient</a>.</p>
+
+</div>
+</div>
+<a id="a3ac5fc6f6645d68b2e99dd6ccd2b3e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac5fc6f6645d68b2e99dd6ccd2b3e35">&#9670;&nbsp;</a></span>VoiceConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nexmo.Api.Conversions.IConversionClient.VoiceConversion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request.html">ConversionRequest</a>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a Conversion API request with information about the Call or Text-To-Speech identified by message-id. <a class="el" href="namespace_nexmo.html">Nexmo</a> uses your conversion data and internal information about message-id to help improve our routing of messages in the future. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client.html#a888e8e8d62a79a719c57d6b3444f70a7">Nexmo.Api.Conversions.ConversionClient</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Conversions/IConversionClient.cs</li>
 </ul>

@@ -9,22 +9,70 @@ Inheritance diagram for Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action\+:\begin{figu
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a54e600542486c7839e15338c0de7a2ef}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a54e600542486c7839e15338c0de7a2ef}} 
-string {\bfseries Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a63b523dbb3541b939e45f40cd9912960}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a63b523dbb3541b939e45f40cd9912960}} 
-string {\bfseries Barge\+In}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a86264b4e595ffefc57da830aa8424de3}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a86264b4e595ffefc57da830aa8424de3}} 
-string {\bfseries Loop}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a3ab1831572cbad7a7e12988abe512f61}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a3ab1831572cbad7a7e12988abe512f61}} 
-string {\bfseries Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a4c56a9d5e7e7dc330327a90649190757}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a4c56a9d5e7e7dc330327a90649190757}} 
-string {\bfseries Voice\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a54e600542486c7839e15338c0de7a2ef}{Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A string of up to 1,500 characters (excluding S\+S\+ML tags) containing the message to be synthesized in the Call or Conversation. A single comma in text adds a short pause to the synthesized speech. To add a longer pause a break tag needs to be used in S\+S\+ML. To use S\+S\+ML tags, you must enclose the text in a speak element. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a63b523dbb3541b939e45f40cd9912960}{Barge\+In}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} Response (I\+VR ). If you set barge\+In to true on one more Stream actions then the next non-\/stream action in the N\+C\+CO stack must be an input action. The default value is false. Once barge\+In is set to true it will stay true (even if barge\+In\+: false is set in a following action) until an input action is encountered \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a86264b4e595ffefc57da830aa8424de3}{Loop}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of times text is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a3ab1831572cbad7a7e12988abe512f61}{Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The volume level that the speech is played. This can be any value between -\/1 to 1 with 0 being the default. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a4c56a9d5e7e7dc330327a90649190757}{Voice\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the voice used to deliver text. You use the voice\+Name that has the correct language, gender and accent for the message you are sending. For example, the default voice kimberly is a female who speaks English with an American accent (en-\/\+US). Possible values are listed in the Text-\/\+To-\/\+Speech guide. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a63b523dbb3541b939e45f40cd9912960}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a63b523dbb3541b939e45f40cd9912960}} 
+\index{Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}!BargeIn@{BargeIn}}
+\index{BargeIn@{BargeIn}!Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}}
+\doxysubsubsection{\texorpdfstring{BargeIn}{BargeIn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action.\+Barge\+In\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} Response (I\+VR ). If you set barge\+In to true on one more Stream actions then the next non-\/stream action in the N\+C\+CO stack must be an input action. The default value is false. Once barge\+In is set to true it will stay true (even if barge\+In\+: false is set in a following action) until an input action is encountered 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a3ab1831572cbad7a7e12988abe512f61}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a3ab1831572cbad7a7e12988abe512f61}} 
+\index{Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}!Level@{Level}}
+\index{Level@{Level}!Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action.\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The volume level that the speech is played. This can be any value between -\/1 to 1 with 0 being the default. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a86264b4e595ffefc57da830aa8424de3}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a86264b4e595ffefc57da830aa8424de3}} 
+\index{Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}!Loop@{Loop}}
+\index{Loop@{Loop}!Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}}
+\doxysubsubsection{\texorpdfstring{Loop}{Loop}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action.\+Loop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of times text is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a54e600542486c7839e15338c0de7a2ef}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a54e600542486c7839e15338c0de7a2ef}} 
+\index{Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}!Text@{Text}}
+\index{Text@{Text}!Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action.\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A string of up to 1,500 characters (excluding S\+S\+ML tags) containing the message to be synthesized in the Call or Conversation. A single comma in text adds a short pause to the synthesized speech. To add a longer pause a break tag needs to be used in S\+S\+ML. To use S\+S\+ML tags, you must enclose the text in a speak element. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a4c56a9d5e7e7dc330327a90649190757}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_talk_action_a4c56a9d5e7e7dc330327a90649190757}} 
+\index{Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}!VoiceName@{VoiceName}}
+\index{VoiceName@{VoiceName}!Nexmo.Api.Voice.Nccos.TalkAction@{Nexmo.Api.Voice.Nccos.TalkAction}}
+\doxysubsubsection{\texorpdfstring{VoiceName}{VoiceName}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Talk\+Action.\+Voice\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the voice used to deliver text. You use the voice\+Name that has the correct language, gender and accent for the message you are sending. For example, the default voice kimberly is a female who speaks English with an American accent (en-\/\+US). Possible values are listed in the Text-\/\+To-\/\+Speech guide. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

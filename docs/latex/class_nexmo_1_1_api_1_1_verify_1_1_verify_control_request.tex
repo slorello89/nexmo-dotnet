@@ -3,12 +3,33 @@
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a28ea52e99d281f2cff25d702a7597ddd}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a28ea52e99d281f2cff25d702a7597ddd}} 
-string {\bfseries Request\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a28ea52e99d281f2cff25d702a7597ddd}{Request\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The request\+\_\+id you received in the response to the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a805c4a5eb336d850511797e4bf91b682}{Cmd}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The possible commands are cancel to request cancellation of the verification process, or trigger\+\_\+next\+\_\+event to advance to the next verification event (if any). Cancellation is only possible 30 seconds after the start of the verification request and before the second event (either T\+TS or S\+MS) has taken place. must be one of \textquotesingle{}cancel\textquotesingle{} or \textquotesingle{}trigger\+\_\+next\+\_\+event\textquotesingle{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a805c4a5eb336d850511797e4bf91b682}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a805c4a5eb336d850511797e4bf91b682}} 
-string {\bfseries Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Verify.VerifyControlRequest@{Nexmo.Api.Verify.VerifyControlRequest}!Cmd@{Cmd}}
+\index{Cmd@{Cmd}!Nexmo.Api.Verify.VerifyControlRequest@{Nexmo.Api.Verify.VerifyControlRequest}}
+\doxysubsubsection{\texorpdfstring{Cmd}{Cmd}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Control\+Request.\+Cmd\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The possible commands are cancel to request cancellation of the verification process, or trigger\+\_\+next\+\_\+event to advance to the next verification event (if any). Cancellation is only possible 30 seconds after the start of the verification request and before the second event (either T\+TS or S\+MS) has taken place. must be one of \textquotesingle{}cancel\textquotesingle{} or \textquotesingle{}trigger\+\_\+next\+\_\+event\textquotesingle{} 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a28ea52e99d281f2cff25d702a7597ddd}\label{class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request_a28ea52e99d281f2cff25d702a7597ddd}} 
+\index{Nexmo.Api.Verify.VerifyControlRequest@{Nexmo.Api.Verify.VerifyControlRequest}!RequestId@{RequestId}}
+\index{RequestId@{RequestId}!Nexmo.Api.Verify.VerifyControlRequest@{Nexmo.Api.Verify.VerifyControlRequest}}
+\doxysubsubsection{\texorpdfstring{RequestId}{RequestId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Verify.\+Verify\+Control\+Request.\+Request\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The request\+\_\+id you received in the response to the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

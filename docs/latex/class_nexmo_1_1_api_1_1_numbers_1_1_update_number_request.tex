@@ -3,30 +3,105 @@
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_abb3a55d62cd60b3026ae78f1b35955ff}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_abb3a55d62cd60b3026ae78f1b35955ff}} 
-string {\bfseries Country}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac2e72766e292418544d0fe8d776abb35}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac2e72766e292418544d0fe8d776abb35}} 
-string {\bfseries Msisdn}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_abb3a55d62cd60b3026ae78f1b35955ff}{Country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The two character country code in I\+SO 3166-\/1 alpha-\/2 format \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac2e72766e292418544d0fe8d776abb35}{Msisdn}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An available inbound virtual number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac6011ee398ac891273e483da72da4ae7}{App\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Application that will handle inbound traffic to this number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a76cb3e719197c1b55c66f4e19c6ebb39}{Mo\+Http\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An U\+R\+L-\/encoded U\+RI to the webhook endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} makes a G\+ET request to the endpoint and checks that it returns a 200 OK response. Set this parameter\textquotesingle{}s value to an empty string to remove the webhook. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a60b1db8985bc2fcd01d1195b161d6a5e}{Mo\+Smpp\+Sys\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The associated system type for your S\+M\+PP client \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ab794f35ece79c2ffe48d26bd4f778d15}{Voice\+Callback\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specify whether inbound voice calls on your number are forwarded to a S\+IP or a telephone number. This must be used with the voice\+Callback\+Value parameter. If set, sip or tel are prioritized over the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} capability in your Application. Note\+: The app value is deprecated and will be removed in future. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ad05bb1fa1ee4fa0968c6334c7acb4a5c}{Voice\+Callback\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A S\+IP U\+RI or telephone number. Must be used with the voice\+Callback\+Type parameter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a3d5e054aa9990b9db0dd885387c80d4b}{Voice\+Status\+Callback}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A webhook U\+RI for \mbox{\hyperlink{namespace_nexmo}{Nexmo}} to send a request to when a call ends \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac6011ee398ac891273e483da72da4ae7}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac6011ee398ac891273e483da72da4ae7}} 
-string {\bfseries App\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!AppId@{AppId}}
+\index{AppId@{AppId}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{AppId}{AppId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+App\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Application that will handle inbound traffic to this number. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_abb3a55d62cd60b3026ae78f1b35955ff}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_abb3a55d62cd60b3026ae78f1b35955ff}} 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!Country@{Country}}
+\index{Country@{Country}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{Country}{Country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The two character country code in I\+SO 3166-\/1 alpha-\/2 format 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a76cb3e719197c1b55c66f4e19c6ebb39}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a76cb3e719197c1b55c66f4e19c6ebb39}} 
-string {\bfseries Mo\+Http\+Url}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!MoHttpUrl@{MoHttpUrl}}
+\index{MoHttpUrl@{MoHttpUrl}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{MoHttpUrl}{MoHttpUrl}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Mo\+Http\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An U\+R\+L-\/encoded U\+RI to the webhook endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} makes a G\+ET request to the endpoint and checks that it returns a 200 OK response. Set this parameter\textquotesingle{}s value to an empty string to remove the webhook. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a60b1db8985bc2fcd01d1195b161d6a5e}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a60b1db8985bc2fcd01d1195b161d6a5e}} 
-string {\bfseries Mo\+Smpp\+Sys\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!MoSmppSysType@{MoSmppSysType}}
+\index{MoSmppSysType@{MoSmppSysType}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{MoSmppSysType}{MoSmppSysType}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Mo\+Smpp\+Sys\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The associated system type for your S\+M\+PP client 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac2e72766e292418544d0fe8d776abb35}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ac2e72766e292418544d0fe8d776abb35}} 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!Msisdn@{Msisdn}}
+\index{Msisdn@{Msisdn}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{Msisdn}{Msisdn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Msisdn\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An available inbound virtual number. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ab794f35ece79c2ffe48d26bd4f778d15}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ab794f35ece79c2ffe48d26bd4f778d15}} 
-string {\bfseries Voice\+Callback\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!VoiceCallbackType@{VoiceCallbackType}}
+\index{VoiceCallbackType@{VoiceCallbackType}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{VoiceCallbackType}{VoiceCallbackType}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Voice\+Callback\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specify whether inbound voice calls on your number are forwarded to a S\+IP or a telephone number. This must be used with the voice\+Callback\+Value parameter. If set, sip or tel are prioritized over the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Voice}} capability in your Application. Note\+: The app value is deprecated and will be removed in future. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ad05bb1fa1ee4fa0968c6334c7acb4a5c}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_ad05bb1fa1ee4fa0968c6334c7acb4a5c}} 
-string {\bfseries Voice\+Callback\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!VoiceCallbackValue@{VoiceCallbackValue}}
+\index{VoiceCallbackValue@{VoiceCallbackValue}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{VoiceCallbackValue}{VoiceCallbackValue}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Voice\+Callback\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A S\+IP U\+RI or telephone number. Must be used with the voice\+Callback\+Type parameter. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a3d5e054aa9990b9db0dd885387c80d4b}\label{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request_a3d5e054aa9990b9db0dd885387c80d4b}} 
-string {\bfseries Voice\+Status\+Callback}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}!VoiceStatusCallback@{VoiceStatusCallback}}
+\index{VoiceStatusCallback@{VoiceStatusCallback}!Nexmo.Api.Numbers.UpdateNumberRequest@{Nexmo.Api.Numbers.UpdateNumberRequest}}
+\doxysubsubsection{\texorpdfstring{VoiceStatusCallback}{VoiceStatusCallback}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Update\+Number\+Request.\+Voice\+Status\+Callback\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A webhook U\+RI for \mbox{\hyperlink{namespace_nexmo}{Nexmo}} to send a request to when a call ends 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

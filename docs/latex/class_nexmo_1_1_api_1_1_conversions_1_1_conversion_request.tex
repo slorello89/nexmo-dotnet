@@ -3,15 +3,48 @@
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a350f2ed7941bec95986278b6b75aab9e}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a350f2ed7941bec95986278b6b75aab9e}} 
-string {\bfseries Message\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a350f2ed7941bec95986278b6b75aab9e}{Message\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ID you receive in the response to a request. $\ast$ From the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} A\+PI -\/ use the event\+\_\+id in the response to \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} Check. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a558b25e79b008708f193d184902da1d9}{Delivered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to true if your user replied to the message you sent. Otherwise, set to false. Note\+: for curl, use 0 and 1. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_ae9ed11fa67adf222681ffcb97354007d}{Time\+Stamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When the user completed your call-\/to-\/action (e.\+g. visited your website, installed your app) in U\+T\+C±00\+:00 format\+: yyyy-\/\+M\+M-\/dd H\+H\+:mm\+:ss. If you do not set this parameter, \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses the time it receives this request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a558b25e79b008708f193d184902da1d9}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a558b25e79b008708f193d184902da1d9}} 
-string {\bfseries Delivered}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_ae9ed11fa67adf222681ffcb97354007d}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_ae9ed11fa67adf222681ffcb97354007d}} 
-string {\bfseries Time\+Stamp}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}!Delivered@{Delivered}}
+\index{Delivered@{Delivered}!Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}}
+\doxysubsubsection{\texorpdfstring{Delivered}{Delivered}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Conversions.\+Conversion\+Request.\+Delivered\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to true if your user replied to the message you sent. Otherwise, set to false. Note\+: for curl, use 0 and 1. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a350f2ed7941bec95986278b6b75aab9e}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_a350f2ed7941bec95986278b6b75aab9e}} 
+\index{Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}!MessageId@{MessageId}}
+\index{MessageId@{MessageId}!Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}}
+\doxysubsubsection{\texorpdfstring{MessageId}{MessageId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Conversions.\+Conversion\+Request.\+Message\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The ID you receive in the response to a request. $\ast$ From the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} A\+PI -\/ use the event\+\_\+id in the response to \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} Check. 
+
+
+\begin{DoxyItemize}
+\item From the S\+MS A\+PI -\/ use the message-\/id $\ast$ From the Text-\/\+To-\/\+Speech A\+PI -\/ use the call-\/id $\ast$ From the Text-\/\+To-\/\+Speech-\/\+Prompt A\+PI -\/ use the call-\/id
+\end{DoxyItemize}\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_ae9ed11fa67adf222681ffcb97354007d}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request_ae9ed11fa67adf222681ffcb97354007d}} 
+\index{Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!Nexmo.Api.Conversions.ConversionRequest@{Nexmo.Api.Conversions.ConversionRequest}}
+\doxysubsubsection{\texorpdfstring{TimeStamp}{TimeStamp}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Conversions.\+Conversion\+Request.\+Time\+Stamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When the user completed your call-\/to-\/action (e.\+g. visited your website, installed your app) in U\+T\+C±00\+:00 format\+: yyyy-\/\+M\+M-\/dd H\+H\+:mm\+:ss. If you do not set this parameter, \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses the time it receives this request. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

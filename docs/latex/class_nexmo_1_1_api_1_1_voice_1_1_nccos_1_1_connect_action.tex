@@ -9,34 +9,118 @@ Inheritance diagram for Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action\+:\begin{f
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a310c63301c3ba1fc04a2809e8faa8b54}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a310c63301c3ba1fc04a2809e8faa8b54}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_endpoint}{Endpoint}}\mbox{[}$\,$\mbox{]} {\bfseries Endpoint}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6b095222ec5b84be9a32c12b2f6d2ecc}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6b095222ec5b84be9a32c12b2f6d2ecc}} 
-string {\bfseries From}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6920a9244a91c30675691c9b8e270690}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6920a9244a91c30675691c9b8e270690}} 
-string {\bfseries Event\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a0d23722ddc122e712867f75448d974eb}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a0d23722ddc122e712867f75448d974eb}} 
-string {\bfseries Timeout}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6014b42ea1bca05c7613d05ecdfd3145}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6014b42ea1bca05c7613d05ecdfd3145}} 
-string {\bfseries Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a5fe463d1c10d488d0a3818a26a7dffd2}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a5fe463d1c10d488d0a3818a26a7dffd2}} 
-string {\bfseries Machine\+Detection}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acd342e9a432f178183ffaad978e517df}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acd342e9a432f178183ffaad978e517df}} 
-string\mbox{[}$\,$\mbox{]} {\bfseries Event\+Url}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acf1d0f7b458622f08a828532c5592536}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acf1d0f7b458622f08a828532c5592536}} 
-string {\bfseries Event\+Method}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a2f65c4614dd68b2f7da615283e1c2b9b}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a2f65c4614dd68b2f7da615283e1c2b9b}} 
-string {\bfseries Ringback\+Tone}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_endpoint}{Endpoint}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a310c63301c3ba1fc04a2809e8faa8b54}{Endpoint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Connect to a single endpoint. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6b095222ec5b84be9a32c12b2f6d2ecc}{From}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A number in E.\+164 format that identifies the caller. This must be one of your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} virtual numbers, another value will result in the caller ID being unknown. If the caller is an app user, this option should be omitted. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6920a9244a91c30675691c9b8e270690}{Event\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to synchronous to\+: make the connect action synchronous enable event\+Url to return an N\+C\+CO that overrides the current N\+C\+CO when a call moves to specific states. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a0d23722ddc122e712867f75448d974eb}{Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the call is unanswered, set the number in seconds before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} stops ringing endpoint. The default value is 60. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6014b42ea1bca05c7613d05ecdfd3145}{Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum length of the call in seconds. The default and maximum value is 7200 seconds (2 hours). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a5fe463d1c10d488d0a3818a26a7dffd2}{Machine\+Detection}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Configure the behavior when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} detects that a destination is an answerphone. Set to either\+: continue -\/ \mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends an H\+T\+TP request to event\+\_\+url with the Call event machine hangup -\/ end the Call \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acd342e9a432f178183ffaad978e517df}{Event\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set the webhook endpoint that \mbox{\hyperlink{namespace_nexmo}{Nexmo}} calls asynchronously on each of the possible Call States. If event\+Type is set to synchronous the event\+Url can return an N\+C\+CO that overrides the current N\+C\+CO when a timeout occurs. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acf1d0f7b458622f08a828532c5592536}{Event\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The H\+T\+TP method \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses to make the request to event\+Url. The default value is P\+O\+ST. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a2f65c4614dd68b2f7da615283e1c2b9b}{Ringback\+Tone}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A U\+RL value that points to a ringback\+Tone to be played back on repeat to the caller, so they don\textquotesingle{}t hear silence. The ringback\+Tone will automatically stop playing when the call is fully connected. It\textquotesingle{}s not recommended to use this parameter when connecting to a phone endpoint, as the carrier will supply their own ringback\+Tone. Example\+: \char`\"{}ringback\+Tone\char`\"{}\+: \char`\"{}http\+://example.\+com/ringback\+Tone.\+wav\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a310c63301c3ba1fc04a2809e8faa8b54}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a310c63301c3ba1fc04a2809e8faa8b54}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!Endpoint@{Endpoint}}
+\index{Endpoint@{Endpoint}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{Endpoint}{Endpoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_endpoint}{Endpoint}} \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Endpoint\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Connect to a single endpoint. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acf1d0f7b458622f08a828532c5592536}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acf1d0f7b458622f08a828532c5592536}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!EventMethod@{EventMethod}}
+\index{EventMethod@{EventMethod}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{EventMethod}{EventMethod}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Event\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The H\+T\+TP method \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses to make the request to event\+Url. The default value is P\+O\+ST. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6920a9244a91c30675691c9b8e270690}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6920a9244a91c30675691c9b8e270690}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!EventType@{EventType}}
+\index{EventType@{EventType}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{EventType}{EventType}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Event\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to synchronous to\+: make the connect action synchronous enable event\+Url to return an N\+C\+CO that overrides the current N\+C\+CO when a call moves to specific states. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acd342e9a432f178183ffaad978e517df}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_acd342e9a432f178183ffaad978e517df}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!EventUrl@{EventUrl}}
+\index{EventUrl@{EventUrl}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{EventUrl}{EventUrl}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Event\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set the webhook endpoint that \mbox{\hyperlink{namespace_nexmo}{Nexmo}} calls asynchronously on each of the possible Call States. If event\+Type is set to synchronous the event\+Url can return an N\+C\+CO that overrides the current N\+C\+CO when a timeout occurs. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6b095222ec5b84be9a32c12b2f6d2ecc}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6b095222ec5b84be9a32c12b2f6d2ecc}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!From@{From}}
+\index{From@{From}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{From}{From}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+From\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A number in E.\+164 format that identifies the caller. This must be one of your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} virtual numbers, another value will result in the caller ID being unknown. If the caller is an app user, this option should be omitted. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6014b42ea1bca05c7613d05ecdfd3145}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a6014b42ea1bca05c7613d05ecdfd3145}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!Limit@{Limit}}
+\index{Limit@{Limit}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{Limit}{Limit}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Limit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximum length of the call in seconds. The default and maximum value is 7200 seconds (2 hours). 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a5fe463d1c10d488d0a3818a26a7dffd2}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a5fe463d1c10d488d0a3818a26a7dffd2}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!MachineDetection@{MachineDetection}}
+\index{MachineDetection@{MachineDetection}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{MachineDetection}{MachineDetection}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Machine\+Detection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Configure the behavior when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} detects that a destination is an answerphone. Set to either\+: continue -\/ \mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends an H\+T\+TP request to event\+\_\+url with the Call event machine hangup -\/ end the Call 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a2f65c4614dd68b2f7da615283e1c2b9b}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a2f65c4614dd68b2f7da615283e1c2b9b}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!RingbackTone@{RingbackTone}}
+\index{RingbackTone@{RingbackTone}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{RingbackTone}{RingbackTone}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Ringback\+Tone\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A U\+RL value that points to a ringback\+Tone to be played back on repeat to the caller, so they don\textquotesingle{}t hear silence. The ringback\+Tone will automatically stop playing when the call is fully connected. It\textquotesingle{}s not recommended to use this parameter when connecting to a phone endpoint, as the carrier will supply their own ringback\+Tone. Example\+: \char`\"{}ringback\+Tone\char`\"{}\+: \char`\"{}http\+://example.\+com/ringback\+Tone.\+wav\char`\"{}. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a0d23722ddc122e712867f75448d974eb}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_connect_action_a0d23722ddc122e712867f75448d974eb}} 
+\index{Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}!Timeout@{Timeout}}
+\index{Timeout@{Timeout}!Nexmo.Api.Voice.Nccos.ConnectAction@{Nexmo.Api.Voice.Nccos.ConnectAction}}
+\doxysubsubsection{\texorpdfstring{Timeout}{Timeout}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Connect\+Action.\+Timeout\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If the call is unanswered, set the number in seconds before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} stops ringing endpoint. The default value is 60. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

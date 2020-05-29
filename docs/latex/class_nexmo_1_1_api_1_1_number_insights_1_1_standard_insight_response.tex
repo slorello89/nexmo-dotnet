@@ -9,42 +9,153 @@ Inheritance diagram for Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Resp
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a309919cf89dc6b003c02611858c1e5a3}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a309919cf89dc6b003c02611858c1e5a3}} 
-string {\bfseries Request\+Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aee7e3bd438c079f7ac938e28c600041b}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aee7e3bd438c079f7ac938e28c600041b}} 
-string {\bfseries Refund\+Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a8a1e4035a950fbdf7d2452742853b5b4}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a8a1e4035a950fbdf7d2452742853b5b4}} 
-string {\bfseries Remaining\+Balance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a69ae10844269b0e53fc37bdb3bdf4ff0}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a69ae10844269b0e53fc37bdb3bdf4ff0}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} {\bfseries Current\+Carrier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a4c98a50a38e10bcb036b622abdafa206}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a4c98a50a38e10bcb036b622abdafa206}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} {\bfseries Original\+Carrier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a41252aec29b035886ecae7baf58e9bbb}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a41252aec29b035886ecae7baf58e9bbb}} 
-string {\bfseries Ported}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a94899372201fff442d7eb5a3db420660}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a94899372201fff442d7eb5a3db420660}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_roaming}{Roaming}} {\bfseries Roaming}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a309919cf89dc6b003c02611858c1e5a3}{Request\+Price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The amount in E\+UR charged to your account. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aee7e3bd438c079f7ac938e28c600041b}{Refund\+Price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If there is an internal lookup error, the refund\+\_\+price will reflect the lookup price. If cnam is requested for a non-\/\+US number the refund\+\_\+price will reflect the cnam price. If both of these conditions occur, refund\+\_\+price is the sum of the lookup price and cnam price. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a8a1e4035a950fbdf7d2452742853b5b4}{Remaining\+Balance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Your account balance in E\+UR after this request. Not returned with Number Insight Advanced Async A\+PI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a69ae10844269b0e53fc37bdb3bdf4ff0}{Current\+Carrier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Information about the network number is currently connected to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a4c98a50a38e10bcb036b622abdafa206}{Original\+Carrier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Information about the network number is currently connected to. \end{DoxyCompactList}\item 
+Ported\+Status \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ac5cb5c209b6e1d5c643e56f0e85058a6}{Ported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the user has changed carrier for number. The assumed status means that the information supplier has replied to the request but has not said explicitly that the number is ported. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_roaming}{Roaming}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a94899372201fff442d7eb5a3db420660}{Roaming}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Information about the roaming status for number. This is applicable to mobile numbers only. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_caller_id}{Caller\+Id}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aba90e0472f7dd44d3abc6e01047a49cd}{Caller\+Identity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Information about the network number is currently connected to. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ad43f9e64f6813de41b2eff70bbb1d786}{Caller\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Full name of the person or business who owns the phone number. Unknown if this information is not available. This parameter is only present if cnam had a value of true within the request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a0bee65b5571f82998dc0801896db811d}{Last\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Last name of the person who owns the phone number if the owner is an individual. This parameter is only present if cnam had a value of true within the request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a5dd8b1cf8788b498c507d5c0b82fc21a}{First\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em First name of the person who owns the phone number if the owner is an individual. This parameter is only present if cnam had a value of true within the request. \end{DoxyCompactList}\item 
+Caller\+Type \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_add6386e59f8015be20f483e49f52d4fb}{Caller\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value will be business if the owner of a phone number is a business. If the owner is an individual the value will be consumer. The value will be unknown if this information is not available. This parameter is only present if cnam had a value of true within the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aba90e0472f7dd44d3abc6e01047a49cd}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aba90e0472f7dd44d3abc6e01047a49cd}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_caller_id}{Caller\+Id}} {\bfseries Caller\+Identity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!CallerIdentity@{CallerIdentity}}
+\index{CallerIdentity@{CallerIdentity}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{CallerIdentity}{CallerIdentity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_caller_id}{Caller\+Id}} Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Caller\+Identity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Information about the network number is currently connected to. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ad43f9e64f6813de41b2eff70bbb1d786}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ad43f9e64f6813de41b2eff70bbb1d786}} 
-string {\bfseries Caller\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a0bee65b5571f82998dc0801896db811d}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a0bee65b5571f82998dc0801896db811d}} 
-string {\bfseries Last\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!CallerName@{CallerName}}
+\index{CallerName@{CallerName}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{CallerName}{CallerName}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Caller\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Full name of the person or business who owns the phone number. Unknown if this information is not available. This parameter is only present if cnam had a value of true within the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_add6386e59f8015be20f483e49f52d4fb}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_add6386e59f8015be20f483e49f52d4fb}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!CallerType@{CallerType}}
+\index{CallerType@{CallerType}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{CallerType}{CallerType}}
+{\footnotesize\ttfamily Caller\+Type Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Caller\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value will be business if the owner of a phone number is a business. If the owner is an individual the value will be consumer. The value will be unknown if this information is not available. This parameter is only present if cnam had a value of true within the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a69ae10844269b0e53fc37bdb3bdf4ff0}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a69ae10844269b0e53fc37bdb3bdf4ff0}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!CurrentCarrier@{CurrentCarrier}}
+\index{CurrentCarrier@{CurrentCarrier}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{CurrentCarrier}{CurrentCarrier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Current\+Carrier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Information about the network number is currently connected to. 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a5dd8b1cf8788b498c507d5c0b82fc21a}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a5dd8b1cf8788b498c507d5c0b82fc21a}} 
-string {\bfseries First\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ac86246da607073c2d54cb16328f181a9}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ac86246da607073c2d54cb16328f181a9}} 
-string {\bfseries Caller\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!FirstName@{FirstName}}
+\index{FirstName@{FirstName}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{FirstName}{FirstName}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+First\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+First name of the person who owns the phone number if the owner is an individual. This parameter is only present if cnam had a value of true within the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a0bee65b5571f82998dc0801896db811d}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a0bee65b5571f82998dc0801896db811d}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!LastName@{LastName}}
+\index{LastName@{LastName}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{LastName}{LastName}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Last\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Last name of the person who owns the phone number if the owner is an individual. This parameter is only present if cnam had a value of true within the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a4c98a50a38e10bcb036b622abdafa206}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a4c98a50a38e10bcb036b622abdafa206}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!OriginalCarrier@{OriginalCarrier}}
+\index{OriginalCarrier@{OriginalCarrier}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{OriginalCarrier}{OriginalCarrier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_carrier}{Carrier}} Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Original\+Carrier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Information about the network number is currently connected to. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ac5cb5c209b6e1d5c643e56f0e85058a6}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_ac5cb5c209b6e1d5c643e56f0e85058a6}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!Ported@{Ported}}
+\index{Ported@{Ported}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{Ported}{Ported}}
+{\footnotesize\ttfamily Ported\+Status Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Ported\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If the user has changed carrier for number. The assumed status means that the information supplier has replied to the request but has not said explicitly that the number is ported. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aee7e3bd438c079f7ac938e28c600041b}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_aee7e3bd438c079f7ac938e28c600041b}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!RefundPrice@{RefundPrice}}
+\index{RefundPrice@{RefundPrice}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{RefundPrice}{RefundPrice}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Refund\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If there is an internal lookup error, the refund\+\_\+price will reflect the lookup price. If cnam is requested for a non-\/\+US number the refund\+\_\+price will reflect the cnam price. If both of these conditions occur, refund\+\_\+price is the sum of the lookup price and cnam price. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a8a1e4035a950fbdf7d2452742853b5b4}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a8a1e4035a950fbdf7d2452742853b5b4}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!RemainingBalance@{RemainingBalance}}
+\index{RemainingBalance@{RemainingBalance}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{RemainingBalance}{RemainingBalance}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Remaining\+Balance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Your account balance in E\+UR after this request. Not returned with Number Insight Advanced Async A\+PI. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a309919cf89dc6b003c02611858c1e5a3}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a309919cf89dc6b003c02611858c1e5a3}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!RequestPrice@{RequestPrice}}
+\index{RequestPrice@{RequestPrice}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{RequestPrice}{RequestPrice}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Request\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The amount in E\+UR charged to your account. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a94899372201fff442d7eb5a3db420660}\label{class_nexmo_1_1_api_1_1_number_insights_1_1_standard_insight_response_a94899372201fff442d7eb5a3db420660}} 
+\index{Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}!Roaming@{Roaming}}
+\index{Roaming@{Roaming}!Nexmo.Api.NumberInsights.StandardInsightResponse@{Nexmo.Api.NumberInsights.StandardInsightResponse}}
+\doxysubsubsection{\texorpdfstring{Roaming}{Roaming}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insights_1_1_roaming}{Roaming}} Nexmo.\+Api.\+Number\+Insights.\+Standard\+Insight\+Response.\+Roaming\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Information about the roaming status for number. This is applicable to mobile numbers only. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

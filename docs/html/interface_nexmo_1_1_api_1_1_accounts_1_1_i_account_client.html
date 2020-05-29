@@ -87,28 +87,323 @@ Inheritance diagram for Nexmo.Api.Accounts.IAccountClient:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5fc7d232f5255a298d157f051408687b"><td class="memItemLeft" align="right" valign="top"><a id="a5fc7d232f5255a298d157f051408687b"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_balance.html">Balance</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccountBalance</b> (<a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:a5fc7d232f5255a298d157f051408687b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_balance.html">Balance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a5fc7d232f5255a298d157f051408687b">GetAccountBalance</a> (<a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:a5fc7d232f5255a298d157f051408687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current balance of your <a class="el" href="namespace_nexmo.html">Nexmo</a> account  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a5fc7d232f5255a298d157f051408687b">More...</a><br /></td></tr>
 <tr class="separator:a5fc7d232f5255a298d157f051408687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0737072b216160331654c985418e963"><td class="memItemLeft" align="right" valign="top"><a id="ac0737072b216160331654c985418e963"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result.html">TopUpResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TopUpAccountBalance</b> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request.html">TopUpRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:ac0737072b216160331654c985418e963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result.html">TopUpResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#ac0737072b216160331654c985418e963">TopUpAccountBalance</a> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request.html">TopUpRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:ac0737072b216160331654c985418e963"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can top up your account using this API when you have enabled auto-reload in the dashboard. The amount added by the top-up operation will be the same amount as was added in the payment when auto-reload was enabled. Your account balance is checked every 5-10 minutes and if it falls below the threshold and auto-reload is enabled, then it will be topped up automatically. Use this endpoint if you need to top up at times when your credit may be exhausted more quickly than the auto-reload may occur.  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#ac0737072b216160331654c985418e963">More...</a><br /></td></tr>
 <tr class="separator:ac0737072b216160331654c985418e963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999bd518927cc500ad5866bbf2bcbdbf"><td class="memItemLeft" align="right" valign="top"><a id="a999bd518927cc500ad5866bbf2bcbdbf"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result.html">AccountSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeAccountSettings</b> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request.html">AccountSettingsRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:a999bd518927cc500ad5866bbf2bcbdbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result.html">AccountSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a999bd518927cc500ad5866bbf2bcbdbf">ChangeAccountSettings</a> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request.html">AccountSettingsRequest</a> request, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:a999bd518927cc500ad5866bbf2bcbdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the default callback URLs (where the webhooks are sent to) associated with your account:  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a999bd518927cc500ad5866bbf2bcbdbf">More...</a><br /></td></tr>
 <tr class="separator:a999bd518927cc500ad5866bbf2bcbdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf8d28451d14c0a20d173c92801fb22"><td class="memItemLeft" align="right" valign="top"><a id="acbf8d28451d14c0a20d173c92801fb22"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result.html">SecretsRequestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveApiSecrets</b> (string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:acbf8d28451d14c0a20d173c92801fb22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result.html">SecretsRequestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#acbf8d28451d14c0a20d173c92801fb22">RetrieveApiSecrets</a> (string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:acbf8d28451d14c0a20d173c92801fb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Many of <a class="el" href="namespace_nexmo.html">Nexmo</a>'s APIs are accessed using an API key and secret. It is recommended that you change or "rotate" your secrets from time to time for security purposes. This section provides the API interface for achieving this. Note: to work on secrets for your secondary accounts, you may authenticate with your primary credentials and supply the secondary API keys as URL parameters to these API endpoints.  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#acbf8d28451d14c0a20d173c92801fb22">More...</a><br /></td></tr>
 <tr class="separator:acbf8d28451d14c0a20d173c92801fb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6df02bd9d1de25606d609053b841ab4"><td class="memItemLeft" align="right" valign="top"><a id="aa6df02bd9d1de25606d609053b841ab4"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateApiSecret</b> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request.html">CreateSecretRequest</a> request, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:aa6df02bd9d1de25606d609053b841ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#aa6df02bd9d1de25606d609053b841ab4">CreateApiSecret</a> (<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request.html">CreateSecretRequest</a> request, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:aa6df02bd9d1de25606d609053b841ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Createse an API <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#aa6df02bd9d1de25606d609053b841ab4">More...</a><br /></td></tr>
 <tr class="separator:aa6df02bd9d1de25606d609053b841ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2883b884760586b21ab213915d607877"><td class="memItemLeft" align="right" valign="top"><a id="a2883b884760586b21ab213915d607877"></a>
-<a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveApiSecret</b> (string secretId, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:a2883b884760586b21ab213915d607877"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a2883b884760586b21ab213915d607877">RetrieveApiSecret</a> (string secretId, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:a2883b884760586b21ab213915d607877"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves info about an api secret at the given id  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#a2883b884760586b21ab213915d607877">More...</a><br /></td></tr>
 <tr class="separator:a2883b884760586b21ab213915d607877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a68ea1f7e91416bc89e2244c175d3a"><td class="memItemLeft" align="right" valign="top"><a id="ae2a68ea1f7e91416bc89e2244c175d3a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RevokeApiSecret</b> (string secretId, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memitem:ae2a68ea1f7e91416bc89e2244c175d3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#ae2a68ea1f7e91416bc89e2244c175d3a">RevokeApiSecret</a> (string secretId, string apiKey=null, <a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a> creds=null)</td></tr>
+<tr class="memdesc:ae2a68ea1f7e91416bc89e2244c175d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes an <a class="el" href="namespace_nexmo_1_1_api.html">Api</a> <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a>  <a href="interface_nexmo_1_1_api_1_1_accounts_1_1_i_account_client.html#ae2a68ea1f7e91416bc89e2244c175d3a">More...</a><br /></td></tr>
 <tr class="separator:ae2a68ea1f7e91416bc89e2244c175d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a999bd518927cc500ad5866bbf2bcbdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999bd518927cc500ad5866bbf2bcbdbf">&#9670;&nbsp;</a></span>ChangeAccountSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_result.html">AccountSettingsResult</a> Nexmo.Api.Accounts.IAccountClient.ChangeAccountSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_settings_request.html">AccountSettingsRequest</a>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the default callback URLs (where the webhooks are sent to) associated with your account: </p>
+<ul>
+<li>Callback URL for incoming SMS messages * Callback URL for delivery receipts <br  />
+ Note: that the URLs you provide must be valid and active.Nexmo will check that they return a 200 OK response before the setting is saved</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#a7b4ec575120afbf71222341b99eff845">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="aa6df02bd9d1de25606d609053b841ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6df02bd9d1de25606d609053b841ab4">&#9670;&nbsp;</a></span>CreateApiSecret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a> Nexmo.Api.Accounts.IAccountClient.CreateApiSecret </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_create_secret_request.html">CreateSecretRequest</a>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>apiKey</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Createse an API <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">apiKey</td><td>The <a class="el" href="namespace_nexmo_1_1_api.html">Api</a> Key to create a secret for</td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#ae2060d522902fcb7115beeddbd7d1531">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="a5fc7d232f5255a298d157f051408687b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc7d232f5255a298d157f051408687b">&#9670;&nbsp;</a></span>GetAccountBalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_balance.html">Balance</a> Nexmo.Api.Accounts.IAccountClient.GetAccountBalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the current balance of your <a class="el" href="namespace_nexmo.html">Nexmo</a> account </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#a7380ade91e8d1d7884ac384125cee4a1">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="a2883b884760586b21ab213915d607877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2883b884760586b21ab213915d607877">&#9670;&nbsp;</a></span>RetrieveApiSecret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a> Nexmo.Api.Accounts.IAccountClient.RetrieveApiSecret </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>secretId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>apiKey</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves info about an api secret at the given id </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secretId</td><td>the id of the secret</td></tr>
+    <tr><td class="paramname">apiKey</td><td><a class="el" href="namespace_nexmo_1_1_api.html">Api</a> Key the secret is for</td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#ab9b6915a807959e9372bae3a53f479e4">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="acbf8d28451d14c0a20d173c92801fb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf8d28451d14c0a20d173c92801fb22">&#9670;&nbsp;</a></span>RetrieveApiSecrets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secrets_request_result.html">SecretsRequestResult</a> Nexmo.Api.Accounts.IAccountClient.RetrieveApiSecrets </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>apiKey</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Many of <a class="el" href="namespace_nexmo.html">Nexmo</a>'s APIs are accessed using an API key and secret. It is recommended that you change or "rotate" your secrets from time to time for security purposes. This section provides the API interface for achieving this. Note: to work on secrets for your secondary accounts, you may authenticate with your primary credentials and supply the secondary API keys as URL parameters to these API endpoints. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">apiKey</td><td></td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#a6b4209996c6b53fd596daf27e17d9d49">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="ae2a68ea1f7e91416bc89e2244c175d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a68ea1f7e91416bc89e2244c175d3a">&#9670;&nbsp;</a></span>RevokeApiSecret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nexmo.Api.Accounts.IAccountClient.RevokeApiSecret </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>secretId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>apiKey</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes an <a class="el" href="namespace_nexmo_1_1_api.html">Api</a> <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_secret.html">Secret</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secretId</td><td>the id of the secret to be deleted</td></tr>
+    <tr><td class="paramname">apiKey</td><td>the api key the secret is for</td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#aa15bb420d615cedd87a21e62ef9fc7c9">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
+<a id="ac0737072b216160331654c985418e963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0737072b216160331654c985418e963">&#9670;&nbsp;</a></span>TopUpAccountBalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_result.html">TopUpResult</a> Nexmo.Api.Accounts.IAccountClient.TopUpAccountBalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_top_up_request.html">TopUpRequest</a>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nexmo_1_1_api_1_1_request_1_1_credentials.html">Credentials</a>&#160;</td>
+          <td class="paramname"><em>creds</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>You can top up your account using this API when you have enabled auto-reload in the dashboard. The amount added by the top-up operation will be the same amount as was added in the payment when auto-reload was enabled. Your account balance is checked every 5-10 minutes and if it falls below the threshold and auto-reload is enabled, then it will be topped up automatically. Use this endpoint if you need to top up at times when your credit may be exhausted more quickly than the auto-reload may occur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">creds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="class_nexmo_1_1_api_1_1_accounts_1_1_account_client.html#a568dabb04494d7fe49cccce1c2a8973c">Nexmo.Api.Accounts.AccountClient</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Accounts/IAccountClient.cs</li>
 </ul>

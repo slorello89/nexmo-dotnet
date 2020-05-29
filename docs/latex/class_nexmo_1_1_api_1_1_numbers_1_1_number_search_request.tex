@@ -3,30 +3,105 @@
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a8c067ef1063f56cf170ab8d900c7fbdd}{Country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The two character country code in I\+SO 3166-\/1 alpha-\/2 format \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa441ae1c5e2c84bc3af3403efb2dd539}{Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set this parameter to filter the type of number, such as mobile or landline Must be one of\+: landline, mobile-\/lvn or landline-\/toll-\/free \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a1a5a20e72389dc9eafbcb0d9ac9b6efe}{Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number pattern you want to search for. Use in conjunction with search\+\_\+pattern. \end{DoxyCompactList}\item 
+Search\+Pattern? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab67aba79dc49776bbefeaba7b2471047}{Search\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The strategy you want to use for matching \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab2dcdfb99a4f323f7c28e17cb843a869}{Features}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Available features are S\+MS, V\+O\+I\+CE and M\+MS. To look for numbers that support multiple features, use a comma-\/separated value\+: S\+MS,M\+MS,V\+O\+I\+CE. Must be one of\+: S\+MS, V\+O\+I\+CE, S\+MS,V\+O\+I\+CE, M\+MS, S\+MS,M\+MS, V\+O\+I\+CE,M\+MS or S\+MS,M\+MS,V\+O\+I\+CE \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aeac8884e2f7738ce302e8724a21ac7c6}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Page size \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a55df7b393400fa2ff9f19840378dd93c}{Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Page index \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa27bdc67c13abf306904d73da43678c7}{Has\+Application}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set this optional field to true to restrict your results to numbers associated with an Application (any Application). Set to false to find all numbers not associated with any Application. Omit the field to avoid filtering on whether or not the number is assigned to an Application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a8c067ef1063f56cf170ab8d900c7fbdd}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a8c067ef1063f56cf170ab8d900c7fbdd}} 
-string {\bfseries Country}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa441ae1c5e2c84bc3af3403efb2dd539}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa441ae1c5e2c84bc3af3403efb2dd539}} 
-string {\bfseries Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a1a5a20e72389dc9eafbcb0d9ac9b6efe}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a1a5a20e72389dc9eafbcb0d9ac9b6efe}} 
-string {\bfseries Pattern}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_abc70f459b1e62965b656b5675922f37b}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_abc70f459b1e62965b656b5675922f37b}} 
-int? {\bfseries Search\+Pattern}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Country@{Country}}
+\index{Country@{Country}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Country}{Country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The two character country code in I\+SO 3166-\/1 alpha-\/2 format 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab2dcdfb99a4f323f7c28e17cb843a869}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab2dcdfb99a4f323f7c28e17cb843a869}} 
-string {\bfseries Features}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aeac8884e2f7738ce302e8724a21ac7c6}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aeac8884e2f7738ce302e8724a21ac7c6}} 
-int? {\bfseries Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a55df7b393400fa2ff9f19840378dd93c}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a55df7b393400fa2ff9f19840378dd93c}} 
-int? {\bfseries Index}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Features@{Features}}
+\index{Features@{Features}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Features}{Features}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Features\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Available features are S\+MS, V\+O\+I\+CE and M\+MS. To look for numbers that support multiple features, use a comma-\/separated value\+: S\+MS,M\+MS,V\+O\+I\+CE. Must be one of\+: S\+MS, V\+O\+I\+CE, S\+MS,V\+O\+I\+CE, M\+MS, S\+MS,M\+MS, V\+O\+I\+CE,M\+MS or S\+MS,M\+MS,V\+O\+I\+CE 
+
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa27bdc67c13abf306904d73da43678c7}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa27bdc67c13abf306904d73da43678c7}} 
-bool? {\bfseries Has\+Application}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!HasApplication@{HasApplication}}
+\index{HasApplication@{HasApplication}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{HasApplication}{HasApplication}}
+{\footnotesize\ttfamily bool? Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Has\+Application\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set this optional field to true to restrict your results to numbers associated with an Application (any Application). Set to false to find all numbers not associated with any Application. Omit the field to avoid filtering on whether or not the number is assigned to an Application. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a55df7b393400fa2ff9f19840378dd93c}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a55df7b393400fa2ff9f19840378dd93c}} 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Index@{Index}}
+\index{Index@{Index}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily int? Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Page index 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a1a5a20e72389dc9eafbcb0d9ac9b6efe}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_a1a5a20e72389dc9eafbcb0d9ac9b6efe}} 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Pattern}{Pattern}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number pattern you want to search for. Use in conjunction with search\+\_\+pattern. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab67aba79dc49776bbefeaba7b2471047}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_ab67aba79dc49776bbefeaba7b2471047}} 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!SearchPattern@{SearchPattern}}
+\index{SearchPattern@{SearchPattern}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{SearchPattern}{SearchPattern}}
+{\footnotesize\ttfamily Search\+Pattern? Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Search\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The strategy you want to use for matching 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aeac8884e2f7738ce302e8724a21ac7c6}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aeac8884e2f7738ce302e8724a21ac7c6}} 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Size@{Size}}
+\index{Size@{Size}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily int? Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Page size 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa441ae1c5e2c84bc3af3403efb2dd539}\label{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request_aa441ae1c5e2c84bc3af3403efb2dd539}} 
+\index{Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}!Type@{Type}}
+\index{Type@{Type}!Nexmo.Api.Numbers.NumberSearchRequest@{Nexmo.Api.Numbers.NumberSearchRequest}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Numbers.\+Number\+Search\+Request.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set this parameter to filter the type of number, such as mobile or landline Must be one of\+: landline, mobile-\/lvn or landline-\/toll-\/free 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

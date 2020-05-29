@@ -9,22 +9,70 @@ Inheritance diagram for Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action\+:\begin{fig
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_af3fd0863b8e66226cb70cd6daea96dcd}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_af3fd0863b8e66226cb70cd6daea96dcd}} 
-string {\bfseries Time\+Out}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_ac2d78107d0125eee80e4a86c1341e3ed}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_ac2d78107d0125eee80e4a86c1341e3ed}} 
-int? {\bfseries Max\+Digits}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a83020369f6262c1c3e92298c1b1c8608}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a83020369f6262c1c3e92298c1b1c8608}} 
-string {\bfseries Submit\+On\+Hash}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a27bce85158083fd2522a177adf707971}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a27bce85158083fd2522a177adf707971}} 
-string\mbox{[}$\,$\mbox{]} {\bfseries Event\+Url}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_aced032e1739b06ac4f4eb5b63e4bf76a}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_aced032e1739b06ac4f4eb5b63e4bf76a}} 
-string {\bfseries Event\+Method}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_af3fd0863b8e66226cb70cd6daea96dcd}{Time\+Out}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The result of the callee\textquotesingle{}s activity is sent to the event\+Url webhook endpoint time\+Out seconds after the last action. The default value is 3. Max is 10. \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_ac2d78107d0125eee80e4a86c1341e3ed}{Max\+Digits}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of digits the user can press. The maximum value is 20, the default is 4 digits. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a83020369f6262c1c3e92298c1b1c8608}{Submit\+On\+Hash}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to true so the callee\textquotesingle{}s activity is sent to your webhook endpoint at event\+Url after they press \#. If \# is not pressed the result is submitted after time\+Out seconds. The default value is false. That is, the result is sent to your webhook endpoint after time\+Out seconds. \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a27bce85158083fd2522a177adf707971}{Event\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends the digits pressed by the callee to this U\+RL after time\+Out pause in activity or when \# is pressed. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_aced032e1739b06ac4f4eb5b63e4bf76a}{Event\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The H\+T\+TP method used to send event information to event\+\_\+url The default value is P\+O\+ST. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_aced032e1739b06ac4f4eb5b63e4bf76a}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_aced032e1739b06ac4f4eb5b63e4bf76a}} 
+\index{Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}!EventMethod@{EventMethod}}
+\index{EventMethod@{EventMethod}!Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}}
+\doxysubsubsection{\texorpdfstring{EventMethod}{EventMethod}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action.\+Event\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The H\+T\+TP method used to send event information to event\+\_\+url The default value is P\+O\+ST. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a27bce85158083fd2522a177adf707971}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a27bce85158083fd2522a177adf707971}} 
+\index{Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}!EventUrl@{EventUrl}}
+\index{EventUrl@{EventUrl}!Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}}
+\doxysubsubsection{\texorpdfstring{EventUrl}{EventUrl}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action.\+Event\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{namespace_nexmo}{Nexmo}} sends the digits pressed by the callee to this U\+RL after time\+Out pause in activity or when \# is pressed. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_ac2d78107d0125eee80e4a86c1341e3ed}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_ac2d78107d0125eee80e4a86c1341e3ed}} 
+\index{Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}!MaxDigits@{MaxDigits}}
+\index{MaxDigits@{MaxDigits}!Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}}
+\doxysubsubsection{\texorpdfstring{MaxDigits}{MaxDigits}}
+{\footnotesize\ttfamily int? Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action.\+Max\+Digits\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of digits the user can press. The maximum value is 20, the default is 4 digits. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a83020369f6262c1c3e92298c1b1c8608}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_a83020369f6262c1c3e92298c1b1c8608}} 
+\index{Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}!SubmitOnHash@{SubmitOnHash}}
+\index{SubmitOnHash@{SubmitOnHash}!Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}}
+\doxysubsubsection{\texorpdfstring{SubmitOnHash}{SubmitOnHash}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action.\+Submit\+On\+Hash\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to true so the callee\textquotesingle{}s activity is sent to your webhook endpoint at event\+Url after they press \#. If \# is not pressed the result is submitted after time\+Out seconds. The default value is false. That is, the result is sent to your webhook endpoint after time\+Out seconds. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_af3fd0863b8e66226cb70cd6daea96dcd}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_input_action_af3fd0863b8e66226cb70cd6daea96dcd}} 
+\index{Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}!TimeOut@{TimeOut}}
+\index{TimeOut@{TimeOut}!Nexmo.Api.Voice.Nccos.InputAction@{Nexmo.Api.Voice.Nccos.InputAction}}
+\doxysubsubsection{\texorpdfstring{TimeOut}{TimeOut}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Input\+Action.\+Time\+Out\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The result of the callee\textquotesingle{}s activity is sent to the event\+Url webhook endpoint time\+Out seconds after the last action. The default value is 3. Max is 10. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

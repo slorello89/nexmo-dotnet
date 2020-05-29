@@ -78,13 +78,62 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a28ea52e99d281f2cff25d702a7597ddd"><td class="memItemLeft" align="right" valign="top"><a id="a28ea52e99d281f2cff25d702a7597ddd"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>RequestId</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a28ea52e99d281f2cff25d702a7597ddd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request.html#a28ea52e99d281f2cff25d702a7597ddd">RequestId</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a28ea52e99d281f2cff25d702a7597ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The request_id you received in the response to the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> request.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request.html#a28ea52e99d281f2cff25d702a7597ddd">More...</a><br /></td></tr>
 <tr class="separator:a28ea52e99d281f2cff25d702a7597ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805c4a5eb336d850511797e4bf91b682"><td class="memItemLeft" align="right" valign="top"><a id="a805c4a5eb336d850511797e4bf91b682"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Cmd</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a805c4a5eb336d850511797e4bf91b682"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request.html#a805c4a5eb336d850511797e4bf91b682">Cmd</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a805c4a5eb336d850511797e4bf91b682"><td class="mdescLeft">&#160;</td><td class="mdescRight">The possible commands are cancel to request cancellation of the verification process, or trigger_next_event to advance to the next verification event (if any). Cancellation is only possible 30 seconds after the start of the verification request and before the second event (either TTS or SMS) has taken place. must be one of 'cancel' or 'trigger_next_event'  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_control_request.html#a805c4a5eb336d850511797e4bf91b682">More...</a><br /></td></tr>
 <tr class="separator:a805c4a5eb336d850511797e4bf91b682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a805c4a5eb336d850511797e4bf91b682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a805c4a5eb336d850511797e4bf91b682">&#9670;&nbsp;</a></span>Cmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyControlRequest.Cmd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The possible commands are cancel to request cancellation of the verification process, or trigger_next_event to advance to the next verification event (if any). Cancellation is only possible 30 seconds after the start of the verification request and before the second event (either TTS or SMS) has taken place. must be one of 'cancel' or 'trigger_next_event' </p>
+
+</div>
+</div>
+<a id="a28ea52e99d281f2cff25d702a7597ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ea52e99d281f2cff25d702a7597ddd">&#9670;&nbsp;</a></span>RequestId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyControlRequest.RequestId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The request_id you received in the response to the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> request. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Verify/VerifyControlRequest.cs</li>
 </ul>

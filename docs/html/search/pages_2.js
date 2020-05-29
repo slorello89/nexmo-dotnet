@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['license_1059',['LICENSE',['../md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__l_i_c_e_n_s_e.html',1,'']]]
+  ['getting_20involved_1277',['Getting Involved',['../md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]]
 ];

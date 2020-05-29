@@ -12,18 +12,67 @@ Inheritance diagram for Nexmo.\+Api.\+Conversions.\+Conversion\+Client\+:\begin{
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_afe70991a236a702aa63c63b62d6f65b6}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_afe70991a236a702aa63c63b62d6f65b6}} 
 {\bfseries Conversion\+Client} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_af3c83fc3f8ed5634c0bd1cd54374723d}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_af3c83fc3f8ed5634c0bd1cd54374723d}} 
-bool {\bfseries Sms\+Conversion} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a888e8e8d62a79a719c57d6b3444f70a7}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a888e8e8d62a79a719c57d6b3444f70a7}} 
-bool {\bfseries Voice\+Conversion} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_af3c83fc3f8ed5634c0bd1cd54374723d}{Sms\+Conversion}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Send a Conversion A\+PI request with information about the S\+MS message identified by message-\/id. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses your conversion data and internal information about message-\/id to help improve our routing of messages in the future. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a888e8e8d62a79a719c57d6b3444f70a7}{Voice\+Conversion}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Send a Conversion A\+PI request with information about the Call or Text-\/\+To-\/\+Speech identified by message-\/id. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses your conversion data and internal information about message-\/id to help improve our routing of messages in the future. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a5d19721d53ef1385f9d698c832dc1076}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a5d19721d53ef1385f9d698c832dc1076}} 
 \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} {\bfseries Credentials}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_af3c83fc3f8ed5634c0bd1cd54374723d}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_af3c83fc3f8ed5634c0bd1cd54374723d}} 
+\index{Nexmo.Api.Conversions.ConversionClient@{Nexmo.Api.Conversions.ConversionClient}!SmsConversion@{SmsConversion}}
+\index{SmsConversion@{SmsConversion}!Nexmo.Api.Conversions.ConversionClient@{Nexmo.Api.Conversions.ConversionClient}}
+\doxysubsubsection{\texorpdfstring{SmsConversion()}{SmsConversion()}}
+{\footnotesize\ttfamily bool Nexmo.\+Api.\+Conversions.\+Conversion\+Client.\+Sms\+Conversion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send a Conversion A\+PI request with information about the S\+MS message identified by message-\/id. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses your conversion data and internal information about message-\/id to help improve our routing of messages in the future. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client_af3e04d6fd702c3d44fd971542c8ecd9f}{Nexmo.\+Api.\+Conversions.\+I\+Conversion\+Client}}.
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a888e8e8d62a79a719c57d6b3444f70a7}\label{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client_a888e8e8d62a79a719c57d6b3444f70a7}} 
+\index{Nexmo.Api.Conversions.ConversionClient@{Nexmo.Api.Conversions.ConversionClient}!VoiceConversion@{VoiceConversion}}
+\index{VoiceConversion@{VoiceConversion}!Nexmo.Api.Conversions.ConversionClient@{Nexmo.Api.Conversions.ConversionClient}}
+\doxysubsubsection{\texorpdfstring{VoiceConversion()}{VoiceConversion()}}
+{\footnotesize\ttfamily bool Nexmo.\+Api.\+Conversions.\+Conversion\+Client.\+Voice\+Conversion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_conversions_1_1_conversion_request}{Conversion\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send a Conversion A\+PI request with information about the Call or Text-\/\+To-\/\+Speech identified by message-\/id. \mbox{\hyperlink{namespace_nexmo}{Nexmo}} uses your conversion data and internal information about message-\/id to help improve our routing of messages in the future. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client_a3ac5fc6f6645d68b2e99dd6ccd2b3e35}{Nexmo.\+Api.\+Conversions.\+I\+Conversion\+Client}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

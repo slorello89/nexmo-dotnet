@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['verify_868',['Verify',['../class_nexmo_1_1_api_1_1_client_methods_1_1_number_verify.html#a76c9d07dd8642955feec81a2bca0db0e',1,'Nexmo::Api::ClientMethods::NumberVerify']]]
+  ['verify_1000',['Verify',['../class_nexmo_1_1_api_1_1_client_methods_1_1_number_verify.html#a76c9d07dd8642955feec81a2bca0db0e',1,'Nexmo::Api::ClientMethods::NumberVerify']]],
+  ['verifycheck_1001',['VerifyCheck',['../interface_nexmo_1_1_api_1_1_verify_1_1_i_verify_client.html#aa88c939e95ed5a508f0ff5fb0f842f32',1,'Nexmo.Api.Verify.IVerifyClient.VerifyCheck()'],['../class_nexmo_1_1_api_1_1_verify_1_1_verify_client.html#ac5f5ffe4c3a9d0c2841aed51675a2df4',1,'Nexmo.Api.Verify.VerifyClient.VerifyCheck()']]],
+  ['verifycontrol_1002',['VerifyControl',['../interface_nexmo_1_1_api_1_1_verify_1_1_i_verify_client.html#afa0c52c37af63e956617733f0087054b',1,'Nexmo.Api.Verify.IVerifyClient.VerifyControl()'],['../class_nexmo_1_1_api_1_1_verify_1_1_verify_client.html#ab959f876fff8ff5f696df322f2bfba27',1,'Nexmo.Api.Verify.VerifyClient.VerifyControl()']]],
+  ['verifyrequest_1003',['VerifyRequest',['../interface_nexmo_1_1_api_1_1_verify_1_1_i_verify_client.html#a987779105372b5b90b7ea099ccfd23e3',1,'Nexmo.Api.Verify.IVerifyClient.VerifyRequest()'],['../class_nexmo_1_1_api_1_1_verify_1_1_verify_client.html#a5eb294becb7fd5f5c0ec207d0f5c6042',1,'Nexmo.Api.Verify.VerifyClient.VerifyRequest()']]],
+  ['verifysearch_1004',['VerifySearch',['../interface_nexmo_1_1_api_1_1_verify_1_1_i_verify_client.html#ab58c5c7ee647877d6db8ee9d6b5ab625',1,'Nexmo.Api.Verify.IVerifyClient.VerifySearch()'],['../class_nexmo_1_1_api_1_1_verify_1_1_verify_client.html#ae66826845929f616e13b2df7dbd8e0c1',1,'Nexmo.Api.Verify.VerifyClient.VerifySearch()']]],
+  ['voiceconversion_1005',['VoiceConversion',['../class_nexmo_1_1_api_1_1_conversions_1_1_conversion_client.html#a888e8e8d62a79a719c57d6b3444f70a7',1,'Nexmo.Api.Conversions.ConversionClient.VoiceConversion()'],['../interface_nexmo_1_1_api_1_1_conversions_1_1_i_conversion_client.html#a3ac5fc6f6645d68b2e99dd6ccd2b3e35',1,'Nexmo.Api.Conversions.IConversionClient.VoiceConversion()']]]
 ];

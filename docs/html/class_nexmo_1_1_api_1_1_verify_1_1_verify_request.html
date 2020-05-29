@@ -94,34 +94,251 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:add183ffb7c47c0f1f39d8ec5c90d1bc6"><td class="memItemLeft" align="right" valign="top"><a id="add183ffb7c47c0f1f39d8ec5c90d1bc6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Number</b><code> [get, set]</code></td></tr>
+<tr class="memitem:add183ffb7c47c0f1f39d8ec5c90d1bc6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#add183ffb7c47c0f1f39d8ec5c90d1bc6">Number</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:add183ffb7c47c0f1f39d8ec5c90d1bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mobile or landline phone number to verify. Unless you are setting country explicitly, this number must be in E.164 format.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#add183ffb7c47c0f1f39d8ec5c90d1bc6">More...</a><br /></td></tr>
 <tr class="separator:add183ffb7c47c0f1f39d8ec5c90d1bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89800554e3425678d3605f528f740493"><td class="memItemLeft" align="right" valign="top"><a id="a89800554e3425678d3605f528f740493"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Country</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a89800554e3425678d3605f528f740493"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a89800554e3425678d3605f528f740493">Country</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a89800554e3425678d3605f528f740493"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you do not provide number in international format or you are not sure if number is correctly formatted, specify the two-character country code in country. <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> will then format the number for you.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a89800554e3425678d3605f528f740493">More...</a><br /></td></tr>
 <tr class="separator:a89800554e3425678d3605f528f740493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5626bb7c2e2fc1a06afdbed2f1ff42d1"><td class="memItemLeft" align="right" valign="top"><a id="a5626bb7c2e2fc1a06afdbed2f1ff42d1"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Brand</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a5626bb7c2e2fc1a06afdbed2f1ff42d1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a5626bb7c2e2fc1a06afdbed2f1ff42d1">Brand</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5626bb7c2e2fc1a06afdbed2f1ff42d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An 18-character alphanumeric string you can use to personalize the verification request SMS body, to help users identify your company or application name. For example: "Your Acme Inc PIN is ..."  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a5626bb7c2e2fc1a06afdbed2f1ff42d1">More...</a><br /></td></tr>
 <tr class="separator:a5626bb7c2e2fc1a06afdbed2f1ff42d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345d0cece8b6342c40de2a0004027340"><td class="memItemLeft" align="right" valign="top"><a id="a345d0cece8b6342c40de2a0004027340"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>SenderId</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a345d0cece8b6342c40de2a0004027340"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a345d0cece8b6342c40de2a0004027340">SenderId</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a345d0cece8b6342c40de2a0004027340"><td class="mdescLeft">&#160;</td><td class="mdescRight">An 11-character alphanumeric string that represents the identity of the sender of the verification request: <a href="https://developer.nexmo.com/messaging/sms/guides/custom-sender-id">https://developer.nexmo.com/messaging/sms/guides/custom-sender-id</a>. Depending on the destination of the phone number you are sending the verification SMS to, restrictions might apply.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a345d0cece8b6342c40de2a0004027340">More...</a><br /></td></tr>
 <tr class="separator:a345d0cece8b6342c40de2a0004027340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a29ef120c626b7e442fed13714e2b5"><td class="memItemLeft" align="right" valign="top"><a id="a32a29ef120c626b7e442fed13714e2b5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CodeLength</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a32a29ef120c626b7e442fed13714e2b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a32a29ef120c626b7e442fed13714e2b5">CodeLength</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a32a29ef120c626b7e442fed13714e2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the verification code. Must be 4 or 6  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a32a29ef120c626b7e442fed13714e2b5">More...</a><br /></td></tr>
 <tr class="separator:a32a29ef120c626b7e442fed13714e2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a746f972ffcf7e30e54fec1ba4be56f8a"><td class="memItemLeft" align="right" valign="top"><a id="a746f972ffcf7e30e54fec1ba4be56f8a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Lg</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a746f972ffcf7e30e54fec1ba4be56f8a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a746f972ffcf7e30e54fec1ba4be56f8a">Lg</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a746f972ffcf7e30e54fec1ba4be56f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, the SMS or text-to-speech (TTS) message is generated in the locale that matches the number. For example, the text message or TTS message for a 33* number is sent in French. Use this parameter to explicitly control the language used for the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> request. A list of languages is available: <a href="https://developer.nexmo.com/verify/guides/verify-languages">https://developer.nexmo.com/verify/guides/verify-languages</a>  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a746f972ffcf7e30e54fec1ba4be56f8a">More...</a><br /></td></tr>
 <tr class="separator:a746f972ffcf7e30e54fec1ba4be56f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a028ea33449e7d7a31051da6bf0a976d3"><td class="memItemLeft" align="right" valign="top"><a id="a028ea33449e7d7a31051da6bf0a976d3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>PinExpiry</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a028ea33449e7d7a31051da6bf0a976d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a028ea33449e7d7a31051da6bf0a976d3">PinExpiry</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a028ea33449e7d7a31051da6bf0a976d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the generated verification code is valid for, in seconds. When you specify both pin_expiry and next_event_wait then pin_expiry must be an integer multiple of next_event_wait otherwise pin_expiry is defaulted to equal next_event_wait. See changing the event timings: <a href="https://developer.nexmo.com/verify/guides/changing-default-timings">https://developer.nexmo.com/verify/guides/changing-default-timings</a>.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a028ea33449e7d7a31051da6bf0a976d3">More...</a><br /></td></tr>
 <tr class="separator:a028ea33449e7d7a31051da6bf0a976d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81222933cdfdf7160ac0e103305a403f"><td class="memItemLeft" align="right" valign="top"><a id="a81222933cdfdf7160ac0e103305a403f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>NextEventWait</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a81222933cdfdf7160ac0e103305a403f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a81222933cdfdf7160ac0e103305a403f">NextEventWait</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a81222933cdfdf7160ac0e103305a403f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the wait time in seconds between attempts to deliver the verification code. Must be between 60 and 900  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a81222933cdfdf7160ac0e103305a403f">More...</a><br /></td></tr>
 <tr class="separator:a81222933cdfdf7160ac0e103305a403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2533d8f6ab5a3ef24a71781397258a8b"><td class="memItemLeft" align="right" valign="top"><a id="a2533d8f6ab5a3ef24a71781397258a8b"></a>
-Workflow?&#160;</td><td class="memItemRight" valign="bottom"><b>WorkflowId</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a2533d8f6ab5a3ef24a71781397258a8b"><td class="memItemLeft" align="right" valign="top">Workflow?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a2533d8f6ab5a3ef24a71781397258a8b">WorkflowId</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2533d8f6ab5a3ef24a71781397258a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the predefined sequence of SMS and TTS (Text To Speech) actions to use in order to convey the PIN to your user. For example, an id of 1 identifies the workflow SMS - TTS - TTS. For a list of all workflows and their associated ids, please visit the developer portal.  <a href="class_nexmo_1_1_api_1_1_verify_1_1_verify_request.html#a2533d8f6ab5a3ef24a71781397258a8b">More...</a><br /></td></tr>
 <tr class="separator:a2533d8f6ab5a3ef24a71781397258a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a5626bb7c2e2fc1a06afdbed2f1ff42d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5626bb7c2e2fc1a06afdbed2f1ff42d1">&#9670;&nbsp;</a></span>Brand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyRequest.Brand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An 18-character alphanumeric string you can use to personalize the verification request SMS body, to help users identify your company or application name. For example: "Your Acme Inc PIN is ..." </p>
+
+</div>
+</div>
+<a id="a32a29ef120c626b7e442fed13714e2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a29ef120c626b7e442fed13714e2b5">&#9670;&nbsp;</a></span>CodeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Nexmo.Api.Verify.VerifyRequest.CodeLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The length of the verification code. Must be 4 or 6 </p>
+
+</div>
+</div>
+<a id="a89800554e3425678d3605f528f740493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89800554e3425678d3605f528f740493">&#9670;&nbsp;</a></span>Country</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyRequest.Country</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If you do not provide number in international format or you are not sure if number is correctly formatted, specify the two-character country code in country. <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> will then format the number for you. </p>
+
+</div>
+</div>
+<a id="a746f972ffcf7e30e54fec1ba4be56f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746f972ffcf7e30e54fec1ba4be56f8a">&#9670;&nbsp;</a></span>Lg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyRequest.Lg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>By default, the SMS or text-to-speech (TTS) message is generated in the locale that matches the number. For example, the text message or TTS message for a 33* number is sent in French. Use this parameter to explicitly control the language used for the <a class="el" href="namespace_nexmo_1_1_api_1_1_verify.html">Verify</a> request. A list of languages is available: <a href="https://developer.nexmo.com/verify/guides/verify-languages">https://developer.nexmo.com/verify/guides/verify-languages</a> </p>
+
+</div>
+</div>
+<a id="a81222933cdfdf7160ac0e103305a403f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81222933cdfdf7160ac0e103305a403f">&#9670;&nbsp;</a></span>NextEventWait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Nexmo.Api.Verify.VerifyRequest.NextEventWait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies the wait time in seconds between attempts to deliver the verification code. Must be between 60 and 900 </p>
+
+</div>
+</div>
+<a id="add183ffb7c47c0f1f39d8ec5c90d1bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add183ffb7c47c0f1f39d8ec5c90d1bc6">&#9670;&nbsp;</a></span>Number</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyRequest.Number</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The mobile or landline phone number to verify. Unless you are setting country explicitly, this number must be in E.164 format. </p>
+
+</div>
+</div>
+<a id="a028ea33449e7d7a31051da6bf0a976d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028ea33449e7d7a31051da6bf0a976d3">&#9670;&nbsp;</a></span>PinExpiry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Nexmo.Api.Verify.VerifyRequest.PinExpiry</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How long the generated verification code is valid for, in seconds. When you specify both pin_expiry and next_event_wait then pin_expiry must be an integer multiple of next_event_wait otherwise pin_expiry is defaulted to equal next_event_wait. See changing the event timings: <a href="https://developer.nexmo.com/verify/guides/changing-default-timings">https://developer.nexmo.com/verify/guides/changing-default-timings</a>. </p>
+
+</div>
+</div>
+<a id="a345d0cece8b6342c40de2a0004027340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345d0cece8b6342c40de2a0004027340">&#9670;&nbsp;</a></span>SenderId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Verify.VerifyRequest.SenderId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An 11-character alphanumeric string that represents the identity of the sender of the verification request: <a href="https://developer.nexmo.com/messaging/sms/guides/custom-sender-id">https://developer.nexmo.com/messaging/sms/guides/custom-sender-id</a>. Depending on the destination of the phone number you are sending the verification SMS to, restrictions might apply. </p>
+
+</div>
+</div>
+<a id="a2533d8f6ab5a3ef24a71781397258a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2533d8f6ab5a3ef24a71781397258a8b">&#9670;&nbsp;</a></span>WorkflowId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Workflow? Nexmo.Api.Verify.VerifyRequest.WorkflowId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the predefined sequence of SMS and TTS (Text To Speech) actions to use in order to convey the PIN to your user. For example, an id of 1 identifies the workflow SMS - TTS - TTS. For a list of all workflows and their associated ids, please visit the developer portal. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Verify/VerifyRequest.cs</li>
 </ul>

@@ -14,16 +14,46 @@ class \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_af81d07df6bf5954270ed33f65eedcf21}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_af81d07df6bf5954270ed33f65eedcf21}} 
-string {\bfseries Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_aa4cc8279dd4ac6baf79f93c8860630e5}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_aa4cc8279dd4ac6baf79f93c8860630e5}} 
-string {\bfseries Dtmf\+Answer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_a07730143d4aba30db097023ac128de49}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_a07730143d4aba30db097023ac128de49}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_1_1_answer}{Answer}} {\bfseries On\+Answer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_af81d07df6bf5954270ed33f65eedcf21}{Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The phone number to connect to in E.\+164 format. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_aa4cc8279dd4ac6baf79f93c8860630e5}{Dtmf\+Answer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set the digits that are sent to the user as soon as the Call is answered. The $\ast$ and \# digits are respected. You create pauses using p. Each pause is 500ms. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_1_1_answer}{Answer}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_a07730143d4aba30db097023ac128de49}{On\+Answer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An object containing a required url key. The U\+RL serves an N\+C\+CO to execute in the number being connected to, before that call is joined to your existing conversation. Optionally, the ringback\+Tone key can be specified with a U\+RL value that points to a ringback\+Tone to be played back on repeat to the caller, so they do not hear just silence. The ringback\+Tone will automatically stop playing when the call is fully connected. Example\+: \{\char`\"{}url\char`\"{}\+:\char`\"{}https\+://example.\+com/answer\char`\"{}, \char`\"{}ringback\+Tone\char`\"{}\+:\char`\"{}http\+://example.\+com/ringback\+Tone.\+wav\char`\"{} \}. Please note, the key ringback is still supported. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_aa4cc8279dd4ac6baf79f93c8860630e5}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_aa4cc8279dd4ac6baf79f93c8860630e5}} 
+\index{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}!DtmfAnswer@{DtmfAnswer}}
+\index{DtmfAnswer@{DtmfAnswer}!Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}}
+\doxysubsubsection{\texorpdfstring{DtmfAnswer}{DtmfAnswer}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Endpoints.\+Phone\+Endpoint.\+Dtmf\+Answer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set the digits that are sent to the user as soon as the Call is answered. The $\ast$ and \# digits are respected. You create pauses using p. Each pause is 500ms. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_af81d07df6bf5954270ed33f65eedcf21}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_af81d07df6bf5954270ed33f65eedcf21}} 
+\index{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}!Number@{Number}}
+\index{Number@{Number}!Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}}
+\doxysubsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Nccos.\+Endpoints.\+Phone\+Endpoint.\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The phone number to connect to in E.\+164 format. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_a07730143d4aba30db097023ac128de49}\label{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_a07730143d4aba30db097023ac128de49}} 
+\index{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}!OnAnswer@{OnAnswer}}
+\index{OnAnswer@{OnAnswer}!Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint@{Nexmo.Api.Voice.Nccos.Endpoints.PhoneEndpoint}}
+\doxysubsubsection{\texorpdfstring{OnAnswer}{OnAnswer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint_1_1_answer}{Answer}} Nexmo.\+Api.\+Voice.\+Nccos.\+Endpoints.\+Phone\+Endpoint.\+On\+Answer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An object containing a required url key. The U\+RL serves an N\+C\+CO to execute in the number being connected to, before that call is joined to your existing conversation. Optionally, the ringback\+Tone key can be specified with a U\+RL value that points to a ringback\+Tone to be played back on repeat to the caller, so they do not hear just silence. The ringback\+Tone will automatically stop playing when the call is fully connected. Example\+: \{\char`\"{}url\char`\"{}\+:\char`\"{}https\+://example.\+com/answer\char`\"{}, \char`\"{}ringback\+Tone\char`\"{}\+:\char`\"{}http\+://example.\+com/ringback\+Tone.\+wav\char`\"{} \}. Please note, the key ringback is still supported. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

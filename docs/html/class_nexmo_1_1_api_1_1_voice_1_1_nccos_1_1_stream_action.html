@@ -87,17 +87,17 @@ Inheritance diagram for Nexmo.Api.Voice.Nccos.StreamAction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:aa278cf4785148b418cc5872716e49e85"><td class="memItemLeft" align="right" valign="top"><a id="aa278cf4785148b418cc5872716e49e85"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>StreamUrl</b><code> [get, set]</code></td></tr>
+<tr class="memitem:aa278cf4785148b418cc5872716e49e85"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#aa278cf4785148b418cc5872716e49e85">StreamUrl</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa278cf4785148b418cc5872716e49e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array containing a single URL to an mp3 or wav (16-bit) audio file to stream to the Call or Conversation.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#aa278cf4785148b418cc5872716e49e85">More...</a><br /></td></tr>
 <tr class="separator:aa278cf4785148b418cc5872716e49e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fe63e0dc640a03b96f06dac7bd20d4"><td class="memItemLeft" align="right" valign="top"><a id="a51fe63e0dc640a03b96f06dac7bd20d4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a51fe63e0dc640a03b96f06dac7bd20d4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#a51fe63e0dc640a03b96f06dac7bd20d4">Level</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a51fe63e0dc640a03b96f06dac7bd20d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the audio level of the stream in the range -1 &gt;=level&lt;=1 with a precision of 0.1. The default value is 0.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#a51fe63e0dc640a03b96f06dac7bd20d4">More...</a><br /></td></tr>
 <tr class="separator:a51fe63e0dc640a03b96f06dac7bd20d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa43ad7146727fe4611507e1bf19a4e6"><td class="memItemLeft" align="right" valign="top"><a id="aaa43ad7146727fe4611507e1bf19a4e6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>BargeIn</b><code> [get, set]</code></td></tr>
+<tr class="memitem:aaa43ad7146727fe4611507e1bf19a4e6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#aaa43ad7146727fe4611507e1bf19a4e6">BargeIn</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aaa43ad7146727fe4611507e1bf19a4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive <a class="el" href="namespace_nexmo_1_1_api_1_1_voice.html">Voice</a> Response (IVR ). If you set bargeIn to true on one more Stream actions then the next non-stream action in the NCCO stack must be an input action. The default value is false. Once bargeIn is set to true it will stay true (even if bargeIn: false is set in a following action) until an input action is encountered  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#aaa43ad7146727fe4611507e1bf19a4e6">More...</a><br /></td></tr>
 <tr class="separator:aaa43ad7146727fe4611507e1bf19a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3885a0f59289b7d51c1e42ffca7b833"><td class="memItemLeft" align="right" valign="top"><a id="ab3885a0f59289b7d51c1e42ffca7b833"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Loop</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ab3885a0f59289b7d51c1e42ffca7b833"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#ab3885a0f59289b7d51c1e42ffca7b833">Loop</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab3885a0f59289b7d51c1e42ffca7b833"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of times audio is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely.  <a href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_stream_action.html#ab3885a0f59289b7d51c1e42ffca7b833">More...</a><br /></td></tr>
 <tr class="separator:ab3885a0f59289b7d51c1e42ffca7b833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td colspan="2" onclick="javascript:toggleInherit('properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action.html">Nexmo.Api.Voice.Nccos.NccoAction</a></td></tr>
 <tr class="memitem:a6e7de4d346c47ef03cee49ceeba07341 inherit properties_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memItemLeft" align="right" valign="top"><a id="a6e7de4d346c47ef03cee49ceeba07341"></a>
@@ -124,6 +124,103 @@ Additional Inherited Members</h2></td></tr>
 override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
 <tr class="separator:aed1ab8e907822c83b65555f27b6914f7 inherit pub_methods_class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="aaa43ad7146727fe4611507e1bf19a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa43ad7146727fe4611507e1bf19a4e6">&#9670;&nbsp;</a></span>BargeIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.StreamAction.BargeIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set to true so this action is terminated when the user presses a button on the keypad. Use this feature to enable users to choose an option without having to listen to the whole message in your Interactive <a class="el" href="namespace_nexmo_1_1_api_1_1_voice.html">Voice</a> Response (IVR ). If you set bargeIn to true on one more Stream actions then the next non-stream action in the NCCO stack must be an input action. The default value is false. Once bargeIn is set to true it will stay true (even if bargeIn: false is set in a following action) until an input action is encountered </p>
+
+</div>
+</div>
+<a id="a51fe63e0dc640a03b96f06dac7bd20d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51fe63e0dc640a03b96f06dac7bd20d4">&#9670;&nbsp;</a></span>Level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.StreamAction.Level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the audio level of the stream in the range -1 &gt;=level&lt;=1 with a precision of 0.1. The default value is 0. </p>
+
+</div>
+</div>
+<a id="ab3885a0f59289b7d51c1e42ffca7b833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3885a0f59289b7d51c1e42ffca7b833">&#9670;&nbsp;</a></span>Loop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Nexmo.Api.Voice.Nccos.StreamAction.Loop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of times audio is repeated before the Call is closed. The default value is 1. Set to 0 to loop infinitely. </p>
+
+</div>
+</div>
+<a id="aa278cf4785148b418cc5872716e49e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa278cf4785148b418cc5872716e49e85">&#9670;&nbsp;</a></span>StreamUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] Nexmo.Api.Voice.Nccos.StreamAction.StreamUrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An array containing a single URL to an mp3 or wav (16-bit) audio file to stream to the Call or Conversation. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/slore/Documents/projects/slorello89/nexmo-dotnet/Nexmo.Api/Voice/Nccos/StreamAction.cs</li>
 </ul>

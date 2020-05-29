@@ -69,7 +69,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_C"></a>:_Users_slore_Documents_projects_slorello89_nexmo-dotnet_README</p>
-<p><a href="http://www.nuget.org/packages/Nexmo.Csharp.Client"><img src="http://img.shields.io/nuget/v/Nexmo.Csharp.Client.svg?style=flat-square" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://ci.appveyor.com/project/slorello89/nexmo-dotnet/branch/master"><img src="https://ci.appveyor.com/api/projects/status/qy0rkyi084vgjmir/branch/master?svg=true" alt="Build status" class="inline"/></a></p>
+<p><a href="http://www.nuget.org/packages/Nexmo.Csharp.Client"><img src="http://img.shields.io/nuget/v/Nexmo.Csharp.Client.svg?style=flat-square" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://ci.appveyor.com/project/slorello89/nexmo-dotnet/branch/master"><img src="https://ci.appveyor.com/api/projects/status/qy0rkyi084vgjmir/branch/master?svg=true" alt="Build status" class="inline"/></a> <a class="el" href="md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_o_d_e__o_f__c_o_n_d_u_c_t.html">![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)</a></p>
+<p><img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" alt="Nexmo is now known as Vonage" style="pointer-events: none;" height="48px" class="inline"/></p>
 <p>You can use this C# client library to integrate <a href="#api-coverage">Nexmo's APIs</a> to your application. To use this, you'll need a <a class="el" href="namespace_nexmo.html">Nexmo</a> account. Sign up <a href="https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">for free at nexmo.com</a>.</p>
 <ul>
 <li><a href="#installation">Installation</a></li>
@@ -78,7 +79,7 @@ $(function() {
 <li><a href="#api-coverage">Coverage</a></li>
 <li><a href="#contributing">Contributing</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
 Installation:</h1>
 <p>To use the client library you'll need to have <a href="https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">created a Nexmo account</a>.</p>
 <p>To install the C# client library using NuGet:</p>
@@ -92,7 +93,7 @@ Installation:</h1>
 <li>If you have downloaded a release, ensure you are referencing the required dependencies by either including them with your project's NuGet dependencies or manually referencing them.</li>
 <li>Reference the assembly in your code.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md30"></a>
 Targeted frameworks:</h1>
 <ul>
 <li>4.5.2 <blockquote class="doxtable">
@@ -103,7 +104,7 @@ Targeted frameworks:</h1>
 <li>.NET Standard 1.6, 2.0</li>
 <li>.NET Core 2.0, 2.1, 2.2, 3.0, 3.1</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 Configuration:</h1>
 <p>To setup the configuration of the <a class="el" href="namespace_nexmo.html">Nexmo</a> Client you can do one of the following.</p>
 <ul>
@@ -151,7 +152,7 @@ Configuration:</h1>
 <blockquote class="doxtable">
 <p>NOTE: Private Key is the literal key - not a path to the file containing the key </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Configuration Reference</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -179,9 +180,9 @@ Configuration Reference</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Nexmo.UserAgent </td><td class="markdownTableBodyNone">Optional. Your app-specific usage identifier in the format of <code>name/version</code>. Example: <code>"myApp/1.0"</code>  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 Logging</h2>
-<h3><a class="anchor" id="autotoc_md27"></a>
+<h3><a class="anchor" id="autotoc_md34"></a>
 3.1.x+</h3>
 <p>The library makes use of <a href="https://github.com/damianh/LibLog/wiki">LibLog</a> to facilitate logging.</p>
 <p>Your application controls if and how logging occurs. Example using <a href="https://serilog.net/">Serilog</a> and <a href="https://www.nuget.org/packages/Serilog.Sinks.Console">Serilog.Sinks.Console</a> v3.x:</p>
@@ -200,7 +201,7 @@ Logging</h2>
 <div class="line">var client = new Nexmo.Api.Client(new Credentials(&quot;example&quot;, &quot;password&quot;));</div>
 <div class="line">client.Account.GetBalance();</div>
 <div class="line">Log.Logger.Debug(&quot;end&quot;);</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md28"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md35"></a>
 2.2.0 - 3.0.x</h3>
 <p>You can request console logging by placing a <code>logging.json</code> file alongside your <code>appsettings.json</code> configuration.</p>
 <p>Note that logging <a class="el" href="namespace_nexmo_1_1_api.html">Nexmo.Api</a> messages will very likely expose your key and secret to the console as they can be part of the query string.</p>
@@ -215,7 +216,7 @@ Logging</h2>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>You may specify other types of logging (file, etc.). The <code>Nexmo.Samples.Coverage</code> project contains an example that logs to a file with the assistance of <code>Serilog.Extensions.Logging.File</code>.</p>
-<h1><a class="anchor" id="autotoc_md29"></a>
+<h1><a class="anchor" id="autotoc_md36"></a>
 Examples</h1>
 <p>We are working on a separate repository for .NET examples. <a href="https://github.com/nexmo-community/nexmo-dotnet-quickstart">Check it out here!</a></p>
 <p>The following examples show how to:</p>
@@ -229,7 +230,7 @@ Examples</h1>
 <li><a href="#sending-2fa-code">Send 2FA code</a></li>
 <li><a href="#checking-2fa-code">Check 2FA code</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md30"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 Sending a Message</h2>
 <p>Use <a href="https://developer.nexmo.com/api/sms?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's SMS API</a> to send an SMS message.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -245,7 +246,7 @@ Sending a Message</h2>
 <div class="line">    to = TO_NUMBER,</div>
 <div class="line">    text = &quot;this is a test&quot;</div>
 <div class="line">});</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
 Receiving a Message</h2>
 <p>Use <a href="https://developer.nexmo.com/api/sms?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's SMS API</a> to receive an SMS message. Assumes your <a class="el" href="namespace_nexmo.html">Nexmo</a> endpoint is configured.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -253,7 +254,7 @@ Receiving a Message</h2>
 <div class="line">{</div>
 <div class="line">    return new HttpStatusCodeResult(HttpStatusCode.OK);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md32"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md39"></a>
 Receiving a Message Delivery Receipt</h2>
 <p>Use <a href="https://developer.nexmo.com/api/sms?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's SMS API</a> to receive an SMS delivery receipt. Assumes your <a class="el" href="namespace_nexmo.html">Nexmo</a> endpoint is configured.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -270,7 +271,7 @@ Receiving a Message Delivery Receipt</h2>
 <div class="line">    return new HttpStatusCodeResult(HttpStatusCode.OK);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>NOTE:</b> <code>[FromUri]</code> is deprecated in .NET Core; <code>[FromQuery]</code> works in this case.</p>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md40"></a>
 Redacting a message</h2>
 <p>Use <a href="https://developer.nexmo.com/api/redact?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's Redact API</a> to redact a SMS message.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -281,7 +282,7 @@ Redacting a message</h2>
 <div class="line">            });</div>
 </div><!-- fragment --><div class="fragment"><div class="line"> {C#}</div>
 <div class="line">client.Redact.RedactTransaction(new Redact.RedactRequest(MESSAGE_ID, &quot;sms&quot;, &quot;outbound&quot;));</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md34"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
 Initiating a Call</h2>
 <p>Use <a href="https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's Voice API</a> to initiate a voice call.</p>
 <p><b>NOTE:</b> You must have a valid Application ID and private key in order to make voice calls. Use either <code>Nexmo.Api.Application</code> or <a class="el" href="namespace_nexmo.html">Nexmo</a>'s Node.js-based <a href="https://github.com/nexmo/nexmo-cli">CLI tool</a> to register. See the <a href="https://developer.nexmo.com/concepts/guides/applications?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Application API</a> documentation for details.</p>
@@ -315,7 +316,7 @@ Initiating a Call</h2>
 <div class="line">        &quot;https://nexmo-community.github.io/ncco-examples/first_call_talk.json&quot;</div>
 <div class="line">    }</div>
 <div class="line">});</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md35"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
 Receiving a Call</h2>
 <p>Use <a href="https://developer.nexmo.com/voice/voice-api/overview?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's Voice API</a> to receive a voice call.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -334,7 +335,7 @@ Receiving a Call</h2>
 <div class="line">    var call = client.Call.Get(id);</div>
 <div class="line">    // Do something with call.</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md36"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
 Sending 2FA Code</h2>
 <p>Use <a href="https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's Verify API</a> to send 2FA pin code.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -356,7 +357,7 @@ Sending 2FA Code</h2>
 <div class="line"> </div>
 <div class="line">    return View();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
 Checking 2FA Code</h2>
 <p>Use <a href="https://developer.nexmo.com/verify/overview?utm_source=DEV_REL&amp;utm_medium=github&amp;utm_campaign=csharp-client-library">Nexmo's Verify API</a> to check 2FA pin code.</p>
 <div class="fragment"><div class="line"> {C#}</div>
@@ -385,12 +386,12 @@ Checking 2FA Code</h2>
 <div class="line">    }</div>
 <div class="line">    return View();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md45"></a>
 Additional Examples</h2>
 <ul>
 <li>Check out the sample MVC application and tests for more examples. Make sure to copy appsettings.json.example to appsettings.json and enter your key/secret.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 API Coverage</h1>
 <ul>
 <li>Account<ul>
@@ -466,7 +467,7 @@ API Coverage</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md40"></a>
+<h1><a class="anchor" id="autotoc_md47"></a>
 Contributing</h1>
 <p>Visual Studio 2017 is required (Community is fine). v15.5+ is recommended.</p>
 <ol type="1">
@@ -475,15 +476,16 @@ Contributing</h1>
 <li>Build! NuGet dependencies should be brought down automatically; check your settings if they are not.</li>
 </ol>
 <p>Pull requests are welcome!</p>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Thanks</h1>
 <p>Special thanks to our contributors:</p>
 <ul>
 <li><a href="https://github.com/jdpearce">jdpearce</a></li>
 <li><a href="https://github.com/jonferreira">jonferreira</a></li>
 <li><a href="https://github.com/fauna5">fauna5</a></li>
+<li><a href="https://github.com/taylus">taylus</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<h1><a class="anchor" id="autotoc_md49"></a>
 License</h1>
 <p>This library is released under <a class="el" href="md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__l_i_c_e_n_s_e.html">the MIT License</a>. </p>
 </div></div><!-- PageDoc -->

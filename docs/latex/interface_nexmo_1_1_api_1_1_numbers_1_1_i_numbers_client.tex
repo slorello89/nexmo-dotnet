@@ -9,21 +9,139 @@ Inheritance diagram for Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client\+:\begin{figu
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_ae47aef8ef3510bdd9b550c6dc881110a}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_ae47aef8ef3510bdd9b550c6dc881110a}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} {\bfseries Get\+Owned\+Numbers} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
-\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a8cdd97f597e0c1f5b920058e9f30bfa2}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a8cdd97f597e0c1f5b920058e9f30bfa2}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} {\bfseries Get\+Available\+Numbers} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_ae47aef8ef3510bdd9b550c6dc881110a}{Get\+Owned\+Numbers}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Retrieve all the inbound numbers associated with your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a8cdd97f597e0c1f5b920058e9f30bfa2}{Get\+Available\+Numbers}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Retrieve inbound numbers that are available for the specified country. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a46ed72a92e1d2694dabed92fe5271bc1}{Buy\+A\+Number}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_request}{Request}} to purchase a specific inbound number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_aa6b6a1d41cfeaf001e287d67b6d15e83}{Cancel\+A\+Number}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Cancel your subscription for a specific inbound number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} \mbox{\hyperlink{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a13b3a2e9136c824df5f4c478af27b7c8}{Update\+A\+Number}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request}{Update\+Number\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Change the behaviour of a number that you own. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a46ed72a92e1d2694dabed92fe5271bc1}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a46ed72a92e1d2694dabed92fe5271bc1}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} {\bfseries Buy\+A\+Number} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\index{Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}!BuyANumber@{BuyANumber}}
+\index{BuyANumber@{BuyANumber}!Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}}
+\doxysubsubsection{\texorpdfstring{BuyANumber()}{BuyANumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client.\+Buy\+A\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_request}{Request}} to purchase a specific inbound number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_client_a875ff61d3deb113ea4f5bdbb53d74879}{Nexmo.\+Api.\+Numbers.\+Numbers\+Client}}.
+
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_aa6b6a1d41cfeaf001e287d67b6d15e83}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_aa6b6a1d41cfeaf001e287d67b6d15e83}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} {\bfseries Cancel\+A\+Number} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\item 
+\index{Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}!CancelANumber@{CancelANumber}}
+\index{CancelANumber@{CancelANumber}!Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}}
+\doxysubsubsection{\texorpdfstring{CancelANumber()}{CancelANumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client.\+Cancel\+A\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_request}{Number\+Transaction\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Cancel your subscription for a specific inbound number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_client_a5f568c78a6cbb70d527ab236b94f077c}{Nexmo.\+Api.\+Numbers.\+Numbers\+Client}}.
+
+\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a8cdd97f597e0c1f5b920058e9f30bfa2}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a8cdd97f597e0c1f5b920058e9f30bfa2}} 
+\index{Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}!GetAvailableNumbers@{GetAvailableNumbers}}
+\index{GetAvailableNumbers@{GetAvailableNumbers}!Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}}
+\doxysubsubsection{\texorpdfstring{GetAvailableNumbers()}{GetAvailableNumbers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client.\+Get\+Available\+Numbers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Retrieve inbound numbers that are available for the specified country. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_client_af19d1f1893fcb5add6d3f77373f1cdad}{Nexmo.\+Api.\+Numbers.\+Numbers\+Client}}.
+
+\mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_ae47aef8ef3510bdd9b550c6dc881110a}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_ae47aef8ef3510bdd9b550c6dc881110a}} 
+\index{Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}!GetOwnedNumbers@{GetOwnedNumbers}}
+\index{GetOwnedNumbers@{GetOwnedNumbers}!Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}}
+\doxysubsubsection{\texorpdfstring{GetOwnedNumbers()}{GetOwnedNumbers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_search_response}{Numbers\+Search\+Response}} Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client.\+Get\+Owned\+Numbers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_search_request}{Number\+Search\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Retrieve all the inbound numbers associated with your \mbox{\hyperlink{namespace_nexmo}{Nexmo}} account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_client_ad2f1a159f3a31e6d897059dfc092f9d7}{Nexmo.\+Api.\+Numbers.\+Numbers\+Client}}.
+
 \mbox{\Hypertarget{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a13b3a2e9136c824df5f4c478af27b7c8}\label{interface_nexmo_1_1_api_1_1_numbers_1_1_i_numbers_client_a13b3a2e9136c824df5f4c478af27b7c8}} 
-\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} {\bfseries Update\+A\+Number} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request}{Update\+Number\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
-\end{DoxyCompactItemize}
+\index{Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}!UpdateANumber@{UpdateANumber}}
+\index{UpdateANumber@{UpdateANumber}!Nexmo.Api.Numbers.INumbersClient@{Nexmo.Api.Numbers.INumbersClient}}
+\doxysubsubsection{\texorpdfstring{UpdateANumber()}{UpdateANumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_number_transaction_response}{Number\+Transaction\+Response}} Nexmo.\+Api.\+Numbers.\+I\+Numbers\+Client.\+Update\+A\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_update_number_request}{Update\+Number\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Change the behaviour of a number that you own. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em creds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_nexmo_1_1_api_1_1_numbers_1_1_numbers_client_a7792e8e5ad816f73e7586df08bdad1fa}{Nexmo.\+Api.\+Numbers.\+Numbers\+Client}}.
+
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
