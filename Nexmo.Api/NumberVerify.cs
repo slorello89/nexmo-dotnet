@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class NumberVerify
     {
         public class VerifyResponseBase
@@ -297,4 +298,5 @@ namespace Nexmo.Api
         public string Status { get; set; }
         public string ErrorText { get; set; }
     }
+#endif
 }

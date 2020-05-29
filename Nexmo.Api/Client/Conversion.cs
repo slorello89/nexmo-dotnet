@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Nexmo.Api.ClientMethods
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     [Obsolete("This item is rendered obsolete by version 5 - please use the new Interfaces provided by the Nexmo.Api.NexmoClient class")]
     public class Conversion
     {
@@ -27,4 +28,5 @@ namespace Nexmo.Api.ClientMethods
             Api.Conversion.SubmitConversion(request, creds);
         }
     }
+#endif
 }

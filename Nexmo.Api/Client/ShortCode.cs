@@ -4,6 +4,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api.ClientMethods
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     [Obsolete("This item is rendered obsolete by version 5 - please use the new Interfaces provided by the Nexmo.Api.NexmoClient class")]
     public class ShortCode
     {
@@ -40,4 +41,5 @@ namespace Nexmo.Api.ClientMethods
             return Api.ShortCode.RequestAlert(request, customValues, creds ?? Credentials);
         }
     }
+#endif
 }

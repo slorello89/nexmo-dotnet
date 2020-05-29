@@ -6,6 +6,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class ApiSecret
     {
         public class SecretList
@@ -85,4 +86,5 @@ namespace Nexmo.Api
             return true;
         }
     }
+#endif
 }

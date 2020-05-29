@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class Conversion
     {
         /// <summary>
@@ -51,4 +52,5 @@ namespace Nexmo.Api
             ApiRequest.DoPostRequestUrlContentFromObject<ConversionResult>(new Uri($"https://api.nexmo.com/conversions/{ConversionType}"), request, creds);
         }
     }
+#endif
 }

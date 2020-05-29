@@ -30,6 +30,10 @@
     <DocumentationFile>C:\Users\slore\Documents\projects\nexmo\nexmo-dotnet\Nexmo.Api\Nexmo.Api.xml</DocumentationFile>
     
   </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <DefineConstants>TRACE;DOXYGEN_SHOULD_SKIP_THIS</DefineConstants>
+  </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard2.0' ">
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />

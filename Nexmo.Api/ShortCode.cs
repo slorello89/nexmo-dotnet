@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class ShortCode
     {
         public class TwoFactorAuthRequest
@@ -63,4 +64,5 @@ namespace Nexmo.Api
             return response;
         }
     }
+#endif
 }

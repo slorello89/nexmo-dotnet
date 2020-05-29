@@ -4,6 +4,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class Search
     {
         public class Messages<T> where T : MessageBase
@@ -155,4 +156,5 @@ namespace Nexmo.Api
             return ApiRequest.DoGetRequestWithQueryParameters<Messages<MessageBase>>(ApiRequest.GetBaseUriFor(typeof(Search), "/search/rejections"), ApiRequest.AuthType.Query, request, creds);
         }
     }
+#endif
 }

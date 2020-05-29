@@ -5,6 +5,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class NumberInsight
     {
         private const string BASIC = "basic";
@@ -309,4 +310,5 @@ namespace Nexmo.Api
     {
         public NumberInsightResponseException(string message) : base(message) { }
     }
+#endif
 }

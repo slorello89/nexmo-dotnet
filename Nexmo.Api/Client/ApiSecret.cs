@@ -4,6 +4,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api.ClientMethods
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     [Obsolete("This item is rendered obsolete by version 5 - please use the new Interfaces provided by the Nexmo.Api.NexmoClient class")]
     public class ApiSecret
     {
@@ -74,4 +75,5 @@ namespace Nexmo.Api.ClientMethods
             return Api.ApiSecret.DeleteSecret(apiKey, secretId, creds ?? Credentials);
         }
     }
+#endif
 }

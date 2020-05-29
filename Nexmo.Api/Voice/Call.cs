@@ -8,7 +8,8 @@ using Nexmo.Api.Request;
 using Nexmo.Api.Voice.Nccos;
 
 namespace Nexmo.Api.Voice
-{    
+{
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static partial class Call
     {
         public class Endpoint
@@ -340,4 +341,5 @@ namespace Nexmo.Api.Voice
             }
         }
     }
+#endif
 }

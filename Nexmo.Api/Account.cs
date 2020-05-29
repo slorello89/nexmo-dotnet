@@ -4,6 +4,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class Account
     {
         public class Balance
@@ -210,4 +211,5 @@ namespace Nexmo.Api
             return ApiRequest.DoGetRequestWithQueryParameters<NumbersResponse>(ApiRequest.GetBaseUriFor(typeof(Account), "/account/numbers"), ApiRequest.AuthType.Query, request, credentials);
         }
     }
+#endif
 }

@@ -2,6 +2,7 @@
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public class ResponseBase
     {
         [JsonProperty("error-code")]
@@ -9,4 +10,5 @@ namespace Nexmo.Api
         [JsonProperty("error-code-label")]
         public string ErrorCodeLabel { get; set; }
     }
+#endif
 }

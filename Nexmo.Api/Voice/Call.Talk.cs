@@ -3,6 +3,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api.Voice
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static partial class Call
     {
         public class TalkCommand
@@ -68,4 +69,5 @@ namespace Nexmo.Api.Voice
             return ApiRequest.DoRequestWithJsonContent<CallCommandResponse>("PUT", ApiRequest.GetBaseUriFor(typeof(Call), $"/v1/calls/{id}/dtmf"), cmd, ApiRequest.AuthType.Bearer, creds);
         }
     }
+#endif
 }

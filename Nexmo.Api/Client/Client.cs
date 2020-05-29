@@ -1,6 +1,7 @@
 using Nexmo.Api.Request;
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public class Client
     {
         private Credentials _credentials;
@@ -48,4 +49,5 @@ namespace Nexmo.Api
         public ClientMethods.SMS SMS { get; private set; }
         public ClientMethods.Redact Redact { get; private set; }
     }
+#endif
 }

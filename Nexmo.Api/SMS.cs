@@ -8,6 +8,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class SMS
     {
         public enum SmsType
@@ -435,4 +436,5 @@ namespace Nexmo.Api
     {
         public SmsResponseException(string message) : base(message) { }
     }
+#endif
 }

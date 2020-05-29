@@ -4,6 +4,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class Number
     {
         public class SearchRequest
@@ -157,4 +158,5 @@ namespace Nexmo.Api
             creds);
         }
     }
+#endif
 }

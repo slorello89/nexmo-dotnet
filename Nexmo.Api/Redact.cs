@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Nexmo.Api
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static class Redact
     {
         public class RedactRequest
@@ -56,4 +57,5 @@ namespace Nexmo.Api
             return true;
         }
     }
+#endif
 }

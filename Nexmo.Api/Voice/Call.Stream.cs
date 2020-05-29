@@ -3,6 +3,7 @@ using Nexmo.Api.Request;
 
 namespace Nexmo.Api.Voice
 {
+#if DOXYGEN_SHOULD_SKIP_THIS
     public static partial class Call
     {
         public class StreamCommand
@@ -39,4 +40,5 @@ namespace Nexmo.Api.Voice
             return ApiRequest.DoRequestWithJsonContent<CallCommandResponse>("DELETE", ApiRequest.GetBaseUriFor(typeof(Call), $"/v1/calls/{id}/stream"), new {}, ApiRequest.AuthType.Bearer, creds);
         }
     }
+#endif
 }
