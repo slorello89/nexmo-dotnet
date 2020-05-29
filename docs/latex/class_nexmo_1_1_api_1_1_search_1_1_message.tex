@@ -1,0 +1,127 @@
+\hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message}{}\doxysection{Nexmo.\+Api.\+Search.\+Message Class Reference}
+\label{class_nexmo_1_1_api_1_1_search_1_1_message}\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+Inheritance diagram for Nexmo.\+Api.\+Search.\+Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nexmo_1_1_api_1_1_search_1_1_message}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_ae2c1d66d4fd0ee2e7605be9f66a8e0c6}{type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The message type. MT (mobile terminated or outbound) or MO (mobile originated or inbound) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_af6c51f1736981ebaee46de67b577c2d6}{message\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The id of the message you sent. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a3154162fe29abbd6b5e1980526a64da5}{network}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The M\+C\+C\+M\+NC for the carrier who delivered the message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a1f4259380ca7f4d83d81bc7984875175}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Price in Euros for a MT message \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a0d24f3085420d797decd90d04240a310}{date\+Closed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The date and time at U\+T\+C+0 when Platform received the delivery receipt from the carrier who delivered the MT message. This parameter is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_ae6f884bc44e1b258b21ca3f39d58d0c5}{latency}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The overall latency between date-\/received and date-\/closed in milliseconds. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a76e3cae09641109cbe083a9ff2bab187}{client\+Ref}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The internal reference you set in the request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a700d5a6234a9e884a999e495d0d532d6}{final\+Status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The status of message-\/id at date-\/closed. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_search_1_1_message_a4d2a3a69448dbdeb0f6649e96a9dd45c}{status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A code that explains where the message is in the delivery process. If status is not delivered check error-\/code for more information. If status is accepted ignore the value of error-\/code \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a76e3cae09641109cbe083a9ff2bab187}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a76e3cae09641109cbe083a9ff2bab187}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!clientRef@{clientRef}}
+\index{clientRef@{clientRef}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{clientRef}{clientRef}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+client\+Ref\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The internal reference you set in the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a0d24f3085420d797decd90d04240a310}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a0d24f3085420d797decd90d04240a310}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!dateClosed@{dateClosed}}
+\index{dateClosed@{dateClosed}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{dateClosed}{dateClosed}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+date\+Closed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The date and time at U\+T\+C+0 when Platform received the delivery receipt from the carrier who delivered the MT message. This parameter is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a700d5a6234a9e884a999e495d0d532d6}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a700d5a6234a9e884a999e495d0d532d6}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!finalStatus@{finalStatus}}
+\index{finalStatus@{finalStatus}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{finalStatus}{finalStatus}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+final\+Status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The status of message-\/id at date-\/closed. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_ae6f884bc44e1b258b21ca3f39d58d0c5}\label{class_nexmo_1_1_api_1_1_search_1_1_message_ae6f884bc44e1b258b21ca3f39d58d0c5}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!latency@{latency}}
+\index{latency@{latency}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{latency}{latency}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+latency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The overall latency between date-\/received and date-\/closed in milliseconds. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_af6c51f1736981ebaee46de67b577c2d6}\label{class_nexmo_1_1_api_1_1_search_1_1_message_af6c51f1736981ebaee46de67b577c2d6}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!messageId@{messageId}}
+\index{messageId@{messageId}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{messageId}{messageId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+message\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The id of the message you sent. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a3154162fe29abbd6b5e1980526a64da5}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a3154162fe29abbd6b5e1980526a64da5}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!network@{network}}
+\index{network@{network}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{network}{network}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+network\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The M\+C\+C\+M\+NC for the carrier who delivered the message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a1f4259380ca7f4d83d81bc7984875175}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a1f4259380ca7f4d83d81bc7984875175}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!price@{price}}
+\index{price@{price}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Price in Euros for a MT message 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_a4d2a3a69448dbdeb0f6649e96a9dd45c}\label{class_nexmo_1_1_api_1_1_search_1_1_message_a4d2a3a69448dbdeb0f6649e96a9dd45c}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!status@{status}}
+\index{status@{status}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A code that explains where the message is in the delivery process. If status is not delivered check error-\/code for more information. If status is accepted ignore the value of error-\/code 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_search_1_1_message_ae2c1d66d4fd0ee2e7605be9f66a8e0c6}\label{class_nexmo_1_1_api_1_1_search_1_1_message_ae2c1d66d4fd0ee2e7605be9f66a8e0c6}} 
+\index{Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}!type@{type}}
+\index{type@{type}!Nexmo.Api.Search.Message@{Nexmo.Api.Search.Message}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Search.\+Message.\+type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The message type. MT (mobile terminated or outbound) or MO (mobile originated or inbound) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/Search.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt}{}\doxysection{Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt Class Reference}
+\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt}\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_abbd4958d7eccd9cc5263601acab5e09e}{to}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Sender\+ID you set in from in your request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a8e37e0fc9bd71830d1e2c699a5d8c9a8}{network\+\_\+code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Mobile Country Code Mobile Network Code (M\+C\+C\+M\+NC) of the carrier this phone number is registered with. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ac44e765bd3c67caf021af8ca57712939}{message\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_nexmo}{Nexmo}} ID for this message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a9e9d8046fb0e6262d57dcaafa1355056}{msisdn}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The phone number this message was sent to. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a4d443566144cbae43e2655c3f20c5937}{status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A code that explains where the message is in the delivery process., If status is not delivered check err-\/code for more information. If status is accepted ignore the value of err-\/code. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6b8741c6784517c6e88c0953a120aadc}{err\+\_\+code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the status is not accepted, this key will have a value \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6d016ea82410b2f9d5134bf39e7ebf0a}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How much it cost to send this message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ad94af88f1b286539673dbc44cc661624}{scts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Coordinated Universal Time (U\+TC) when the D\+LR was recieved from the carrier. The scts is in the following format\+: Y\+Y\+M\+M\+D\+D\+H\+H\+MM. For example, 1101181426 is 2011 Jan 18th 14\+:26. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_aa72c4381b237b0c584b4c2fb4b1e79be}{message\+\_\+timestamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time at U\+T\+C±00\+:00 when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} started to push this Delivery Receipt to your webhook endpoint. The message-\/timestamp is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS. For example, 2020-\/01-\/01 12\+:00\+:00. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_af1d8f647ab8819874f03924120bb57a9}{client\+\_\+ref}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The client-\/ref you set in the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_af1d8f647ab8819874f03924120bb57a9}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_af1d8f647ab8819874f03924120bb57a9}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!client\_ref@{client\_ref}}
+\index{client\_ref@{client\_ref}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{client\_ref}{client\_ref}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+client\+\_\+ref\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The client-\/ref you set in the request. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6b8741c6784517c6e88c0953a120aadc}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6b8741c6784517c6e88c0953a120aadc}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!err\_code@{err\_code}}
+\index{err\_code@{err\_code}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{err\_code}{err\_code}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+err\+\_\+code\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If the status is not accepted, this key will have a value 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_aa72c4381b237b0c584b4c2fb4b1e79be}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_aa72c4381b237b0c584b4c2fb4b1e79be}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!message\_timestamp@{message\_timestamp}}
+\index{message\_timestamp@{message\_timestamp}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{message\_timestamp}{message\_timestamp}}
+{\footnotesize\ttfamily Date\+Time Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+message\+\_\+timestamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time at U\+T\+C±00\+:00 when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} started to push this Delivery Receipt to your webhook endpoint. The message-\/timestamp is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS. For example, 2020-\/01-\/01 12\+:00\+:00. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ac44e765bd3c67caf021af8ca57712939}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ac44e765bd3c67caf021af8ca57712939}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!messageId@{messageId}}
+\index{messageId@{messageId}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{messageId}{messageId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+message\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \mbox{\hyperlink{namespace_nexmo}{Nexmo}} ID for this message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a9e9d8046fb0e6262d57dcaafa1355056}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a9e9d8046fb0e6262d57dcaafa1355056}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!msisdn@{msisdn}}
+\index{msisdn@{msisdn}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{msisdn}{msisdn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+msisdn\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The phone number this message was sent to. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a8e37e0fc9bd71830d1e2c699a5d8c9a8}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a8e37e0fc9bd71830d1e2c699a5d8c9a8}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!network\_code@{network\_code}}
+\index{network\_code@{network\_code}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{network\_code}{network\_code}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+network\+\_\+code\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Mobile Country Code Mobile Network Code (M\+C\+C\+M\+NC) of the carrier this phone number is registered with. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6d016ea82410b2f9d5134bf39e7ebf0a}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a6d016ea82410b2f9d5134bf39e7ebf0a}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!price@{price}}
+\index{price@{price}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How much it cost to send this message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ad94af88f1b286539673dbc44cc661624}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_ad94af88f1b286539673dbc44cc661624}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!scts@{scts}}
+\index{scts@{scts}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{scts}{scts}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+scts\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Coordinated Universal Time (U\+TC) when the D\+LR was recieved from the carrier. The scts is in the following format\+: Y\+Y\+M\+M\+D\+D\+H\+H\+MM. For example, 1101181426 is 2011 Jan 18th 14\+:26. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a4d443566144cbae43e2655c3f20c5937}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_a4d443566144cbae43e2655c3f20c5937}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!status@{status}}
+\index{status@{status}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A code that explains where the message is in the delivery process., If status is not delivered check err-\/code for more information. If status is accepted ignore the value of err-\/code. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_abbd4958d7eccd9cc5263601acab5e09e}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_delivery_receipt_abbd4958d7eccd9cc5263601acab5e09e}} 
+\index{Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}!to@{to}}
+\index{to@{to}!Nexmo.Api.SMS.SMSDeliveryReceipt@{Nexmo.Api.SMS.SMSDeliveryReceipt}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Delivery\+Receipt.\+to\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Sender\+ID you set in from in your request. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/S\+M\+S.\+cs\end{DoxyCompactItemize}

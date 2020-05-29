@@ -1,0 +1,133 @@
+\hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command}{}\doxysection{Nexmo.\+Api.\+Voice.\+Call\+Command Class Reference}
+\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command}\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_endpoint}{Endpoint}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1e7e7f566c6756acd616c1e660fc5145}{To}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The single or mixed collection of endpoint types you connected to. Possible values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint}{Phone\+Endpoint}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_afa7286e600c3ac4006a2281b5081bc66}{From}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The endpoint you are calling from. Possible value are the same as to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco}{Ncco}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a9639efc805453990e61618e52c5c883f}{Ncco}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This will convert to ncco as per the \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_converter}{Call\+Command\+Converter}} -\/ it is preferable to use this over the J\+Array Ncco \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_abe23129197e16ac803020e825857504f}{Answer\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The webhook endpoint where you provide the \mbox{\hyperlink{namespace_nexmo}{Nexmo}} Call Control Object that governs this call. As soon as your user answers a call, Platform requests this N\+C\+CO from answer\+\_\+url. Use answer\+\_\+method to manage the H\+T\+TP method. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_af38c60f271d0d40ee1031df6b3536236}{Answer\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The H\+T\+TP method used to send event information to answer\+\_\+url. The default value is G\+ET. \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a6bdba7b60ce31759fa80aba0e6272b35}{Event\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Platform sends event information asynchronously to this endpoint when status changes. For more information about the values sent, see callback. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a3bdb8cdbcc310621cb14982924af3cb5}{Event\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The H\+T\+TP method used to send event information to event\+\_\+url. The default value is P\+O\+ST. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a471ae495d014125adb7c22e10b11cd26}{Machine\+Detection}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Configure the behavior when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} detects that a destination is an answerphone. \end{DoxyCompactList}\item 
+uint? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_acf3921026c098cf993c4645546b7601c}{Length\+Timer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Set the number of seconds that elapse before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} hangs up after the call state changes to in\+\_\+progress. The default value is 7200, two hours. This is also the maximum value. \end{DoxyCompactList}\item 
+uint? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1d4a370387f6037efb45205ceff93c18}{Ringing\+Timer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Set the number of seconds that elapse before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} hangs up after the call state changes to \textquotesingle{}ringing\textquotesingle{}. The default value is 60, the maximum value is 120. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_af38c60f271d0d40ee1031df6b3536236}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_af38c60f271d0d40ee1031df6b3536236}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!AnswerMethod@{AnswerMethod}}
+\index{AnswerMethod@{AnswerMethod}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{AnswerMethod}{AnswerMethod}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call\+Command.\+Answer\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The H\+T\+TP method used to send event information to answer\+\_\+url. The default value is G\+ET. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_abe23129197e16ac803020e825857504f}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_abe23129197e16ac803020e825857504f}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!AnswerUrl@{AnswerUrl}}
+\index{AnswerUrl@{AnswerUrl}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{AnswerUrl}{AnswerUrl}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Call\+Command.\+Answer\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The webhook endpoint where you provide the \mbox{\hyperlink{namespace_nexmo}{Nexmo}} Call Control Object that governs this call. As soon as your user answers a call, Platform requests this N\+C\+CO from answer\+\_\+url. Use answer\+\_\+method to manage the H\+T\+TP method. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a3bdb8cdbcc310621cb14982924af3cb5}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a3bdb8cdbcc310621cb14982924af3cb5}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!EventMethod@{EventMethod}}
+\index{EventMethod@{EventMethod}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{EventMethod}{EventMethod}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call\+Command.\+Event\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The H\+T\+TP method used to send event information to event\+\_\+url. The default value is P\+O\+ST. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a6bdba7b60ce31759fa80aba0e6272b35}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a6bdba7b60ce31759fa80aba0e6272b35}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!EventUrl@{EventUrl}}
+\index{EventUrl@{EventUrl}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{EventUrl}{EventUrl}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Call\+Command.\+Event\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Platform sends event information asynchronously to this endpoint when status changes. For more information about the values sent, see callback. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_afa7286e600c3ac4006a2281b5081bc66}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_afa7286e600c3ac4006a2281b5081bc66}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!From@{From}}
+\index{From@{From}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{From}{From}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_phone_endpoint}{Phone\+Endpoint}} Nexmo.\+Api.\+Voice.\+Call\+Command.\+From\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The endpoint you are calling from. Possible value are the same as to. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_acf3921026c098cf993c4645546b7601c}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_acf3921026c098cf993c4645546b7601c}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!LengthTimer@{LengthTimer}}
+\index{LengthTimer@{LengthTimer}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{LengthTimer}{LengthTimer}}
+{\footnotesize\ttfamily uint? Nexmo.\+Api.\+Voice.\+Call\+Command.\+Length\+Timer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Set the number of seconds that elapse before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} hangs up after the call state changes to in\+\_\+progress. The default value is 7200, two hours. This is also the maximum value. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a471ae495d014125adb7c22e10b11cd26}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a471ae495d014125adb7c22e10b11cd26}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!MachineDetection@{MachineDetection}}
+\index{MachineDetection@{MachineDetection}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{MachineDetection}{MachineDetection}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call\+Command.\+Machine\+Detection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Configure the behavior when \mbox{\hyperlink{namespace_nexmo}{Nexmo}} detects that a destination is an answerphone. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a9639efc805453990e61618e52c5c883f}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a9639efc805453990e61618e52c5c883f}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!Ncco@{Ncco}}
+\index{Ncco@{Ncco}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{Ncco}{Ncco}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_ncco}{Ncco}} Nexmo.\+Api.\+Voice.\+Call\+Command.\+Ncco\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This will convert to ncco as per the \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_command_converter}{Call\+Command\+Converter}} -\/ it is preferable to use this over the J\+Array Ncco 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1d4a370387f6037efb45205ceff93c18}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1d4a370387f6037efb45205ceff93c18}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!RingingTimer@{RingingTimer}}
+\index{RingingTimer@{RingingTimer}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{RingingTimer}{RingingTimer}}
+{\footnotesize\ttfamily uint? Nexmo.\+Api.\+Voice.\+Call\+Command.\+Ringing\+Timer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Set the number of seconds that elapse before \mbox{\hyperlink{namespace_nexmo}{Nexmo}} hangs up after the call state changes to \textquotesingle{}ringing\textquotesingle{}. The default value is 60, the maximum value is 120. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1e7e7f566c6756acd616c1e660fc5145}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_command_a1e7e7f566c6756acd616c1e660fc5145}} 
+\index{Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}!To@{To}}
+\index{To@{To}!Nexmo.Api.Voice.CallCommand@{Nexmo.Api.Voice.CallCommand}}
+\doxysubsubsection{\texorpdfstring{To}{To}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_nccos_1_1_endpoints_1_1_endpoint}{Endpoint}} \mbox{[}$\,$\mbox{]} Nexmo.\+Api.\+Voice.\+Call\+Command.\+To\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The single or mixed collection of endpoint types you connected to. Possible values. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Voice/Call\+Command.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code}{}\doxysection{Nexmo.\+Api.\+Client\+Methods.\+Short\+Code Class Reference}
+\label{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code}\index{Nexmo.Api.ClientMethods.ShortCode@{Nexmo.Api.ClientMethods.ShortCode}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a42a92392c1e565ba66c5840989e6d438}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a42a92392c1e565ba66c5840989e6d438}} 
+{\bfseries Short\+Code} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds)
+\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_response}{Api.\+S\+M\+S.\+S\+M\+S\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a30b6d5279f27aee1a2c181fccac584a6}{Request\+Two\+Factor\+Auth}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_short_code_1_1_two_factor_auth_request}{Api.\+Short\+Code.\+Two\+Factor\+Auth\+Request}} request, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Send a 2FA request. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_response}{Api.\+S\+M\+S.\+S\+M\+S\+Response}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a273dbf5dac55f91f1cd25ca0fb8adea0}{Request\+Alert}} (\mbox{\hyperlink{class_nexmo_1_1_api_1_1_short_code_1_1_alert_request}{Api.\+Short\+Code.\+Alert\+Request}} request, Dictionary$<$ string, string $>$ custom\+Values, \mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} creds=null)
+\begin{DoxyCompactList}\small\item\em Send an Event Based Alerts request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_af56c02d30dfd307f7918aadabc4f6cc2}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_af56c02d30dfd307f7918aadabc4f6cc2}} 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}} {\bfseries Credentials}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a273dbf5dac55f91f1cd25ca0fb8adea0}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a273dbf5dac55f91f1cd25ca0fb8adea0}} 
+\index{Nexmo.Api.ClientMethods.ShortCode@{Nexmo.Api.ClientMethods.ShortCode}!RequestAlert@{RequestAlert}}
+\index{RequestAlert@{RequestAlert}!Nexmo.Api.ClientMethods.ShortCode@{Nexmo.Api.ClientMethods.ShortCode}}
+\doxysubsubsection{\texorpdfstring{RequestAlert()}{RequestAlert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_response}{Api.\+S\+M\+S.\+S\+M\+S\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Short\+Code.\+Request\+Alert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_short_code_1_1_alert_request}{Api.\+Short\+Code.\+Alert\+Request}}}]{request,  }\item[{Dictionary$<$ string, string $>$}]{custom\+Values,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send an Event Based Alerts request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Event Based Alerts request\\
+\hline
+{\em custom\+Values} & Any custom parameters you need for template.\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+{\em \mbox{\hyperlink{class_nexmo_1_1_api_1_1_sms_response_exception}{Sms\+Response\+Exception}}} & Throwns if the status received back from an \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_s_m_s}{S\+MS}} was non-\/zero\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a30b6d5279f27aee1a2c181fccac584a6}\label{class_nexmo_1_1_api_1_1_client_methods_1_1_short_code_a30b6d5279f27aee1a2c181fccac584a6}} 
+\index{Nexmo.Api.ClientMethods.ShortCode@{Nexmo.Api.ClientMethods.ShortCode}!RequestTwoFactorAuth@{RequestTwoFactorAuth}}
+\index{RequestTwoFactorAuth@{RequestTwoFactorAuth}!Nexmo.Api.ClientMethods.ShortCode@{Nexmo.Api.ClientMethods.ShortCode}}
+\doxysubsubsection{\texorpdfstring{RequestTwoFactorAuth()}{RequestTwoFactorAuth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_response}{Api.\+S\+M\+S.\+S\+M\+S\+Response}} Nexmo.\+Api.\+Client\+Methods.\+Short\+Code.\+Request\+Two\+Factor\+Auth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_short_code_1_1_two_factor_auth_request}{Api.\+Short\+Code.\+Two\+Factor\+Auth\+Request}}}]{request,  }\item[{\mbox{\hyperlink{class_nexmo_1_1_api_1_1_request_1_1_credentials}{Credentials}}}]{creds = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send a 2FA request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & 2FA request\\
+\hline
+{\em creds} & (Optional) Overridden credentials for only this request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nexmo\+Http\+Request\+Exception} & thrown if an error is encountered when talking to the A\+PI\\
+\hline
+{\em \mbox{\hyperlink{class_nexmo_1_1_api_1_1_sms_response_exception}{Sms\+Response\+Exception}}} & Throwns if the status received back from an \mbox{\hyperlink{class_nexmo_1_1_api_1_1_client_methods_1_1_s_m_s}{S\+MS}} was non-\/zero\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Client/Short\+Code.\+cs\end{DoxyCompactItemize}

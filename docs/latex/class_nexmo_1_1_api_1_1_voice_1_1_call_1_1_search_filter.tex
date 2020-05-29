@@ -1,0 +1,97 @@
+\hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter}{}\doxysection{Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter Class Reference}
+\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter}\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a4752cbd492d32b03db7963dad363e57c}{status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Filter on the status of this Call.\+Possible values are\+: started -\/ Platform has stared the call. ringing -\/ the user\textquotesingle{}s handset is ringing. answered -\/ the user has answered your call. timeout -\/ your user did not answer your call with ringing\+\_\+timer. machine -\/ Platform detected an answering machine. completed -\/ Platform has terminated this call. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a12d891f2131b815d2630d30dcde719ab}{date\+\_\+start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return the records that occurred after this point in time. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac318d9a29f53a472764376a0ae7cfdbc}{date\+\_\+end}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return the records that occurred before this point in time. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_aebdbb0964722f6e42df20df21152320d}{page\+\_\+size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return this amount of records in the response. The default value is 10. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a3493089ce20a972cc71b7ffac232fe11}{record\+\_\+index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return page\+\_\+size Calls from this index in the response. That is, if your request returns 300 Calls, set record\+\_\+index to 5 in order to return Calls 50 to 59. The default value is 0. That is, the first page\+\_\+size Calls. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a206aa7b2108b1865fb75f8e3675da3bd}{order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return the results in\+: asc -\/ ascending order.\+This is the default value. desc -\/ descending order. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac6fe6c3953ff9e68883e6ea04eec9a0d}{conversation\+\_\+uuid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return all the records associated with a specific Conversation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac6fe6c3953ff9e68883e6ea04eec9a0d}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac6fe6c3953ff9e68883e6ea04eec9a0d}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!conversation\_uuid@{conversation\_uuid}}
+\index{conversation\_uuid@{conversation\_uuid}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{conversation\_uuid}{conversation\_uuid}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+conversation\+\_\+uuid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return all the records associated with a specific Conversation. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac318d9a29f53a472764376a0ae7cfdbc}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_ac318d9a29f53a472764376a0ae7cfdbc}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!date\_end@{date\_end}}
+\index{date\_end@{date\_end}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{date\_end}{date\_end}}
+{\footnotesize\ttfamily Date\+Time? Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+date\+\_\+end\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return the records that occurred before this point in time. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a12d891f2131b815d2630d30dcde719ab}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a12d891f2131b815d2630d30dcde719ab}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!date\_start@{date\_start}}
+\index{date\_start@{date\_start}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{date\_start}{date\_start}}
+{\footnotesize\ttfamily Date\+Time? Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+date\+\_\+start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return the records that occurred after this point in time. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a206aa7b2108b1865fb75f8e3675da3bd}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a206aa7b2108b1865fb75f8e3675da3bd}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!order@{order}}
+\index{order@{order}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{order}{order}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+order\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return the results in\+: asc -\/ ascending order.\+This is the default value. desc -\/ descending order. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_aebdbb0964722f6e42df20df21152320d}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_aebdbb0964722f6e42df20df21152320d}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!page\_size@{page\_size}}
+\index{page\_size@{page\_size}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{page\_size}{page\_size}}
+{\footnotesize\ttfamily int Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+page\+\_\+size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return this amount of records in the response. The default value is 10. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a3493089ce20a972cc71b7ffac232fe11}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a3493089ce20a972cc71b7ffac232fe11}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!record\_index@{record\_index}}
+\index{record\_index@{record\_index}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{record\_index}{record\_index}}
+{\footnotesize\ttfamily int Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+record\+\_\+index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Return page\+\_\+size Calls from this index in the response. That is, if your request returns 300 Calls, set record\+\_\+index to 5 in order to return Calls 50 to 59. The default value is 0. That is, the first page\+\_\+size Calls. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a4752cbd492d32b03db7963dad363e57c}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_search_filter_a4752cbd492d32b03db7963dad363e57c}} 
+\index{Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}!status@{status}}
+\index{status@{status}!Nexmo.Api.Voice.Call.SearchFilter@{Nexmo.Api.Voice.Call.SearchFilter}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Search\+Filter.\+status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Filter on the status of this Call.\+Possible values are\+: started -\/ Platform has stared the call. ringing -\/ the user\textquotesingle{}s handset is ringing. answered -\/ the user has answered your call. timeout -\/ your user did not answer your call with ringing\+\_\+timer. machine -\/ Platform detected an answering machine. completed -\/ Platform has terminated this call. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Voice/Call.\+cs\end{DoxyCompactItemize}

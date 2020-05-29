@@ -1,0 +1,67 @@
+\hypertarget{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request}{}\doxysection{Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request Class Reference}
+\label{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request}\index{Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}}
+Inheritance diagram for Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a7739f02e4a0e4b4ea7d9fc105d48e66a}{Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required. A single phone number that you need insight about in national or international format. The number may include any or all of the following\+: white space, -\/, +, (, ). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a9802caaba5f4883802cb364a2c408878}{Country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. If a number does not have a country code or is uncertain, set the two-\/character country code. This code must be in I\+SO 3166-\/1 alpha-\/2 format and in upper case. For example, GB or US. If you set country and number is already in E.\+164 format, country must match the country code in number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ace825188cba5baffb7f84791461e759e}{Caller\+I\+D\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Indicates if the name of the person who owns the phone number should be looked up and returned in the response. Set to true to receive phone number owner name in the response. This features is available for US numbers only and incurs an additional charge. Default value is false. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ad74e2342f6c5b340543d2f9c93c56560}{I\+P\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. The IP address of the user. If supplied, we will compare this to the country the user\textquotesingle{}s phone is located in and return an error if it does not match. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ace825188cba5baffb7f84791461e759e}\label{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ace825188cba5baffb7f84791461e759e}} 
+\index{Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}!CallerIDName@{CallerIDName}}
+\index{CallerIDName@{CallerIDName}!Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}}
+\doxysubsubsection{\texorpdfstring{CallerIDName}{CallerIDName}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request.\+Caller\+I\+D\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Indicates if the name of the person who owns the phone number should be looked up and returned in the response. Set to true to receive phone number owner name in the response. This features is available for US numbers only and incurs an additional charge. Default value is false. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a9802caaba5f4883802cb364a2c408878}\label{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a9802caaba5f4883802cb364a2c408878}} 
+\index{Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}!Country@{Country}}
+\index{Country@{Country}!Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}}
+\doxysubsubsection{\texorpdfstring{Country}{Country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request.\+Country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. If a number does not have a country code or is uncertain, set the two-\/character country code. This code must be in I\+SO 3166-\/1 alpha-\/2 format and in upper case. For example, GB or US. If you set country and number is already in E.\+164 format, country must match the country code in number. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ad74e2342f6c5b340543d2f9c93c56560}\label{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_ad74e2342f6c5b340543d2f9c93c56560}} 
+\index{Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}!IPAddress@{IPAddress}}
+\index{IPAddress@{IPAddress}!Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}}
+\doxysubsubsection{\texorpdfstring{IPAddress}{IPAddress}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request.\+I\+P\+Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. The IP address of the user. If supplied, we will compare this to the country the user\textquotesingle{}s phone is located in and return an error if it does not match. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a7739f02e4a0e4b4ea7d9fc105d48e66a}\label{class_nexmo_1_1_api_1_1_number_insight_1_1_number_insight_request_a7739f02e4a0e4b4ea7d9fc105d48e66a}} 
+\index{Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}!Number@{Number}}
+\index{Number@{Number}!Nexmo.Api.NumberInsight.NumberInsightRequest@{Nexmo.Api.NumberInsight.NumberInsightRequest}}
+\doxysubsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Insight.\+Number\+Insight\+Request.\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required. A single phone number that you need insight about in national or international format. The number may include any or all of the following\+: white space, -\/, +, (, ). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/Number\+Insight.\+cs\end{DoxyCompactItemize}
