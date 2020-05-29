@@ -1,0 +1,169 @@
+\hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}{}\doxysection{Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response Class Reference}
+\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response}\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a30bc9e42808255ff420b919098a17f5b}{uuid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A unique identifier for this Call. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a18ee0d4bc09510c856ba37629e23bab4}{conversation\+\_\+uuid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A unique identifier for the Conversation this Call is part of. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_endpoint}{Endpoint}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_abeddc51c21db73277017a54b1548b27c}{to}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The single or mixed collection of endpoint types you connected to.\+Possible value are\+: phone -\/ phone numbers in e.\+164 format.\+Options are\+: number -\/ the phone number to connect to in E.\+164 format. dtmf\+Answer -\/ Set the digits that are sent to the user as soon as the Call is answered.\+The$\ast$ and \# digits are respected. You create pauses using p. Each pause is 500ms. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_endpoint}{Endpoint}} \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a497eceb03b3e0612412be53e534cdc73}{from}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The endpoint you called from. Possible values are the same as to \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0339385af9df424b177c369c16002fa3}{direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Possible values are outbound or inbound. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a02b1a787a259d2310bc8306107d8b148}{recording\+\_\+url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The U\+RL to download a call or conversation recording from. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a363d6813335a02cc0f0da9c3f77f38de}{start\+\_\+time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time the Call started \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ab32c231e947df4cfe153d7a5939883d8}{network}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Mobile Country Code Mobile Network Code (M\+C\+C\+M\+NC) for the carrier network used to make this Call. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ad842cc4a513ab5c279aec11d1d253aa6}{status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The status of the Call. Possible values are\+: started -\/ Platform has stared the Call. ringing -\/ the user\textquotesingle{}s handset is ringing. answered -\/ the user has answered your Call. timeout -\/ your user did not answer your Call with ringing\+\_\+timer. machine -\/ Platform detected an answering machine. completed -\/ Platform has terminated this Call. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a87f896d098cf9c764e0bcade09fc5302}{rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The price per minute for this Call. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_aa311446ff1041e662227731426afd358}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total price charged for this Call. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a79d39e36bb51fd538455b82d628ba2e5}{duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time elapsed for the Call to take place in seconds. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0990401657a14aa123ac43f759c4faa0}{end\+\_\+time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time the Call ended \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a18ee0d4bc09510c856ba37629e23bab4}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a18ee0d4bc09510c856ba37629e23bab4}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!conversation\_uuid@{conversation\_uuid}}
+\index{conversation\_uuid@{conversation\_uuid}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{conversation\_uuid}{conversation\_uuid}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+conversation\+\_\+uuid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A unique identifier for the Conversation this Call is part of. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0339385af9df424b177c369c16002fa3}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0339385af9df424b177c369c16002fa3}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!direction@{direction}}
+\index{direction@{direction}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+direction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Possible values are outbound or inbound. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a79d39e36bb51fd538455b82d628ba2e5}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a79d39e36bb51fd538455b82d628ba2e5}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!duration@{duration}}
+\index{duration@{duration}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily int Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time elapsed for the Call to take place in seconds. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0990401657a14aa123ac43f759c4faa0}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a0990401657a14aa123ac43f759c4faa0}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!end\_time@{end\_time}}
+\index{end\_time@{end\_time}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{end\_time}{end\_time}}
+{\footnotesize\ttfamily Date\+Time? Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+end\+\_\+time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time the Call ended 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a497eceb03b3e0612412be53e534cdc73}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a497eceb03b3e0612412be53e534cdc73}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!from@{from}}
+\index{from@{from}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{from}{from}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_endpoint}{Endpoint}} Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+from\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The endpoint you called from. Possible values are the same as to 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ab32c231e947df4cfe153d7a5939883d8}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ab32c231e947df4cfe153d7a5939883d8}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!network@{network}}
+\index{network@{network}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{network}{network}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+network\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Mobile Country Code Mobile Network Code (M\+C\+C\+M\+NC) for the carrier network used to make this Call. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_aa311446ff1041e662227731426afd358}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_aa311446ff1041e662227731426afd358}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!price@{price}}
+\index{price@{price}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily decimal Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The total price charged for this Call. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a87f896d098cf9c764e0bcade09fc5302}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a87f896d098cf9c764e0bcade09fc5302}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!rate@{rate}}
+\index{rate@{rate}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily decimal Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The price per minute for this Call. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a02b1a787a259d2310bc8306107d8b148}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a02b1a787a259d2310bc8306107d8b148}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!recording\_url@{recording\_url}}
+\index{recording\_url@{recording\_url}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{recording\_url}{recording\_url}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+recording\+\_\+url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The U\+RL to download a call or conversation recording from. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a363d6813335a02cc0f0da9c3f77f38de}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a363d6813335a02cc0f0da9c3f77f38de}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily Date\+Time? Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+start\+\_\+time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time the Call started 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ad842cc4a513ab5c279aec11d1d253aa6}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_ad842cc4a513ab5c279aec11d1d253aa6}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!status@{status}}
+\index{status@{status}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The status of the Call. Possible values are\+: started -\/ Platform has stared the Call. ringing -\/ the user\textquotesingle{}s handset is ringing. answered -\/ the user has answered your Call. timeout -\/ your user did not answer your Call with ringing\+\_\+timer. machine -\/ Platform detected an answering machine. completed -\/ Platform has terminated this Call. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_abeddc51c21db73277017a54b1548b27c}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_abeddc51c21db73277017a54b1548b27c}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!to@{to}}
+\index{to@{to}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_endpoint}{Endpoint}} Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+to\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The single or mixed collection of endpoint types you connected to.\+Possible value are\+: phone -\/ phone numbers in e.\+164 format.\+Options are\+: number -\/ the phone number to connect to in E.\+164 format. dtmf\+Answer -\/ Set the digits that are sent to the user as soon as the Call is answered.\+The$\ast$ and \# digits are respected. You create pauses using p. Each pause is 500ms. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a30bc9e42808255ff420b919098a17f5b}\label{class_nexmo_1_1_api_1_1_voice_1_1_call_1_1_call_response_a30bc9e42808255ff420b919098a17f5b}} 
+\index{Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}!uuid@{uuid}}
+\index{uuid@{uuid}!Nexmo.Api.Voice.Call.CallResponse@{Nexmo.Api.Voice.Call.CallResponse}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Voice.\+Call.\+Call\+Response.\+uuid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A unique identifier for this Call. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/\+Voice/Call.\+cs\end{DoxyCompactItemize}

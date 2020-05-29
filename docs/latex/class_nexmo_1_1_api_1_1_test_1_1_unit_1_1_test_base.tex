@@ -1,0 +1,68 @@
+\hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base}{}\doxysection{Nexmo.\+Api.\+Test.\+Unit.\+Test\+Base Class Reference}
+\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base}\index{Nexmo.Api.Test.Unit.TestBase@{Nexmo.Api.Test.Unit.TestBase}}
+Inheritance diagram for Nexmo.\+Api.\+Test.\+Unit.\+Test\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_abceaf3c8d268db41e5dc17fc35ca6236}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_abceaf3c8d268db41e5dc17fc35ca6236}} 
+void {\bfseries Setup} (string uri, string response\+Content, string request\+Content=null, Http\+Status\+Code expected\+Code=Http\+Status\+Code.\+OK)
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_aa01836e3ba0a5898f6afe68f798546b6}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_aa01836e3ba0a5898f6afe68f798546b6}} 
+void {\bfseries Setup} (string uri, byte\mbox{[}$\,$\mbox{]} response\+Content, Http\+Status\+Code expected\+Code=Http\+Status\+Code.\+OK)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a2ea909df2852d1a65e6df115d4adc39c}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a2ea909df2852d1a65e6df115d4adc39c}} 
+string {\bfseries Api\+Url} = Configuration.\+Instance.\+Settings\mbox{[}\char`\"{}app\+Settings\+:\+Nexmo.\+Url.\+Api\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_aa2198a489d6ded12c8f484c1866e0ae0}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_aa2198a489d6ded12c8f484c1866e0ae0}} 
+string {\bfseries Rest\+Url} = Configuration.\+Instance.\+Settings\mbox{[}\char`\"{}app\+Settings\+:\+Nexmo.\+Url.\+Rest\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_af07f68d3c3257ce42147dcc2cc48c074}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_af07f68d3c3257ce42147dcc2cc48c074}} 
+string {\bfseries Api\+Key} = Environment.\+Get\+Environment\+Variable(\char`\"{}N\+E\+X\+M\+O\+\_\+\+A\+P\+I\+\_\+\+K\+EY\char`\"{})??\char`\"{}test\+Key\char`\"{}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a05e30e671010f7a6b904c4824c25013d}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a05e30e671010f7a6b904c4824c25013d}} 
+string {\bfseries Api\+Secret} = Environment.\+Get\+Environment\+Variable(\char`\"{}N\+E\+X\+M\+O\+\_\+\+A\+P\+I\+\_\+\+Secret\char`\"{}) ?? \char`\"{}test\+Secret\char`\"{}
+\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a21dd1fbb2402a132580ba2f6c5149417}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a21dd1fbb2402a132580ba2f6c5149417}} 
+string {\bfseries App\+Id} = Environment.\+Get\+Environment\+Variable(\char`\"{}A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+ID\char`\"{})?? \char`\"{}afed99d2-\/ae38-\/487c-\/bb5a-\/fe2518febd44\char`\"{}
+\item 
+string {\bfseries Private\+Key}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a2c1aac18a32f69223c50d69252317645}\label{class_nexmo_1_1_api_1_1_test_1_1_unit_1_1_test_base_a2c1aac18a32f69223c50d69252317645}} 
+\index{Nexmo.Api.Test.Unit.TestBase@{Nexmo.Api.Test.Unit.TestBase}!PrivateKey@{PrivateKey}}
+\index{PrivateKey@{PrivateKey}!Nexmo.Api.Test.Unit.TestBase@{Nexmo.Api.Test.Unit.TestBase}}
+\doxysubsubsection{\texorpdfstring{PrivateKey}{PrivateKey}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Test.\+Unit.\+Test\+Base.\+Private\+Key\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"PRIVATE\_KEY"}) ?? \textcolor{stringliteral}{@"-\/-\/-\/-\/-\/BEGIN RSA PRIVATE KEY-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\textcolor{stringliteral}{MIICXAIBAAKBgQCqGKukO1De7zhZj6+H0qtjTkVxwTCpvKe4eCZ0FPqri0cb2JZfXJ/DgYSF6vUp}}
+\DoxyCodeLine{\textcolor{stringliteral}{wmJG8wVQZKjeGcjDOL5UlsuusFncCzWBQ7RKNUSesmQRMSGkVb1/3j+skZ6UtW+5u09lHNsj6tQ5}}
+\DoxyCodeLine{\textcolor{stringliteral}{1s1SPrCBkedbNf0Tp0GbMJDyR4e9T04ZZwIDAQABAoGAFijko56+qGyN8M0RVyaRAXz++xTqHBLh}}
+\DoxyCodeLine{\textcolor{stringliteral}{3tx4VgMtrQ+WEgCjhoTwo23KMBAuJGSYnRmoBZM3lMfTKevIkAidPExvYCdm5dYq3XToLkkLv5L2}}
+\DoxyCodeLine{\textcolor{stringliteral}{pIIVOFMDG+KESnAFV7l2c+cnzRMW0+b6f8mR1CJzZuxVLL6Q02fvLi55/mbSYxECQQDeAw6fiIQX}}
+\DoxyCodeLine{\textcolor{stringliteral}{GukBI4eMZZt4nscy2o12KyYner3VpoeE+Np2q+Z3pvAMd/aNzQ/W9WaI+NRfcxUJrmfPwIGm63il}}
+\DoxyCodeLine{\textcolor{stringliteral}{AkEAxCL5HQb2bQr4ByorcMWm/hEP2MZzROV73yF41hPsRC9m66KrheO9HPTJuo3/9s5p+sqGxOlF}}
+\DoxyCodeLine{\textcolor{stringliteral}{L0NDt4SkosjgGwJAFklyR1uZ/wPJjj611cdBcztlPdqoxssQGnh85BzCj/u3WqBpE2vjvyyvyI5k}}
+\DoxyCodeLine{\textcolor{stringliteral}{X6zk7S0ljKtt2jny2+00VsBerQJBAJGC1Mg5Oydo5NwD6BiROrPxGo2bpTbu/fhrT8ebHkTz2epl}}
+\DoxyCodeLine{\textcolor{stringliteral}{U9VQQSQzY1oZMVX8i1m5WUTLPz2yLJIBQVdXqhMCQBGoiuSoSjafUhV7i1cEGpb88h5NBYZzWXGZ}}
+\DoxyCodeLine{\textcolor{stringliteral}{37sJ5QsW+sJyoNde3xH8vdXhzU7eT82D6X/scw9RZz+/6rCJ4p0=}}
+\DoxyCodeLine{\textcolor{stringliteral}{-\/-\/-\/-\/-\/END RSA PRIVATE KEY-\/-\/-\/-\/-\/"}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api.\+Test.\+Unit/Test\+Base.\+cs\end{DoxyCompactItemize}

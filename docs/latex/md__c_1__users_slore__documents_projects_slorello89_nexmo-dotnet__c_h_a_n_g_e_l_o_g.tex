@@ -1,0 +1,113 @@
+
+\begin{DoxyItemize}
+\item Added Secret Management A\+PI implementation.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md1}{}\doxysection{3.\+1.\+1 (2018-\/08-\/30)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Fixed missed Credentials default constructor.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md2}{}\doxysection{3.\+1.\+0 (2018-\/08-\/16)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Added Redact A\+PI implementation.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md3}{}\doxysection{3.\+0.\+1 (2018-\/03-\/05)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Fixed missed Number\+Insight instanciation (\#90)
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md4}{}\doxysection{3.\+0.\+0 (2018-\/02-\/23)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} Deprioritize support for configuration via configuration files.
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} Application\+Key must now be the actual private key and not a path to the key.
+\item Instance-\/based methods are available to use.
+\item Support .N\+ET Standard 2.\+0.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md5}{}\doxysection{2.\+3.\+1 (2017-\/11-\/23)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Set Json serialization Default\+Value\+Handling to ignore (Voice A\+PI defaults no longer required to be explicitly sent)
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md6}{}\doxysection{2.\+3.\+0 (2017-\/11-\/09)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md6}
+
+\begin{DoxyItemize}
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} {\ttfamily Account.\+Get\+Balance} returns (instead of a {\ttfamily decimal}) a {\ttfamily Balance} object that includes your account balance and other properties.
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} {\ttfamily Number\+Insight} calls, request classes, and response classes have changed slightly. The underlying calls to \mbox{\hyperlink{namespace_nexmo}{Nexmo}}\textquotesingle{}s A\+PI have been updated as well. Thanks to @\+Rabeb\+Othmani for the P\+R!
+\begin{DoxyItemize}
+\item C\+H\+A\+N\+GE\+: Number\+Insight\+Basic\+Response Request\+Basic(\+Number\+Insight\+Basic\+Request, ...) =$>$ Number\+Insight\+Basic\+Response Request\+Basic(\+Number\+Insight\+Request, ...)
+\item C\+H\+A\+N\+GE\+: Number\+Insight\+Standard\+Response Request\+Standard(\+Number\+Insight\+Basic\+Request, ...) =$>$ Number\+Insight\+Standard\+Response Request\+Standard(\+Number\+Insight\+Request, ...)
+\item A\+DD\+: Number\+Insight\+Advanced\+Response Request\+Advanced(\+Number\+Insight\+Request, ...)
+\item C\+H\+A\+N\+GE\+: Number\+Insight\+Request\+Response Request(\+Number\+Insight\+Request, ...) =$>$ Number\+Insight\+Async\+Request\+Response Request\+Async(\+Number\+Insight\+Async\+Request, ...)
+\end{DoxyItemize}
+\item A\+PI and documentation refresh\+: Added missing J\+S\+ON properties, updated summaries from the official docs.
+\item Support additional call endpoint types.
+\item Introduced {\ttfamily Nexmo.\+Api.\+Ensure\+Success\+Status\+Code} configuration option. You may instruct the library to throw an exception if a request results in an unsuccessful H\+T\+TP status code.
+\item Address {\ttfamily Short\+Code.\+Request\+Alert} request bug.
+\item Expose the configuration {\ttfamily I\+Logger\+Factory} for use with external logging implementations.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md7}{}\doxysection{2.\+2.\+2 (2017-\/06-\/19)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Updated jose-\/jwt to 2.\+3.\+0 which is reported to address key loading issues.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md8}{}\doxysection{2.\+2.\+1 (2017-\/03-\/21)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md8}
+
+\begin{DoxyItemize}
+\item Fixed Nu\+Get dependencies; testing shows they are now being correctly included when performing {\ttfamily install-\/package}.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md9}{}\doxysection{2.\+2.\+0 (2017-\/03-\/10)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md9}
+
+\begin{DoxyItemize}
+\item Promoted to release, no changes from rc2.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md10}{}\doxysection{2.\+2.\+0-\/rc2 (2017-\/01-\/12)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md10}
+
+\begin{DoxyItemize}
+\item Allow P\+K\+CS\#8 formatted private keys; auth key parser logging.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md11}{}\doxysection{2.\+2.\+0-\/rc1 (2017-\/01-\/12)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md11}
+
+\begin{DoxyItemize}
+\item Expose internal A\+PI request methods to allow custom A\+PI calls from library consumers as some new \mbox{\hyperlink{namespace_nexmo}{Nexmo}} A\+PI endpoints may not be immediately supported.
+\item Allow override of request credentials per A\+PI call.
+\item Optional configuration and request logging.
+\item Support signed requests via security key.
+\item Optional A\+PI request rate limiting.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md12}{}\doxysection{2.\+1.\+2 (2016-\/12-\/07)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Look for {\ttfamily appsettings.\+json} (netcore webapp convention)
+\item Ensure X\+ML config parser only looks for keyvalues inside {\ttfamily $<$app\+Settings$>$} and {\ttfamily $<$connection\+Strings$>$} elements.
+\item Gracefully ignore elements with key attribute but not value attribute.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md13}{}\doxysection{2.\+1.\+1 (2016-\/12-\/06)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md13}
+
+\begin{DoxyItemize}
+\item Look for {\ttfamily $<$executing process$>$.exe.\+config} file for X\+ML configuration.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md14}{}\doxysection{2.\+1.\+0 (2016-\/11-\/18)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md14}
+
+\begin{DoxyItemize}
+\item User-\/\+Agent reporting. You may also append an application-\/specific ID via settings.\+json.
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} Support web.\+config X\+ML. This has changed the settings.\+json structure slightly. Please check the R\+E\+A\+D\+ME for details.
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md15}{}\doxysection{2.\+0.\+0 (2016-\/10-\/24)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md15}
+
+\begin{DoxyItemize}
+\item Dependency marking for netstandard1.\+6
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md16}{}\doxysection{2.\+0.\+0-\/rc2 (2016-\/10-\/22)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md16}
+
+\begin{DoxyItemize}
+\item Fix J\+WT generation (key import fail) on O\+S\+X/\+Linux
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md17}{}\doxysection{2.\+0.\+0-\/rc1 (2016-\/10-\/16)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md17}
+
+\begin{DoxyItemize}
+\item Number\+Insight basic + standard support
+\item Number\+Verify control call
+\item J\+WT token generation
+\item Application A\+PI support
+\item Application-\/based call A\+PI support
+\item .N\+ET Standard 1.\+6 support
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} Moved configuration from app.\+config to settings.\+json
+\item {\bfseries{\mbox{[}B\+R\+E\+A\+K\+I\+NG\mbox{]}}} \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Nexmo.\+Api.\+Voice}} static class has been deprecated -\/ you must move to the new Voice calls inside the new \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_voice}{Nexmo.\+Api.\+Voice}} namespace. See \href{https://docs.nexmo.com/voice/voice-api}{\texttt{ the Nexmo docs}} for details.
+\end{DoxyItemize}
+
+J\+WT notes\+:
+
+
+\begin{DoxyItemize}
+\item When registering a new application, make sure you save the private key. This library does not (currently) take care of this for you.
+\item Make sure your saved private key is A\+S\+C\+II (not U\+T\+F-\/8, no B\+OM) -\/ \href{http://stackoverflow.com/questions/1068650/using-awk-to-remove-the-byte-order-mark}{\texttt{ http\+://stackoverflow.\+com/questions/1068650/using-\/awk-\/to-\/remove-\/the-\/byte-\/order-\/mark}}
+\end{DoxyItemize}\hypertarget{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md18}{}\doxysection{1.\+0.\+0 (2016-\/03-\/19)}\label{md__c_1__users_slore__documents_projects_slorello89_nexmo-dotnet__c_h_a_n_g_e_l_o_g_autotoc_md18}
+
+\begin{DoxyItemize}
+\item Initial release with nuget package 
+\end{DoxyItemize}

@@ -1,0 +1,139 @@
+\hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request}{}\doxysection{Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request Class Reference}
+\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request}\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ae43602681e5707deab33f15530cac886}{number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The mobile or landline phone number to verify. Unless you are setting country explicitly, this number must be in E.\+164 format. For example, 447700900000. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a4ba43508eb282f41051c1eff36ea17a5}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a4ba43508eb282f41051c1eff36ea17a5}} 
+string {\bfseries Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ace4a4bd3447d1e9d987f26b48fc426d1}{country}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If do not set number in international format or you are not sure if number is correctly formatted, set country with the two-\/character country code. For example, GB, US. \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} works out the international phone number for you. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ab5ed397f3f4b300784e2eb07ea887e71}{brand}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the company or App you are using \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} for. This 18 character alphanumeric string is used in the body of \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} message. For example\+: \char`\"{}\+Your brand P\+I\+N is ..\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a99bb01440f1d745cf2ddd8fcd2036d7e}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a99bb01440f1d745cf2ddd8fcd2036d7e}} 
+string {\bfseries Brand}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af21dd9111d495f33a6a46b318f5d9ea3}{sender\+\_\+id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An 11 character alphanumeric string to specify the Sender\+ID for S\+MS sent by \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}}. Depending on the destination of the phone number you are applying, restrictions may apply. By default, sender\+\_\+id is V\+E\+R\+I\+FY. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a464ba03e5ac11441c7b64d0eb172e2f6}{code\+\_\+length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The length of the P\+IN. Possible values are 6 or 4 characters. The default value is 4. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af39cb409bdfbc8ea1402ee3e568e9ed5}{lg}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em By default, the S\+MS or text-\/to-\/speech (T\+TS) message is generated in the locale that matches the number. For example, the text message or T\+TS message for a 33$\ast$ number is sent in French. Use this parameter to explicitly control the language, accent and gender used for the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request. The default language is en-\/us. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a33b484f5bde3f25c91fd183d6d2f0416}{require\+\_\+type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Restrict verification to a certain network type. Possible values are\+: All (Default) Mobile Landline \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_aff04a6261a56ca159d1e6ffcf6116931}{pin\+\_\+expiry}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The P\+IN validity time from generation. This is an integer value between 60 and 3600 seconds. The default is 300 seconds. When specified together, pin\+\_\+expiry must be an integer multiple of next\+\_\+event\+\_\+wait. Otherwise, pin\+\_\+expiry is set to equal next\+\_\+event\+\_\+wait. For example\+: pin\+\_\+expiry = 360 seconds, so next\+\_\+event\+\_\+wait = 120 seconds -\/ all three attempts have the same P\+IN. pin\+\_\+expiry = 240 seconds, so next\+\_\+event\+\_\+wait = 120 seconds -\/ 1st and 2nd attempts have the same P\+IN, third attempt has a different P\+IN. pin\+\_\+expiry = 120 (or 200 or 400 seconds) -\/ each attempt has a different P\+IN. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a42e9fb4a4c0ab198d78844fa989da6e4}{next\+\_\+event\+\_\+wait}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An integer value between 60 and 900 seconds inclusive that specifies the wait time between attempts to deliver the P\+IN. \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} calculates the default value based on the average time taken by users to complete verification. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a9578f07da9c339b374cbc8cb635840ab}{workflow\+\_\+id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The workflow ID for selecting verification workflow -\/ choose between 1 and 5 full guide \href{https://developer.nexmo.com/verify/guides/workflows-and-events}{\texttt{ https\+://developer.\+nexmo.\+com/verify/guides/workflows-\/and-\/events}} workflow\+\_\+id = 1, (Default Workflow)\+: S\+MS -\/$>$ T\+TS -\/$>$ T\+TS workflow\+\_\+id = 2, S\+MS -\/$>$ S\+MS -\/$>$ T\+TS workflow\+\_\+id = 3, T\+TS -\/$>$ T\+TS workflow\+\_\+id = 4, S\+MS -\/$>$ S\+MS workflow\+\_\+id = 5, S\+MS -\/$>$ T\+TS \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ab5ed397f3f4b300784e2eb07ea887e71}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ab5ed397f3f4b300784e2eb07ea887e71}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!brand@{brand}}
+\index{brand@{brand}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{brand}{brand}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+brand\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the company or App you are using \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} for. This 18 character alphanumeric string is used in the body of \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} message. For example\+: \char`\"{}\+Your brand P\+I\+N is ..\char`\"{}. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a464ba03e5ac11441c7b64d0eb172e2f6}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a464ba03e5ac11441c7b64d0eb172e2f6}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!code\_length@{code\_length}}
+\index{code\_length@{code\_length}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{code\_length}{code\_length}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+code\+\_\+length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The length of the P\+IN. Possible values are 6 or 4 characters. The default value is 4. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ace4a4bd3447d1e9d987f26b48fc426d1}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ace4a4bd3447d1e9d987f26b48fc426d1}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!country@{country}}
+\index{country@{country}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{country}{country}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+country\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If do not set number in international format or you are not sure if number is correctly formatted, set country with the two-\/character country code. For example, GB, US. \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} works out the international phone number for you. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af39cb409bdfbc8ea1402ee3e568e9ed5}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af39cb409bdfbc8ea1402ee3e568e9ed5}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!lg@{lg}}
+\index{lg@{lg}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{lg}{lg}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+lg\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+By default, the S\+MS or text-\/to-\/speech (T\+TS) message is generated in the locale that matches the number. For example, the text message or T\+TS message for a 33$\ast$ number is sent in French. Use this parameter to explicitly control the language, accent and gender used for the \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} request. The default language is en-\/us. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a42e9fb4a4c0ab198d78844fa989da6e4}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a42e9fb4a4c0ab198d78844fa989da6e4}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!next\_event\_wait@{next\_event\_wait}}
+\index{next\_event\_wait@{next\_event\_wait}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{next\_event\_wait}{next\_event\_wait}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+next\+\_\+event\+\_\+wait\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An integer value between 60 and 900 seconds inclusive that specifies the wait time between attempts to deliver the P\+IN. \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}} calculates the default value based on the average time taken by users to complete verification. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ae43602681e5707deab33f15530cac886}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_ae43602681e5707deab33f15530cac886}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!number@{number}}
+\index{number@{number}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The mobile or landline phone number to verify. Unless you are setting country explicitly, this number must be in E.\+164 format. For example, 447700900000. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_aff04a6261a56ca159d1e6ffcf6116931}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_aff04a6261a56ca159d1e6ffcf6116931}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!pin\_expiry@{pin\_expiry}}
+\index{pin\_expiry@{pin\_expiry}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{pin\_expiry}{pin\_expiry}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+pin\+\_\+expiry\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The P\+IN validity time from generation. This is an integer value between 60 and 3600 seconds. The default is 300 seconds. When specified together, pin\+\_\+expiry must be an integer multiple of next\+\_\+event\+\_\+wait. Otherwise, pin\+\_\+expiry is set to equal next\+\_\+event\+\_\+wait. For example\+: pin\+\_\+expiry = 360 seconds, so next\+\_\+event\+\_\+wait = 120 seconds -\/ all three attempts have the same P\+IN. pin\+\_\+expiry = 240 seconds, so next\+\_\+event\+\_\+wait = 120 seconds -\/ 1st and 2nd attempts have the same P\+IN, third attempt has a different P\+IN. pin\+\_\+expiry = 120 (or 200 or 400 seconds) -\/ each attempt has a different P\+IN. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a33b484f5bde3f25c91fd183d6d2f0416}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a33b484f5bde3f25c91fd183d6d2f0416}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!require\_type@{require\_type}}
+\index{require\_type@{require\_type}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{require\_type}{require\_type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+require\+\_\+type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Restrict verification to a certain network type. Possible values are\+: All (Default) Mobile Landline 
+
+Note\+: contact \href{mailto:support@nexmo.com}{\texttt{ support@nexmo.\+com}} to enable this feature.\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af21dd9111d495f33a6a46b318f5d9ea3}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_af21dd9111d495f33a6a46b318f5d9ea3}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!sender\_id@{sender\_id}}
+\index{sender\_id@{sender\_id}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{sender\_id}{sender\_id}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+sender\+\_\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An 11 character alphanumeric string to specify the Sender\+ID for S\+MS sent by \mbox{\hyperlink{namespace_nexmo_1_1_api_1_1_verify}{Verify}}. Depending on the destination of the phone number you are applying, restrictions may apply. By default, sender\+\_\+id is V\+E\+R\+I\+FY. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a9578f07da9c339b374cbc8cb635840ab}\label{class_nexmo_1_1_api_1_1_number_verify_1_1_verify_request_a9578f07da9c339b374cbc8cb635840ab}} 
+\index{Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}!workflow\_id@{workflow\_id}}
+\index{workflow\_id@{workflow\_id}!Nexmo.Api.NumberVerify.VerifyRequest@{Nexmo.Api.NumberVerify.VerifyRequest}}
+\doxysubsubsection{\texorpdfstring{workflow\_id}{workflow\_id}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+Number\+Verify.\+Verify\+Request.\+workflow\+\_\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The workflow ID for selecting verification workflow -\/ choose between 1 and 5 full guide \href{https://developer.nexmo.com/verify/guides/workflows-and-events}{\texttt{ https\+://developer.\+nexmo.\+com/verify/guides/workflows-\/and-\/events}} workflow\+\_\+id = 1, (Default Workflow)\+: S\+MS -\/$>$ T\+TS -\/$>$ T\+TS workflow\+\_\+id = 2, S\+MS -\/$>$ S\+MS -\/$>$ T\+TS workflow\+\_\+id = 3, T\+TS -\/$>$ T\+TS workflow\+\_\+id = 4, S\+MS -\/$>$ S\+MS workflow\+\_\+id = 5, S\+MS -\/$>$ T\+TS 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/Number\+Verify.\+cs\end{DoxyCompactItemize}

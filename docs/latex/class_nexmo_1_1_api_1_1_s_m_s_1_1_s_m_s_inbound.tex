@@ -1,0 +1,231 @@
+\hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound}{}\doxysection{Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound Class Reference}
+\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound}\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a038b1805766ce8a2d926847c9d91a812}{Construct\+Signature\+String\+From\+Dictionary}} (I\+Dictionary$<$ string, string $>$ query)
+\begin{DoxyCompactList}\small\item\em converts dictionary into properly formatted signature string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a15dba609c3406fe6bd9d893d66687ea3}{type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Possible values are\+: text -\/ standard text. unicode -\/ U\+R\+Lencoded unicode . This is valid for standard G\+SM, Arabic, Chinese, double-\/encoded characters and so on. binary -\/ a binary message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_af136f274e228b9f10cbc33519fe94b1c}{to}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The phone number the message was sent to. This is your virtual number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_abde3ccc427e668c6ae7660da3b26a2c7}{msisdn}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The phone number that this inbound message was sent from. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a1f6215159b78049807eef82d6673e866}{message\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_nexmo}{Nexmo}} ID for this message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aa7f2ec80d37b32fcdb50071adf42c652}{message\+\_\+timestamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time at U\+T\+C±00\+:00 that \mbox{\hyperlink{namespace_nexmo}{Nexmo}} started to push this inbound message to your webhook endpoint. The message-\/timestamp is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS. For example, 2020-\/01-\/01 12\+:00\+:00. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a805695ea08cc1f0bf0417e59554f65e2}{timestamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A unix timestamp representation of message-\/timestamp. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a451a5ae1e9db37337fe94ebfd6a01e2a}{nonce}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A random string that forms part of the signed set of parameters, it adds an extra element of unpredictability into the signature for the request. You use the nonce and timestamp parameters with your shared secret to calculate and validate the signature for inbound messages. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a159db5618b03375f81d7cc1515573138}{text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The message body for this inbound message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ac670b2db26b330289a17b9fbbded1fd1}{keyword}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The first word in the message body. This is typically used with short codes. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a438c1a09e24a0ac279bd8ab9a0a2c3c4}{concat}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True -\/ if this is a concatenated message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a5cc07dbe1a4ce8df50ed1f756ac0ff9c}{concat\+\_\+ref}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The transaction reference. All parts of this message share this concat-\/ref. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a543192f7397e051d353e58231d96a1bb}{concat\+\_\+total}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of parts in this concatenated message. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ab8d24b6ac996d1724b9e25984b3d1421}{concat\+\_\+part}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of this part in the message. Counting starts at 1. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a8af62d2baf57adff3a43cbb322a8ce16}{data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The content of this message \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aaf3087ef88fb6e45d83e86d35875679d}{udh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The hex encoded User Data Header \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ae655ae6335a8013c9d0137f89a07d4c4}{sig}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Signature if Applicable \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a038b1805766ce8a2d926847c9d91a812}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a038b1805766ce8a2d926847c9d91a812}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!ConstructSignatureStringFromDictionary@{ConstructSignatureStringFromDictionary}}
+\index{ConstructSignatureStringFromDictionary@{ConstructSignatureStringFromDictionary}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{ConstructSignatureStringFromDictionary()}{ConstructSignatureStringFromDictionary()}}
+{\footnotesize\ttfamily static string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+Construct\+Signature\+String\+From\+Dictionary (\begin{DoxyParamCaption}\item[{I\+Dictionary$<$ string, string $>$}]{query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+converts dictionary into properly formatted signature string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a438c1a09e24a0ac279bd8ab9a0a2c3c4}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a438c1a09e24a0ac279bd8ab9a0a2c3c4}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!concat@{concat}}
+\index{concat@{concat}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{concat}{concat}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+concat\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+True -\/ if this is a concatenated message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ab8d24b6ac996d1724b9e25984b3d1421}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ab8d24b6ac996d1724b9e25984b3d1421}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!concat\_part@{concat\_part}}
+\index{concat\_part@{concat\_part}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{concat\_part}{concat\_part}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+concat\+\_\+part\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of this part in the message. Counting starts at 1. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a5cc07dbe1a4ce8df50ed1f756ac0ff9c}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a5cc07dbe1a4ce8df50ed1f756ac0ff9c}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!concat\_ref@{concat\_ref}}
+\index{concat\_ref@{concat\_ref}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{concat\_ref}{concat\_ref}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+concat\+\_\+ref\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The transaction reference. All parts of this message share this concat-\/ref. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a543192f7397e051d353e58231d96a1bb}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a543192f7397e051d353e58231d96a1bb}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!concat\_total@{concat\_total}}
+\index{concat\_total@{concat\_total}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{concat\_total}{concat\_total}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+concat\+\_\+total\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of parts in this concatenated message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a8af62d2baf57adff3a43cbb322a8ce16}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a8af62d2baf57adff3a43cbb322a8ce16}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!data@{data}}
+\index{data@{data}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The content of this message 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ac670b2db26b330289a17b9fbbded1fd1}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ac670b2db26b330289a17b9fbbded1fd1}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!keyword@{keyword}}
+\index{keyword@{keyword}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{keyword}{keyword}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+keyword\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The first word in the message body. This is typically used with short codes. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aa7f2ec80d37b32fcdb50071adf42c652}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aa7f2ec80d37b32fcdb50071adf42c652}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!message\_timestamp@{message\_timestamp}}
+\index{message\_timestamp@{message\_timestamp}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{message\_timestamp}{message\_timestamp}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+message\+\_\+timestamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time at U\+T\+C±00\+:00 that \mbox{\hyperlink{namespace_nexmo}{Nexmo}} started to push this inbound message to your webhook endpoint. The message-\/timestamp is in the following format Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS. For example, 2020-\/01-\/01 12\+:00\+:00. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a1f6215159b78049807eef82d6673e866}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a1f6215159b78049807eef82d6673e866}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!messageId@{messageId}}
+\index{messageId@{messageId}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{messageId}{messageId}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+message\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \mbox{\hyperlink{namespace_nexmo}{Nexmo}} ID for this message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_abde3ccc427e668c6ae7660da3b26a2c7}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_abde3ccc427e668c6ae7660da3b26a2c7}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!msisdn@{msisdn}}
+\index{msisdn@{msisdn}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{msisdn}{msisdn}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+msisdn\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The phone number that this inbound message was sent from. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a451a5ae1e9db37337fe94ebfd6a01e2a}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a451a5ae1e9db37337fe94ebfd6a01e2a}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!nonce@{nonce}}
+\index{nonce@{nonce}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{nonce}{nonce}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+nonce\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A random string that forms part of the signed set of parameters, it adds an extra element of unpredictability into the signature for the request. You use the nonce and timestamp parameters with your shared secret to calculate and validate the signature for inbound messages. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ae655ae6335a8013c9d0137f89a07d4c4}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_ae655ae6335a8013c9d0137f89a07d4c4}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!sig@{sig}}
+\index{sig@{sig}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{sig}{sig}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+sig\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Signature if Applicable 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a159db5618b03375f81d7cc1515573138}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a159db5618b03375f81d7cc1515573138}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!text@{text}}
+\index{text@{text}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The message body for this inbound message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a805695ea08cc1f0bf0417e59554f65e2}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a805695ea08cc1f0bf0417e59554f65e2}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+timestamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A unix timestamp representation of message-\/timestamp. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_af136f274e228b9f10cbc33519fe94b1c}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_af136f274e228b9f10cbc33519fe94b1c}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!to@{to}}
+\index{to@{to}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+to\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The phone number the message was sent to. This is your virtual number. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a15dba609c3406fe6bd9d893d66687ea3}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_a15dba609c3406fe6bd9d893d66687ea3}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!type@{type}}
+\index{type@{type}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Possible values are\+: text -\/ standard text. unicode -\/ U\+R\+Lencoded unicode . This is valid for standard G\+SM, Arabic, Chinese, double-\/encoded characters and so on. binary -\/ a binary message. 
+
+\mbox{\Hypertarget{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aaf3087ef88fb6e45d83e86d35875679d}\label{class_nexmo_1_1_api_1_1_s_m_s_1_1_s_m_s_inbound_aaf3087ef88fb6e45d83e86d35875679d}} 
+\index{Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}!udh@{udh}}
+\index{udh@{udh}!Nexmo.Api.SMS.SMSInbound@{Nexmo.Api.SMS.SMSInbound}}
+\doxysubsubsection{\texorpdfstring{udh}{udh}}
+{\footnotesize\ttfamily string Nexmo.\+Api.\+S\+M\+S.\+S\+M\+S\+Inbound.\+udh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The hex encoded User Data Header 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/slore/\+Documents/projects/slorello89/nexmo-\/dotnet/\+Nexmo.\+Api/S\+M\+S.\+cs\end{DoxyCompactItemize}
